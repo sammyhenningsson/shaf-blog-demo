@@ -1,0 +1,1046 @@
+# Logfile created on 2019-09-06 12:08:07 +0200 by logger.rb/66358
+D, [2019-09-06T12:08:07.793725 #30298] DEBUG -- : Loading initializer: hal_presenter
+I, [2019-09-06T12:08:07.795964 #30298]  INFO -- : (0.000084s) SELECT sqlite_version()
+I, [2019-09-06T12:08:07.796147 #30298]  INFO -- : (0.000061s) SELECT NULL AS 'nil' FROM `schema_migrations` LIMIT 1
+I, [2019-09-06T12:08:07.796260 #30298]  INFO -- : (0.000053s) SELECT * FROM `schema_migrations` LIMIT 1
+I, [2019-09-06T12:08:07.796407 #30298]  INFO -- : (0.000059s) SELECT `filename` FROM `schema_migrations` ORDER BY `filename`
+D, [2019-09-06T12:08:07.796447 #30298] DEBUG -- : Loading initializer: db_migrations
+D, [2019-09-06T12:08:07.798469 #30298] DEBUG -- : Loading initializer: sequel
+D, [2019-09-06T12:08:07.798846 #30298] DEBUG -- : Require file: models/user.rb
+I, [2019-09-06T12:08:07.799931 #30298]  INFO -- : (0.000116s) PRAGMA table_info('users')
+D, [2019-09-06T12:08:07.800209 #30298] DEBUG -- : Require file: policies/base_policy.rb
+D, [2019-09-06T12:08:07.800309 #30298] DEBUG -- : Require file: policies/user_policy.rb
+D, [2019-09-06T12:08:07.800445 #30298] DEBUG -- : Require file: controllers/base_controller.rb
+I, [2019-09-06T12:08:07.804057 #30298]  INFO -- : Using Shaf::CurrentUser
+D, [2019-09-06T12:08:07.804171 #30298] DEBUG -- : Require file: controllers/users_controller.rb
+D, [2019-09-06T12:08:07.809546 #30298] DEBUG -- : Require file: controllers/root_controller.rb
+D, [2019-09-06T12:08:07.810001 #30298] DEBUG -- : Require file: controllers/docs_controller.rb
+D, [2019-09-06T12:08:07.811560 #30298] DEBUG -- : Require file: serializers/base_serializer.rb
+D, [2019-09-06T12:08:07.811678 #30298] DEBUG -- : Require file: serializers/user_serializer.rb
+D, [2019-09-06T12:08:07.812614 #30298] DEBUG -- : Require file: serializers/error_serializer.rb
+D, [2019-09-06T12:08:07.812787 #30298] DEBUG -- : Require file: serializers/form_serializer.rb
+D, [2019-09-06T12:08:07.813745 #30298] DEBUG -- : Require file: serializers/validation_error_serializer.rb
+D, [2019-09-06T12:08:07.813912 #30298] DEBUG -- : Require file: serializers/root_serializer.rb
+D, [2019-09-06T12:08:07.814042 #30298] DEBUG -- : Require file: forms/user_forms.rb
+I, [2019-09-06T12:08:11.922352 #30298]  INFO -- : (0.000370s) SELECT * FROM `users`
+D, [2019-09-06T12:12:04.824125 #5775] DEBUG -- : Loading initializer: hal_presenter
+I, [2019-09-06T12:12:04.826156 #5775]  INFO -- : (0.000063s) SELECT sqlite_version()
+I, [2019-09-06T12:12:04.826321 #5775]  INFO -- : (0.000054s) SELECT NULL AS 'nil' FROM `schema_migrations` LIMIT 1
+I, [2019-09-06T12:12:04.826426 #5775]  INFO -- : (0.000050s) SELECT * FROM `schema_migrations` LIMIT 1
+I, [2019-09-06T12:12:04.826560 #5775]  INFO -- : (0.000055s) SELECT `filename` FROM `schema_migrations` ORDER BY `filename`
+D, [2019-09-06T12:12:04.826597 #5775] DEBUG -- : Loading initializer: db_migrations
+D, [2019-09-06T12:12:04.828459 #5775] DEBUG -- : Loading initializer: sequel
+D, [2019-09-06T12:12:04.828828 #5775] DEBUG -- : Require file: models/user.rb
+I, [2019-09-06T12:12:04.829862 #5775]  INFO -- : (0.000096s) PRAGMA table_info('users')
+D, [2019-09-06T12:12:04.830116 #5775] DEBUG -- : Require file: policies/base_policy.rb
+D, [2019-09-06T12:12:04.830212 #5775] DEBUG -- : Require file: policies/user_policy.rb
+D, [2019-09-06T12:12:04.830345 #5775] DEBUG -- : Require file: controllers/base_controller.rb
+I, [2019-09-06T12:12:04.833158 #5775]  INFO -- : Using Shaf::CurrentUser
+D, [2019-09-06T12:12:04.833265 #5775] DEBUG -- : Require file: controllers/users_controller.rb
+D, [2019-09-06T12:12:04.838234 #5775] DEBUG -- : Require file: controllers/root_controller.rb
+D, [2019-09-06T12:12:04.838651 #5775] DEBUG -- : Require file: controllers/docs_controller.rb
+D, [2019-09-06T12:12:04.840124 #5775] DEBUG -- : Require file: serializers/base_serializer.rb
+D, [2019-09-06T12:12:04.840235 #5775] DEBUG -- : Require file: serializers/user_serializer.rb
+D, [2019-09-06T12:12:04.841115 #5775] DEBUG -- : Require file: serializers/error_serializer.rb
+D, [2019-09-06T12:12:04.841297 #5775] DEBUG -- : Require file: serializers/form_serializer.rb
+D, [2019-09-06T12:12:04.842256 #5775] DEBUG -- : Require file: serializers/validation_error_serializer.rb
+D, [2019-09-06T12:12:04.842415 #5775] DEBUG -- : Require file: serializers/root_serializer.rb
+D, [2019-09-06T12:12:04.843212 #5775] DEBUG -- : Require file: forms/user_forms.rb
+D, [2019-09-06T12:12:07.050925 #5803] DEBUG -- : Loading initializer: hal_presenter
+I, [2019-09-06T12:12:07.053282 #5803]  INFO -- : (0.000078s) SELECT sqlite_version()
+I, [2019-09-06T12:12:07.053486 #5803]  INFO -- : (0.000072s) SELECT NULL AS 'nil' FROM `schema_migrations` LIMIT 1
+I, [2019-09-06T12:12:07.053608 #5803]  INFO -- : (0.000057s) SELECT * FROM `schema_migrations` LIMIT 1
+I, [2019-09-06T12:12:07.053766 #5803]  INFO -- : (0.000065s) SELECT `filename` FROM `schema_migrations` ORDER BY `filename`
+D, [2019-09-06T12:12:07.053809 #5803] DEBUG -- : Loading initializer: db_migrations
+D, [2019-09-06T12:12:07.055975 #5803] DEBUG -- : Loading initializer: sequel
+D, [2019-09-06T12:12:07.056436 #5803] DEBUG -- : Require file: models/user.rb
+I, [2019-09-06T12:12:07.057643 #5803]  INFO -- : (0.000114s) PRAGMA table_info('users')
+D, [2019-09-06T12:12:07.057939 #5803] DEBUG -- : Require file: policies/base_policy.rb
+D, [2019-09-06T12:12:07.058049 #5803] DEBUG -- : Require file: policies/user_policy.rb
+D, [2019-09-06T12:12:07.058200 #5803] DEBUG -- : Require file: controllers/base_controller.rb
+I, [2019-09-06T12:12:07.061392 #5803]  INFO -- : Using Shaf::CurrentUser
+D, [2019-09-06T12:12:07.061514 #5803] DEBUG -- : Require file: controllers/users_controller.rb
+D, [2019-09-06T12:12:07.067177 #5803] DEBUG -- : Require file: controllers/root_controller.rb
+D, [2019-09-06T12:12:07.067640 #5803] DEBUG -- : Require file: controllers/docs_controller.rb
+D, [2019-09-06T12:12:07.069215 #5803] DEBUG -- : Require file: serializers/base_serializer.rb
+D, [2019-09-06T12:12:07.069337 #5803] DEBUG -- : Require file: serializers/user_serializer.rb
+D, [2019-09-06T12:12:07.070299 #5803] DEBUG -- : Require file: serializers/error_serializer.rb
+D, [2019-09-06T12:12:07.071166 #5803] DEBUG -- : Require file: serializers/form_serializer.rb
+D, [2019-09-06T12:12:07.072263 #5803] DEBUG -- : Require file: serializers/validation_error_serializer.rb
+D, [2019-09-06T12:12:07.072444 #5803] DEBUG -- : Require file: serializers/root_serializer.rb
+D, [2019-09-06T12:12:07.072578 #5803] DEBUG -- : Require file: forms/user_forms.rb
+I, [2019-09-06T12:12:34.371753 #5803]  INFO -- : Processing: GET /
+D, [2019-09-06T12:12:34.371808 #5803] DEBUG -- : Payload: {}
+W, [2019-09-06T12:12:34.371951 #5803]  WARN -- : The default Shaf implementation of #current_user requires a User model with a column auth_token_digest
+I, [2019-09-06T12:12:34.372105 #5803]  INFO -- : GET / => 200
+D, [2019-09-06T12:12:34.372133 #5803] DEBUG -- : Response payload (NilClass): {"_links":{"self":{"href":"http://localhost:3000/"},"users":{"href":"http://localhost:3000/users"}}}
+I, [2019-09-06T12:12:46.132582 #5803]  INFO -- : Processing: GET /users
+D, [2019-09-06T12:12:46.132729 #5803] DEBUG -- : Payload: {}
+W, [2019-09-06T12:12:46.132884 #5803]  WARN -- : The default Shaf implementation of #current_user requires a User model with a column auth_token_digest
+I, [2019-09-06T12:12:46.133949 #5803]  INFO -- : (0.000300s) SELECT count(*) AS 'count' FROM `users` LIMIT 1
+W, [2019-09-06T12:12:46.134421 #5803]  WARN -- : The default Shaf implementation of #current_user requires a User model with a column auth_token_digest
+I, [2019-09-06T12:12:46.135682 #5803]  INFO -- : (0.000429s) SELECT * FROM `users` ORDER BY `created_at` DESC LIMIT 25 OFFSET 0
+I, [2019-09-06T12:12:46.135962 #5803]  INFO -- : GET /users => 200
+D, [2019-09-06T12:12:46.137443 #5803] DEBUG -- : Response payload (#<Class:0x000055d8ae6f48e8>): {"_links":{"self":{"href":"http://localhost:3000/users?page=1&per_page=25"},"doc:up":{"href":"http://localhost:3000/"},"doc:create-form":{"href":"http://localhost:3000/user/form"},"curies":[{"name":"doc","href":"http://localhost:3000/doc/user/rels/{rel}","templated":true}]},"_embedded":{"users":[]}}
+I, [2019-09-06T12:13:10.267674 #5803]  INFO -- : Processing: GET /user/form
+D, [2019-09-06T12:13:10.267796 #5803] DEBUG -- : Payload: {}
+W, [2019-09-06T12:13:10.267936 #5803]  WARN -- : The default Shaf implementation of #current_user requires a User model with a column auth_token_digest
+W, [2019-09-06T12:13:10.268476 #5803]  WARN -- : The default Shaf implementation of #current_user requires a User model with a column auth_token_digest
+I, [2019-09-06T12:13:10.268961 #5803]  INFO -- : GET /user/form => 200
+D, [2019-09-06T12:13:10.269043 #5803] DEBUG -- : Response payload (Shaf::Formable::Form): {"method":"POST","name":"create-user","title":"Create User","href":"http://localhost:3000/users","type":"application/json","submit":"save","_links":{"self":{"href":"http://localhost:3000/user/form"},"profile":{"href":"https://gist.githubusercontent.com/sammyhenningsson/39c8aafeaf60192b082762cbf3e08d57/raw/shaf-form.md"}},"fields":[{"name":"name","type":"string","required":true}]}
+I, [2019-09-06T12:15:15.136795 #5803]  INFO -- : Processing: POST /users
+D, [2019-09-06T12:15:15.136936 #5803] DEBUG -- : Payload: {:name=>"fo"}
+W, [2019-09-06T12:15:15.137032 #5803]  WARN -- : The default Shaf implementation of #current_user requires a User model with a column auth_token_digest
+I, [2019-09-06T12:15:15.137621 #5803]  INFO -- : (0.000064s) BEGIN
+I, [2019-09-06T12:15:15.138236 #5803]  INFO -- : (0.000275s) INSERT INTO `users` (`name`, `created_at`) VALUES ('fo', '2019-09-06 12:15:15.137428')
+I, [2019-09-06T12:15:15.139128 #5803]  INFO -- : (0.000677s) SELECT * FROM `users` WHERE `id` = 1
+I, [2019-09-06T12:15:15.143981 #5803]  INFO -- : (0.004737s) COMMIT
+W, [2019-09-06T12:15:15.144341 #5803]  WARN -- : The default Shaf implementation of #current_user requires a User model with a column auth_token_digest
+I, [2019-09-06T12:15:15.144870 #5803]  INFO -- : POST /users => 201
+D, [2019-09-06T12:15:15.144958 #5803] DEBUG -- : Response payload (User): {"name":"fo","_links":{"doc:up":{"href":"http://localhost:3000/users"},"self":{"href":"http://localhost:3000/users/1"},"doc:edit-form":{"href":"http://localhost:3000/users/1/edit"},"doc:delete":{"href":"http://localhost:3000/users/1"},"curies":[{"name":"doc","href":"http://localhost:3000/doc/user/rels/{rel}","templated":true}]}}
+D, [2019-09-06T12:17:13.979367 #14231] DEBUG -- : Loading initializer: hal_presenter
+I, [2019-09-06T12:17:13.981528 #14231]  INFO -- : (0.000088s) SELECT sqlite_version()
+I, [2019-09-06T12:17:13.981781 #14231]  INFO -- : (0.000100s) SELECT NULL AS 'nil' FROM `schema_migrations` LIMIT 1
+I, [2019-09-06T12:17:13.981915 #14231]  INFO -- : (0.000061s) SELECT * FROM `schema_migrations` LIMIT 1
+I, [2019-09-06T12:17:13.982061 #14231]  INFO -- : (0.000057s) SELECT `filename` FROM `schema_migrations` ORDER BY `filename`
+D, [2019-09-06T12:17:13.982097 #14231] DEBUG -- : Loading initializer: db_migrations
+D, [2019-09-06T12:17:13.983934 #14231] DEBUG -- : Loading initializer: sequel
+D, [2019-09-06T12:17:13.984300 #14231] DEBUG -- : Require file: models/user.rb
+I, [2019-09-06T12:17:13.985329 #14231]  INFO -- : (0.000106s) PRAGMA table_info('users')
+D, [2019-09-06T12:17:13.985580 #14231] DEBUG -- : Require file: policies/base_policy.rb
+D, [2019-09-06T12:17:13.985675 #14231] DEBUG -- : Require file: policies/user_policy.rb
+D, [2019-09-06T12:17:13.985803 #14231] DEBUG -- : Require file: controllers/base_controller.rb
+I, [2019-09-06T12:17:13.988540 #14231]  INFO -- : Using Shaf::CurrentUser
+D, [2019-09-06T12:17:13.988644 #14231] DEBUG -- : Require file: controllers/users_controller.rb
+D, [2019-09-06T12:17:13.993490 #14231] DEBUG -- : Require file: controllers/root_controller.rb
+D, [2019-09-06T12:17:13.993881 #14231] DEBUG -- : Require file: controllers/docs_controller.rb
+D, [2019-09-06T12:17:13.995193 #14231] DEBUG -- : Require file: serializers/base_serializer.rb
+D, [2019-09-06T12:17:13.995294 #14231] DEBUG -- : Require file: serializers/user_serializer.rb
+D, [2019-09-06T12:17:13.996303 #14231] DEBUG -- : Require file: serializers/error_serializer.rb
+D, [2019-09-06T12:17:13.996462 #14231] DEBUG -- : Require file: serializers/form_serializer.rb
+D, [2019-09-06T12:17:13.997404 #14231] DEBUG -- : Require file: serializers/validation_error_serializer.rb
+D, [2019-09-06T12:17:13.997556 #14231] DEBUG -- : Require file: serializers/root_serializer.rb
+D, [2019-09-06T12:17:13.997670 #14231] DEBUG -- : Require file: forms/user_forms.rb
+I, [2019-09-06T12:17:27.630884 #14231]  INFO -- : Processing: DELETE /users/1
+D, [2019-09-06T12:17:27.630982 #14231] DEBUG -- : Payload: {}
+W, [2019-09-06T12:17:27.631722 #14231]  WARN -- : The default Shaf implementation of #current_user requires a User model with a column auth_token_digest
+I, [2019-09-06T12:17:27.632626 #14231]  INFO -- : (0.000722s) SELECT * FROM `users` WHERE `id` = '1'
+I, [2019-09-06T12:17:27.633206 #14231]  INFO -- : (0.000136s) BEGIN
+I, [2019-09-06T12:17:27.633485 #14231]  INFO -- : (0.000166s) DELETE FROM `users` WHERE `id` = 1
+I, [2019-09-06T12:17:27.637312 #14231]  INFO -- : (0.003765s) COMMIT
+I, [2019-09-06T12:53:01.633342 #14231]  INFO -- : Processing: GET /
+D, [2019-09-06T12:53:01.633394 #14231] DEBUG -- : Payload: {}
+W, [2019-09-06T12:53:01.633534 #14231]  WARN -- : The default Shaf implementation of #current_user requires a User model with a column auth_token_digest
+I, [2019-09-06T12:53:01.633664 #14231]  INFO -- : GET / => 200
+D, [2019-09-06T12:53:01.633689 #14231] DEBUG -- : Response payload (NilClass): {"_links":{"self":{"href":"http://localhost:3000/"},"users":{"href":"http://localhost:3000/users"}}}
+I, [2019-09-06T12:53:17.030027 #14231]  INFO -- : Processing: GET /users
+D, [2019-09-06T12:53:17.030167 #14231] DEBUG -- : Payload: {}
+W, [2019-09-06T12:53:17.030322 #14231]  WARN -- : The default Shaf implementation of #current_user requires a User model with a column auth_token_digest
+I, [2019-09-06T12:53:17.031273 #14231]  INFO -- : (0.000290s) SELECT count(*) AS 'count' FROM `users` LIMIT 1
+W, [2019-09-06T12:53:17.031639 #14231]  WARN -- : The default Shaf implementation of #current_user requires a User model with a column auth_token_digest
+I, [2019-09-06T12:53:17.032678 #14231]  INFO -- : (0.000416s) SELECT * FROM `users` ORDER BY `created_at` DESC LIMIT 25 OFFSET 0
+I, [2019-09-06T12:53:17.032970 #14231]  INFO -- : GET /users => 200
+D, [2019-09-06T12:53:17.034077 #14231] DEBUG -- : Response payload (#<Class:0x000055906bc05c78>): {"_links":{"self":{"href":"http://localhost:3000/users?page=1&per_page=25"},"doc:up":{"href":"http://localhost:3000/"},"doc:create-form":{"href":"http://localhost:3000/user/form"},"curies":[{"name":"doc","href":"http://localhost:3000/doc/user/rels/{rel}","templated":true}]},"_embedded":{"users":[]}}
+I, [2019-09-06T12:56:04.287570 #14231]  INFO -- : Processing: GET /user/form
+D, [2019-09-06T12:56:04.287699 #14231] DEBUG -- : Payload: {}
+W, [2019-09-06T12:56:04.287844 #14231]  WARN -- : The default Shaf implementation of #current_user requires a User model with a column auth_token_digest
+W, [2019-09-06T12:56:04.288287 #14231]  WARN -- : The default Shaf implementation of #current_user requires a User model with a column auth_token_digest
+I, [2019-09-06T12:56:04.288765 #14231]  INFO -- : GET /user/form => 200
+D, [2019-09-06T12:56:04.288845 #14231] DEBUG -- : Response payload (Shaf::Formable::Form): {"method":"POST","name":"create-user","title":"Create User","href":"http://localhost:3000/users","type":"application/json","submit":"save","_links":{"self":{"href":"http://localhost:3000/user/form"},"profile":{"href":"https://gist.githubusercontent.com/sammyhenningsson/39c8aafeaf60192b082762cbf3e08d57/raw/shaf-form.md"}},"fields":[{"name":"name","type":"string","required":true}]}
+I, [2019-09-06T12:57:15.005647 #14231]  INFO -- : Processing: POST /users
+D, [2019-09-06T12:57:15.005739 #14231] DEBUG -- : Payload: {:name=>"fo"}
+W, [2019-09-06T12:57:15.005800 #14231]  WARN -- : The default Shaf implementation of #current_user requires a User model with a column auth_token_digest
+E, [2019-09-06T12:57:15.006221 #14231] ERROR -- : name is shorter than 3 characters
+E, [2019-09-06T12:57:15.006250 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sequel-5.24.0/lib/sequel/model/base.rb:1462:in `save'
+E, [2019-09-06T12:57:15.006272 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sequel-5.24.0/lib/sequel/model/base.rb:254:in `create'
+E, [2019-09-06T12:57:15.006285 #14231] ERROR -- : /home/sammy/Development/demo/api/controllers/users_controller.rb:23:in `block in <class:UsersController>'
+E, [2019-09-06T12:57:15.006295 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:1635:in `call'
+E, [2019-09-06T12:57:15.006304 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:1635:in `block in compile!'
+E, [2019-09-06T12:57:15.006314 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:987:in `block (3 levels) in route!'
+E, [2019-09-06T12:57:15.006323 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:1006:in `route_eval'
+E, [2019-09-06T12:57:15.006333 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:987:in `block (2 levels) in route!'
+E, [2019-09-06T12:57:15.006342 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:1035:in `block in process_route'
+E, [2019-09-06T12:57:15.006352 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:1033:in `catch'
+E, [2019-09-06T12:57:15.006361 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:1033:in `process_route'
+E, [2019-09-06T12:57:15.006371 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:985:in `block in route!'
+E, [2019-09-06T12:57:15.006380 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:984:in `each'
+E, [2019-09-06T12:57:15.006390 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:984:in `route!'
+E, [2019-09-06T12:57:15.006399 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:1097:in `block in dispatch!'
+E, [2019-09-06T12:57:15.006409 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:1071:in `block in invoke'
+E, [2019-09-06T12:57:15.006418 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:1071:in `catch'
+E, [2019-09-06T12:57:15.006428 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:1071:in `invoke'
+E, [2019-09-06T12:57:15.006440 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:1094:in `dispatch!'
+E, [2019-09-06T12:57:15.006450 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:919:in `block in call!'
+E, [2019-09-06T12:57:15.006459 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:1071:in `block in invoke'
+E, [2019-09-06T12:57:15.006468 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:1071:in `catch'
+E, [2019-09-06T12:57:15.006478 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:1071:in `invoke'
+E, [2019-09-06T12:57:15.006487 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:919:in `call!'
+E, [2019-09-06T12:57:15.006497 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:908:in `call'
+E, [2019-09-06T12:57:15.006506 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rack-2.0.7/lib/rack/deflater.rb:34:in `call'
+E, [2019-09-06T12:57:15.006519 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rack-protection-2.0.7/lib/rack/protection/xss_header.rb:18:in `call'
+E, [2019-09-06T12:57:15.006530 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rack-protection-2.0.7/lib/rack/protection/path_traversal.rb:16:in `call'
+E, [2019-09-06T12:57:15.006542 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rack-protection-2.0.7/lib/rack/protection/json_csrf.rb:26:in `call'
+E, [2019-09-06T12:57:15.006552 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rack-protection-2.0.7/lib/rack/protection/base.rb:50:in `call'
+E, [2019-09-06T12:57:15.006561 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rack-protection-2.0.7/lib/rack/protection/base.rb:50:in `call'
+E, [2019-09-06T12:57:15.006571 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rack-protection-2.0.7/lib/rack/protection/frame_options.rb:31:in `call'
+E, [2019-09-06T12:57:15.006581 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rack-2.0.7/lib/rack/logger.rb:15:in `call'
+E, [2019-09-06T12:57:15.006590 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rack-2.0.7/lib/rack/common_logger.rb:33:in `call'
+E, [2019-09-06T12:57:15.006600 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:231:in `call'
+E, [2019-09-06T12:57:15.006609 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:224:in `call'
+E, [2019-09-06T12:57:15.006619 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rack-2.0.7/lib/rack/head.rb:12:in `call'
+E, [2019-09-06T12:57:15.006633 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rack-2.0.7/lib/rack/method_override.rb:22:in `call'
+E, [2019-09-06T12:57:15.006643 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/show_exceptions.rb:22:in `call'
+E, [2019-09-06T12:57:15.006654 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:194:in `call'
+E, [2019-09-06T12:57:15.006664 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:1950:in `call'
+E, [2019-09-06T12:57:15.006673 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:1502:in `block in call'
+E, [2019-09-06T12:57:15.006682 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:1729:in `synchronize'
+E, [2019-09-06T12:57:15.006692 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:1502:in `call'
+E, [2019-09-06T12:57:15.006701 #14231] ERROR -- : /home/sammy/Development/shaf/lib/shaf/router.rb:53:in `block in call'
+E, [2019-09-06T12:57:15.006711 #14231] ERROR -- : /home/sammy/Development/shaf/lib/shaf/router.rb:70:in `controllers_for'
+E, [2019-09-06T12:57:15.006721 #14231] ERROR -- : /home/sammy/Development/shaf/lib/shaf/router.rb:52:in `call'
+E, [2019-09-06T12:57:15.006736 #14231] ERROR -- : /home/sammy/Development/shaf/lib/shaf/middleware/request_id.rb:14:in `call'
+E, [2019-09-06T12:57:15.006746 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rack-protection-2.0.7/lib/rack/protection/xss_header.rb:18:in `call'
+E, [2019-09-06T12:57:15.006755 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rack-protection-2.0.7/lib/rack/protection/path_traversal.rb:16:in `call'
+E, [2019-09-06T12:57:15.006765 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rack-protection-2.0.7/lib/rack/protection/json_csrf.rb:26:in `call'
+E, [2019-09-06T12:57:15.006774 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rack-protection-2.0.7/lib/rack/protection/base.rb:50:in `call'
+E, [2019-09-06T12:57:15.006786 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rack-protection-2.0.7/lib/rack/protection/base.rb:50:in `call'
+E, [2019-09-06T12:57:15.006797 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rack-protection-2.0.7/lib/rack/protection/frame_options.rb:31:in `call'
+E, [2019-09-06T12:57:15.006807 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rack-2.0.7/lib/rack/null_logger.rb:9:in `call'
+E, [2019-09-06T12:57:15.006816 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rack-2.0.7/lib/rack/head.rb:12:in `call'
+E, [2019-09-06T12:57:15.006827 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/show_exceptions.rb:22:in `call'
+E, [2019-09-06T12:57:15.006837 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:194:in `call'
+E, [2019-09-06T12:57:15.006847 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:1950:in `call'
+E, [2019-09-06T12:57:15.006857 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:1502:in `block in call'
+E, [2019-09-06T12:57:15.006867 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:1729:in `synchronize'
+E, [2019-09-06T12:57:15.006876 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:1502:in `call'
+E, [2019-09-06T12:57:15.006886 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/thin-1.7.2/lib/thin/connection.rb:86:in `block in pre_process'
+E, [2019-09-06T12:57:15.006896 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/thin-1.7.2/lib/thin/connection.rb:84:in `catch'
+E, [2019-09-06T12:57:15.006923 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/thin-1.7.2/lib/thin/connection.rb:84:in `pre_process'
+E, [2019-09-06T12:57:15.006934 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/thin-1.7.2/lib/thin/connection.rb:50:in `block in process'
+E, [2019-09-06T12:57:15.006948 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/eventmachine-1.2.7/lib/eventmachine.rb:1077:in `block in spawn_threadpool'
+W, [2019-09-06T12:57:15.007038 #14231]  WARN -- : The default Shaf implementation of #current_user requires a User model with a column auth_token_digest
+I, [2019-09-06T12:57:15.007184 #14231]  INFO -- : POST /users => 422
+D, [2019-09-06T12:57:15.007214 #14231] DEBUG -- : Response payload (Shaf::Errors::ValidationError): {"title":"Invalid entity","code":"VALIDATION_ERROR","fields":{"name":["is shorter than 3 characters"]},"_links":{"profile":{"href":"https://gist.githubusercontent.com/sammyhenningsson/049d10e2b8978059cde104fc5d6c2d52/raw/shaf-error.md"}}}
+I, [2019-09-06T13:05:56.067049 #14231]  INFO -- : Processing: GET /
+D, [2019-09-06T13:05:56.067102 #14231] DEBUG -- : Payload: {}
+W, [2019-09-06T13:05:56.067218 #14231]  WARN -- : The default Shaf implementation of #current_user requires a User model with a column auth_token_digest
+I, [2019-09-06T13:05:56.067313 #14231]  INFO -- : GET / => 200
+D, [2019-09-06T13:05:56.067337 #14231] DEBUG -- : Response payload (NilClass): {"_links":{"self":{"href":"http://localhost:3000/"},"users":{"href":"http://localhost:3000/users"}}}
+I, [2019-09-06T13:06:03.943230 #14231]  INFO -- : Processing: GET /users
+D, [2019-09-06T13:06:03.943368 #14231] DEBUG -- : Payload: {}
+W, [2019-09-06T13:06:03.943505 #14231]  WARN -- : The default Shaf implementation of #current_user requires a User model with a column auth_token_digest
+I, [2019-09-06T13:06:03.944399 #14231]  INFO -- : (0.000324s) SELECT count(*) AS 'count' FROM `users` LIMIT 1
+W, [2019-09-06T13:06:03.944766 #14231]  WARN -- : The default Shaf implementation of #current_user requires a User model with a column auth_token_digest
+I, [2019-09-06T13:06:03.945609 #14231]  INFO -- : (0.000411s) SELECT * FROM `users` ORDER BY `created_at` DESC LIMIT 25 OFFSET 0
+I, [2019-09-06T13:06:03.945851 #14231]  INFO -- : GET /users => 200
+D, [2019-09-06T13:06:03.946932 #14231] DEBUG -- : Response payload (#<Class:0x000055906bc05c78>): {"_links":{"self":{"href":"http://localhost:3000/users?page=1&per_page=25"},"doc:up":{"href":"http://localhost:3000/"},"doc:create-form":{"href":"http://localhost:3000/user/form"},"curies":[{"name":"doc","href":"http://localhost:3000/doc/user/rels/{rel}","templated":true}]},"_embedded":{"users":[]}}
+I, [2019-09-06T13:06:10.557038 #14231]  INFO -- : Processing: GET /user/form
+D, [2019-09-06T13:06:10.557172 #14231] DEBUG -- : Payload: {}
+W, [2019-09-06T13:06:10.557311 #14231]  WARN -- : The default Shaf implementation of #current_user requires a User model with a column auth_token_digest
+W, [2019-09-06T13:06:10.557626 #14231]  WARN -- : The default Shaf implementation of #current_user requires a User model with a column auth_token_digest
+I, [2019-09-06T13:06:10.558051 #14231]  INFO -- : GET /user/form => 200
+D, [2019-09-06T13:06:10.558129 #14231] DEBUG -- : Response payload (Shaf::Formable::Form): {"method":"POST","name":"create-user","title":"Create User","href":"http://localhost:3000/users","type":"application/json","submit":"save","_links":{"self":{"href":"http://localhost:3000/user/form"},"profile":{"href":"https://gist.githubusercontent.com/sammyhenningsson/39c8aafeaf60192b082762cbf3e08d57/raw/shaf-form.md"}},"fields":[{"name":"name","type":"string","required":true}]}
+I, [2019-09-06T13:06:28.996865 #14231]  INFO -- : Processing: POST /users
+D, [2019-09-06T13:06:28.997040 #14231] DEBUG -- : Payload: {:name=>"fo"}
+W, [2019-09-06T13:06:28.997183 #14231]  WARN -- : The default Shaf implementation of #current_user requires a User model with a column auth_token_digest
+E, [2019-09-06T13:06:28.997816 #14231] ERROR -- : name is shorter than 3 characters
+E, [2019-09-06T13:06:28.997888 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sequel-5.24.0/lib/sequel/model/base.rb:1462:in `save'
+E, [2019-09-06T13:06:28.997937 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sequel-5.24.0/lib/sequel/model/base.rb:254:in `create'
+E, [2019-09-06T13:06:28.997969 #14231] ERROR -- : /home/sammy/Development/demo/api/controllers/users_controller.rb:23:in `block in <class:UsersController>'
+E, [2019-09-06T13:06:28.998000 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:1635:in `call'
+E, [2019-09-06T13:06:28.998029 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:1635:in `block in compile!'
+E, [2019-09-06T13:06:28.998058 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:987:in `block (3 levels) in route!'
+E, [2019-09-06T13:06:28.998088 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:1006:in `route_eval'
+E, [2019-09-06T13:06:28.998117 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:987:in `block (2 levels) in route!'
+E, [2019-09-06T13:06:28.998146 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:1035:in `block in process_route'
+E, [2019-09-06T13:06:28.998174 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:1033:in `catch'
+E, [2019-09-06T13:06:28.998203 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:1033:in `process_route'
+E, [2019-09-06T13:06:28.998239 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:985:in `block in route!'
+E, [2019-09-06T13:06:28.998287 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:984:in `each'
+E, [2019-09-06T13:06:28.998318 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:984:in `route!'
+E, [2019-09-06T13:06:28.998347 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:1097:in `block in dispatch!'
+E, [2019-09-06T13:06:28.998374 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:1071:in `block in invoke'
+E, [2019-09-06T13:06:28.998401 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:1071:in `catch'
+E, [2019-09-06T13:06:28.998429 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:1071:in `invoke'
+E, [2019-09-06T13:06:28.998456 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:1094:in `dispatch!'
+E, [2019-09-06T13:06:28.998483 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:919:in `block in call!'
+E, [2019-09-06T13:06:28.998511 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:1071:in `block in invoke'
+E, [2019-09-06T13:06:28.998550 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:1071:in `catch'
+E, [2019-09-06T13:06:28.998578 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:1071:in `invoke'
+E, [2019-09-06T13:06:28.998606 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:919:in `call!'
+E, [2019-09-06T13:06:28.998634 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:908:in `call'
+E, [2019-09-06T13:06:28.998662 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rack-2.0.7/lib/rack/deflater.rb:34:in `call'
+E, [2019-09-06T13:06:28.998690 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rack-protection-2.0.7/lib/rack/protection/xss_header.rb:18:in `call'
+E, [2019-09-06T13:06:28.998718 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rack-protection-2.0.7/lib/rack/protection/path_traversal.rb:16:in `call'
+E, [2019-09-06T13:06:28.998746 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rack-protection-2.0.7/lib/rack/protection/json_csrf.rb:26:in `call'
+E, [2019-09-06T13:06:28.998773 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rack-protection-2.0.7/lib/rack/protection/base.rb:50:in `call'
+E, [2019-09-06T13:06:28.998808 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rack-protection-2.0.7/lib/rack/protection/base.rb:50:in `call'
+E, [2019-09-06T13:06:28.998836 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rack-protection-2.0.7/lib/rack/protection/frame_options.rb:31:in `call'
+E, [2019-09-06T13:06:28.998864 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rack-2.0.7/lib/rack/logger.rb:15:in `call'
+E, [2019-09-06T13:06:28.998892 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rack-2.0.7/lib/rack/common_logger.rb:33:in `call'
+E, [2019-09-06T13:06:28.998919 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:231:in `call'
+E, [2019-09-06T13:06:28.998947 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:224:in `call'
+E, [2019-09-06T13:06:28.998974 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rack-2.0.7/lib/rack/head.rb:12:in `call'
+E, [2019-09-06T13:06:28.999015 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rack-2.0.7/lib/rack/method_override.rb:22:in `call'
+E, [2019-09-06T13:06:28.999045 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/show_exceptions.rb:22:in `call'
+E, [2019-09-06T13:06:28.999072 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:194:in `call'
+E, [2019-09-06T13:06:28.999107 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:1950:in `call'
+E, [2019-09-06T13:06:28.999135 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:1502:in `block in call'
+E, [2019-09-06T13:06:28.999162 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:1729:in `synchronize'
+E, [2019-09-06T13:06:28.999190 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:1502:in `call'
+E, [2019-09-06T13:06:28.999218 #14231] ERROR -- : /home/sammy/Development/shaf/lib/shaf/router.rb:53:in `block in call'
+E, [2019-09-06T13:06:28.999246 #14231] ERROR -- : /home/sammy/Development/shaf/lib/shaf/router.rb:67:in `block in controllers_for'
+E, [2019-09-06T13:06:28.999273 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/2.6.0/set.rb:338:in `each_key'
+E, [2019-09-06T13:06:28.999300 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/2.6.0/set.rb:338:in `each'
+E, [2019-09-06T13:06:28.999328 #14231] ERROR -- : /home/sammy/Development/shaf/lib/shaf/router.rb:67:in `controllers_for'
+E, [2019-09-06T13:06:28.999362 #14231] ERROR -- : /home/sammy/Development/shaf/lib/shaf/router.rb:52:in `call'
+E, [2019-09-06T13:06:28.999390 #14231] ERROR -- : /home/sammy/Development/shaf/lib/shaf/middleware/request_id.rb:14:in `call'
+E, [2019-09-06T13:06:28.999418 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rack-protection-2.0.7/lib/rack/protection/xss_header.rb:18:in `call'
+E, [2019-09-06T13:06:28.999446 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rack-protection-2.0.7/lib/rack/protection/path_traversal.rb:16:in `call'
+E, [2019-09-06T13:06:28.999473 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rack-protection-2.0.7/lib/rack/protection/json_csrf.rb:26:in `call'
+E, [2019-09-06T13:06:28.999501 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rack-protection-2.0.7/lib/rack/protection/base.rb:50:in `call'
+E, [2019-09-06T13:06:28.999528 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rack-protection-2.0.7/lib/rack/protection/base.rb:50:in `call'
+E, [2019-09-06T13:06:28.999555 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rack-protection-2.0.7/lib/rack/protection/frame_options.rb:31:in `call'
+E, [2019-09-06T13:06:28.999583 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rack-2.0.7/lib/rack/null_logger.rb:9:in `call'
+E, [2019-09-06T13:06:28.999610 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rack-2.0.7/lib/rack/head.rb:12:in `call'
+E, [2019-09-06T13:06:28.999644 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/show_exceptions.rb:22:in `call'
+E, [2019-09-06T13:06:28.999672 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:194:in `call'
+E, [2019-09-06T13:06:28.999699 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:1950:in `call'
+E, [2019-09-06T13:06:28.999727 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:1502:in `block in call'
+E, [2019-09-06T13:06:28.999754 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:1729:in `synchronize'
+E, [2019-09-06T13:06:28.999790 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:1502:in `call'
+E, [2019-09-06T13:06:28.999820 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/thin-1.7.2/lib/thin/connection.rb:86:in `block in pre_process'
+E, [2019-09-06T13:06:28.999848 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/thin-1.7.2/lib/thin/connection.rb:84:in `catch'
+E, [2019-09-06T13:06:28.999875 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/thin-1.7.2/lib/thin/connection.rb:84:in `pre_process'
+E, [2019-09-06T13:06:28.999908 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/thin-1.7.2/lib/thin/connection.rb:50:in `block in process'
+E, [2019-09-06T13:06:28.999937 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/eventmachine-1.2.7/lib/eventmachine.rb:1077:in `block in spawn_threadpool'
+W, [2019-09-06T13:06:29.000257 #14231]  WARN -- : The default Shaf implementation of #current_user requires a User model with a column auth_token_digest
+I, [2019-09-06T13:06:29.000660 #14231]  INFO -- : POST /users => 422
+D, [2019-09-06T13:06:29.000772 #14231] DEBUG -- : Response payload (Shaf::Errors::ValidationError): {"title":"Invalid entity","code":"VALIDATION_ERROR","fields":{"name":["is shorter than 3 characters"]},"_links":{"profile":{"href":"https://gist.githubusercontent.com/sammyhenningsson/049d10e2b8978059cde104fc5d6c2d52/raw/shaf-error.md"}}}
+I, [2019-09-06T13:09:06.126014 #14231]  INFO -- : Processing: GET /
+D, [2019-09-06T13:09:06.126064 #14231] DEBUG -- : Payload: {}
+W, [2019-09-06T13:09:06.126178 #14231]  WARN -- : The default Shaf implementation of #current_user requires a User model with a column auth_token_digest
+I, [2019-09-06T13:09:06.126295 #14231]  INFO -- : GET / => 200
+D, [2019-09-06T13:09:06.126319 #14231] DEBUG -- : Response payload (NilClass): {"_links":{"self":{"href":"http://localhost:3000/"},"users":{"href":"http://localhost:3000/users"}}}
+I, [2019-09-06T13:09:06.128207 #14231]  INFO -- : Processing: GET /users
+D, [2019-09-06T13:09:06.128241 #14231] DEBUG -- : Payload: {}
+W, [2019-09-06T13:09:06.128280 #14231]  WARN -- : The default Shaf implementation of #current_user requires a User model with a column auth_token_digest
+I, [2019-09-06T13:09:06.128572 #14231]  INFO -- : (0.000096s) SELECT count(*) AS 'count' FROM `users` LIMIT 1
+W, [2019-09-06T13:09:06.128672 #14231]  WARN -- : The default Shaf implementation of #current_user requires a User model with a column auth_token_digest
+I, [2019-09-06T13:09:06.128959 #14231]  INFO -- : (0.000144s) SELECT * FROM `users` ORDER BY `created_at` DESC LIMIT 25 OFFSET 0
+I, [2019-09-06T13:09:06.129033 #14231]  INFO -- : GET /users => 200
+D, [2019-09-06T13:09:06.129511 #14231] DEBUG -- : Response payload (#<Class:0x000055906bc05c78>): {"_links":{"self":{"href":"http://localhost:3000/users?page=1&per_page=25"},"doc:up":{"href":"http://localhost:3000/"},"doc:create-form":{"href":"http://localhost:3000/user/form"},"curies":[{"name":"doc","href":"http://localhost:3000/doc/user/rels/{rel}","templated":true}]},"_embedded":{"users":[]}}
+I, [2019-09-06T13:09:06.131242 #14231]  INFO -- : Processing: GET /user/form
+D, [2019-09-06T13:09:06.131274 #14231] DEBUG -- : Payload: {}
+W, [2019-09-06T13:09:06.131313 #14231]  WARN -- : The default Shaf implementation of #current_user requires a User model with a column auth_token_digest
+W, [2019-09-06T13:09:06.131404 #14231]  WARN -- : The default Shaf implementation of #current_user requires a User model with a column auth_token_digest
+I, [2019-09-06T13:09:06.131559 #14231]  INFO -- : GET /user/form => 200
+D, [2019-09-06T13:09:06.131583 #14231] DEBUG -- : Response payload (Shaf::Formable::Form): {"method":"POST","name":"create-user","title":"Create User","href":"http://localhost:3000/users","type":"application/json","submit":"save","_links":{"self":{"href":"http://localhost:3000/user/form"},"profile":{"href":"https://gist.githubusercontent.com/sammyhenningsson/39c8aafeaf60192b082762cbf3e08d57/raw/shaf-form.md"}},"fields":[{"name":"name","type":"string","required":true}]}
+I, [2019-09-06T13:09:18.994152 #14231]  INFO -- : Processing: POST /users
+D, [2019-09-06T13:09:18.994327 #14231] DEBUG -- : Payload: {:name=>"fo"}
+W, [2019-09-06T13:09:18.994472 #14231]  WARN -- : The default Shaf implementation of #current_user requires a User model with a column auth_token_digest
+E, [2019-09-06T13:09:18.995101 #14231] ERROR -- : name is shorter than 3 characters
+E, [2019-09-06T13:09:18.995173 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sequel-5.24.0/lib/sequel/model/base.rb:1462:in `save'
+E, [2019-09-06T13:09:18.995222 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sequel-5.24.0/lib/sequel/model/base.rb:254:in `create'
+E, [2019-09-06T13:09:18.995255 #14231] ERROR -- : /home/sammy/Development/demo/api/controllers/users_controller.rb:23:in `block in <class:UsersController>'
+E, [2019-09-06T13:09:18.995285 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:1635:in `call'
+E, [2019-09-06T13:09:18.995314 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:1635:in `block in compile!'
+E, [2019-09-06T13:09:18.995343 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:987:in `block (3 levels) in route!'
+E, [2019-09-06T13:09:18.995371 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:1006:in `route_eval'
+E, [2019-09-06T13:09:18.995400 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:987:in `block (2 levels) in route!'
+E, [2019-09-06T13:09:18.995429 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:1035:in `block in process_route'
+E, [2019-09-06T13:09:18.995458 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:1033:in `catch'
+E, [2019-09-06T13:09:18.995486 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:1033:in `process_route'
+E, [2019-09-06T13:09:18.995522 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:985:in `block in route!'
+E, [2019-09-06T13:09:18.995552 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:984:in `each'
+E, [2019-09-06T13:09:18.995581 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:984:in `route!'
+E, [2019-09-06T13:09:18.995609 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:1097:in `block in dispatch!'
+E, [2019-09-06T13:09:18.995638 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:1071:in `block in invoke'
+E, [2019-09-06T13:09:18.995666 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:1071:in `catch'
+E, [2019-09-06T13:09:18.995695 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:1071:in `invoke'
+E, [2019-09-06T13:09:18.995723 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:1094:in `dispatch!'
+E, [2019-09-06T13:09:18.995752 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:919:in `block in call!'
+E, [2019-09-06T13:09:18.995780 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:1071:in `block in invoke'
+E, [2019-09-06T13:09:18.995833 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:1071:in `catch'
+E, [2019-09-06T13:09:18.995866 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:1071:in `invoke'
+E, [2019-09-06T13:09:18.995894 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:919:in `call!'
+E, [2019-09-06T13:09:18.995921 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:908:in `call'
+E, [2019-09-06T13:09:18.995948 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rack-2.0.7/lib/rack/deflater.rb:34:in `call'
+E, [2019-09-06T13:09:18.995976 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rack-protection-2.0.7/lib/rack/protection/xss_header.rb:18:in `call'
+E, [2019-09-06T13:09:18.996004 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rack-protection-2.0.7/lib/rack/protection/path_traversal.rb:16:in `call'
+E, [2019-09-06T13:09:18.996031 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rack-protection-2.0.7/lib/rack/protection/json_csrf.rb:26:in `call'
+E, [2019-09-06T13:09:18.996110 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rack-protection-2.0.7/lib/rack/protection/base.rb:50:in `call'
+E, [2019-09-06T13:09:18.996152 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rack-protection-2.0.7/lib/rack/protection/base.rb:50:in `call'
+E, [2019-09-06T13:09:18.996181 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rack-protection-2.0.7/lib/rack/protection/frame_options.rb:31:in `call'
+E, [2019-09-06T13:09:18.996208 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rack-2.0.7/lib/rack/logger.rb:15:in `call'
+E, [2019-09-06T13:09:18.996235 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rack-2.0.7/lib/rack/common_logger.rb:33:in `call'
+E, [2019-09-06T13:09:18.996262 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:231:in `call'
+E, [2019-09-06T13:09:18.996301 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:224:in `call'
+E, [2019-09-06T13:09:18.996310 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rack-2.0.7/lib/rack/head.rb:12:in `call'
+E, [2019-09-06T13:09:18.996320 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rack-2.0.7/lib/rack/method_override.rb:22:in `call'
+E, [2019-09-06T13:09:18.996329 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/show_exceptions.rb:22:in `call'
+E, [2019-09-06T13:09:18.996344 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:194:in `call'
+E, [2019-09-06T13:09:18.996359 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:1950:in `call'
+E, [2019-09-06T13:09:18.996369 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:1502:in `block in call'
+E, [2019-09-06T13:09:18.996378 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:1729:in `synchronize'
+E, [2019-09-06T13:09:18.996387 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:1502:in `call'
+E, [2019-09-06T13:09:18.996397 #14231] ERROR -- : /home/sammy/Development/shaf/lib/shaf/router.rb:53:in `block in call'
+E, [2019-09-06T13:09:18.996407 #14231] ERROR -- : /home/sammy/Development/shaf/lib/shaf/router.rb:67:in `block in controllers_for'
+E, [2019-09-06T13:09:18.996416 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/2.6.0/set.rb:338:in `each_key'
+E, [2019-09-06T13:09:18.996429 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/2.6.0/set.rb:338:in `each'
+E, [2019-09-06T13:09:18.996440 #14231] ERROR -- : /home/sammy/Development/shaf/lib/shaf/router.rb:67:in `controllers_for'
+E, [2019-09-06T13:09:18.996452 #14231] ERROR -- : /home/sammy/Development/shaf/lib/shaf/router.rb:52:in `call'
+E, [2019-09-06T13:09:18.996462 #14231] ERROR -- : /home/sammy/Development/shaf/lib/shaf/middleware/request_id.rb:14:in `call'
+E, [2019-09-06T13:09:18.996471 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rack-protection-2.0.7/lib/rack/protection/xss_header.rb:18:in `call'
+E, [2019-09-06T13:09:18.996481 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rack-protection-2.0.7/lib/rack/protection/path_traversal.rb:16:in `call'
+E, [2019-09-06T13:09:18.996490 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rack-protection-2.0.7/lib/rack/protection/json_csrf.rb:26:in `call'
+E, [2019-09-06T13:09:18.996500 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rack-protection-2.0.7/lib/rack/protection/base.rb:50:in `call'
+E, [2019-09-06T13:09:18.996510 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rack-protection-2.0.7/lib/rack/protection/base.rb:50:in `call'
+E, [2019-09-06T13:09:18.996519 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rack-protection-2.0.7/lib/rack/protection/frame_options.rb:31:in `call'
+E, [2019-09-06T13:09:18.996529 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rack-2.0.7/lib/rack/null_logger.rb:9:in `call'
+E, [2019-09-06T13:09:18.996538 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rack-2.0.7/lib/rack/head.rb:12:in `call'
+E, [2019-09-06T13:09:18.996551 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/show_exceptions.rb:22:in `call'
+E, [2019-09-06T13:09:18.996561 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:194:in `call'
+E, [2019-09-06T13:09:18.996571 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:1950:in `call'
+E, [2019-09-06T13:09:18.996580 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:1502:in `block in call'
+E, [2019-09-06T13:09:18.996590 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:1729:in `synchronize'
+E, [2019-09-06T13:09:18.996599 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:1502:in `call'
+E, [2019-09-06T13:09:18.996609 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/thin-1.7.2/lib/thin/connection.rb:86:in `block in pre_process'
+E, [2019-09-06T13:09:18.996618 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/thin-1.7.2/lib/thin/connection.rb:84:in `catch'
+E, [2019-09-06T13:09:18.996628 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/thin-1.7.2/lib/thin/connection.rb:84:in `pre_process'
+E, [2019-09-06T13:09:18.996639 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/thin-1.7.2/lib/thin/connection.rb:50:in `block in process'
+E, [2019-09-06T13:09:18.996649 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/eventmachine-1.2.7/lib/eventmachine.rb:1077:in `block in spawn_threadpool'
+W, [2019-09-06T13:09:18.996729 #14231]  WARN -- : The default Shaf implementation of #current_user requires a User model with a column auth_token_digest
+I, [2019-09-06T13:09:18.996842 #14231]  INFO -- : POST /users => 422
+D, [2019-09-06T13:09:18.996867 #14231] DEBUG -- : Response payload (Shaf::Errors::ValidationError): {"title":"Invalid entity","code":"VALIDATION_ERROR","fields":{"name":["is shorter than 3 characters"]},"_links":{"profile":{"href":"https://gist.githubusercontent.com/sammyhenningsson/049d10e2b8978059cde104fc5d6c2d52/raw/shaf-error.md"}}}
+I, [2019-09-06T13:11:50.281919 #14231]  INFO -- : Processing: POST /users
+D, [2019-09-06T13:11:50.282097 #14231] DEBUG -- : Payload: {:name=>"foobar"}
+W, [2019-09-06T13:11:50.282244 #14231]  WARN -- : The default Shaf implementation of #current_user requires a User model with a column auth_token_digest
+I, [2019-09-06T13:11:50.282711 #14231]  INFO -- : (0.000078s) BEGIN
+I, [2019-09-06T13:11:50.283569 #14231]  INFO -- : (0.000399s) INSERT INTO `users` (`name`, `created_at`) VALUES ('foobar', '2019-09-06 13:11:50.282442')
+I, [2019-09-06T13:11:50.284342 #14231]  INFO -- : (0.000454s) SELECT * FROM `users` WHERE `id` = 2
+I, [2019-09-06T13:11:50.289372 #14231]  INFO -- : (0.004876s) COMMIT
+W, [2019-09-06T13:11:50.289741 #14231]  WARN -- : The default Shaf implementation of #current_user requires a User model with a column auth_token_digest
+I, [2019-09-06T13:11:50.290275 #14231]  INFO -- : POST /users => 201
+D, [2019-09-06T13:11:50.290363 #14231] DEBUG -- : Response payload (User): {"name":"foobar","_links":{"doc:up":{"href":"http://localhost:3000/users"},"self":{"href":"http://localhost:3000/users/2"},"doc:edit-form":{"href":"http://localhost:3000/users/2/edit"},"doc:delete":{"href":"http://localhost:3000/users/2"},"curies":[{"name":"doc","href":"http://localhost:3000/doc/user/rels/{rel}","templated":true}]}}
+I, [2019-09-06T13:12:08.876227 #14231]  INFO -- : Processing: DELETE /users/2
+D, [2019-09-06T13:12:08.876290 #14231] DEBUG -- : Payload: {}
+W, [2019-09-06T13:12:08.876379 #14231]  WARN -- : The default Shaf implementation of #current_user requires a User model with a column auth_token_digest
+I, [2019-09-06T13:12:08.876701 #14231]  INFO -- : (0.000235s) SELECT * FROM `users` WHERE `id` = '2'
+I, [2019-09-06T13:12:08.876806 #14231]  INFO -- : (0.000023s) BEGIN
+I, [2019-09-06T13:12:08.876984 #14231]  INFO -- : (0.000123s) DELETE FROM `users` WHERE `id` = 2
+I, [2019-09-06T13:12:08.881659 #14231]  INFO -- : (0.004610s) COMMIT
+I, [2019-09-06T13:14:14.892365 #14231]  INFO -- : Processing: GET /users/2
+D, [2019-09-06T13:14:14.892413 #14231] DEBUG -- : Payload: {}
+W, [2019-09-06T13:14:14.892483 #14231]  WARN -- : The default Shaf implementation of #current_user requires a User model with a column auth_token_digest
+I, [2019-09-06T13:14:14.892659 #14231]  INFO -- : (0.000110s) SELECT * FROM `users` WHERE `id` = '2'
+E, [2019-09-06T13:14:14.892840 #14231] ERROR -- : User resource with id 2 does not exist
+E, [2019-09-06T13:14:14.892861 #14231] ERROR -- : /home/sammy/Development/demo/api/controllers/users_controller.rb:59:in `block in user'
+E, [2019-09-06T13:14:14.892877 #14231] ERROR -- : /home/sammy/Development/demo/api/controllers/users_controller.rb:58:in `tap'
+E, [2019-09-06T13:14:14.892887 #14231] ERROR -- : /home/sammy/Development/demo/api/controllers/users_controller.rb:58:in `user'
+E, [2019-09-06T13:14:14.892896 #14231] ERROR -- : /home/sammy/Development/demo/api/controllers/users_controller.rb:30:in `block in <class:UsersController>'
+E, [2019-09-06T13:14:14.892906 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:1635:in `call'
+E, [2019-09-06T13:14:14.892915 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:1635:in `block in compile!'
+E, [2019-09-06T13:14:14.892924 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:987:in `block (3 levels) in route!'
+E, [2019-09-06T13:14:14.892933 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:1006:in `route_eval'
+E, [2019-09-06T13:14:14.892942 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:987:in `block (2 levels) in route!'
+E, [2019-09-06T13:14:14.892951 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:1035:in `block in process_route'
+E, [2019-09-06T13:14:14.892967 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:1033:in `catch'
+E, [2019-09-06T13:14:14.892977 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:1033:in `process_route'
+E, [2019-09-06T13:14:14.892988 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:985:in `block in route!'
+E, [2019-09-06T13:14:14.892997 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:984:in `each'
+E, [2019-09-06T13:14:14.893005 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:984:in `route!'
+E, [2019-09-06T13:14:14.893014 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:1097:in `block in dispatch!'
+E, [2019-09-06T13:14:14.893022 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:1071:in `block in invoke'
+E, [2019-09-06T13:14:14.893031 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:1071:in `catch'
+E, [2019-09-06T13:14:14.893039 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:1071:in `invoke'
+E, [2019-09-06T13:14:14.893048 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:1094:in `dispatch!'
+E, [2019-09-06T13:14:14.893056 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:919:in `block in call!'
+E, [2019-09-06T13:14:14.893066 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:1071:in `block in invoke'
+E, [2019-09-06T13:14:14.893075 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:1071:in `catch'
+E, [2019-09-06T13:14:14.893084 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:1071:in `invoke'
+E, [2019-09-06T13:14:14.893093 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:919:in `call!'
+E, [2019-09-06T13:14:14.893101 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:908:in `call'
+E, [2019-09-06T13:14:14.893110 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rack-2.0.7/lib/rack/deflater.rb:34:in `call'
+E, [2019-09-06T13:14:14.893119 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rack-protection-2.0.7/lib/rack/protection/xss_header.rb:18:in `call'
+E, [2019-09-06T13:14:14.893127 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rack-protection-2.0.7/lib/rack/protection/path_traversal.rb:16:in `call'
+E, [2019-09-06T13:14:14.893136 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rack-protection-2.0.7/lib/rack/protection/json_csrf.rb:26:in `call'
+E, [2019-09-06T13:14:14.893145 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rack-protection-2.0.7/lib/rack/protection/base.rb:50:in `call'
+E, [2019-09-06T13:14:14.893156 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rack-protection-2.0.7/lib/rack/protection/base.rb:50:in `call'
+E, [2019-09-06T13:14:14.893165 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rack-protection-2.0.7/lib/rack/protection/frame_options.rb:31:in `call'
+E, [2019-09-06T13:14:14.893174 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rack-2.0.7/lib/rack/logger.rb:15:in `call'
+E, [2019-09-06T13:14:14.893182 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rack-2.0.7/lib/rack/common_logger.rb:33:in `call'
+E, [2019-09-06T13:14:14.893194 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:231:in `call'
+E, [2019-09-06T13:14:14.893204 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:224:in `call'
+E, [2019-09-06T13:14:14.893213 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rack-2.0.7/lib/rack/head.rb:12:in `call'
+E, [2019-09-06T13:14:14.893221 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rack-2.0.7/lib/rack/method_override.rb:22:in `call'
+E, [2019-09-06T13:14:14.893230 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/show_exceptions.rb:22:in `call'
+E, [2019-09-06T13:14:14.893241 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:194:in `call'
+E, [2019-09-06T13:14:14.893250 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:1950:in `call'
+E, [2019-09-06T13:14:14.893258 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:1502:in `block in call'
+E, [2019-09-06T13:14:14.893267 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:1729:in `synchronize'
+E, [2019-09-06T13:14:14.893275 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:1502:in `call'
+E, [2019-09-06T13:14:14.893284 #14231] ERROR -- : /home/sammy/Development/shaf/lib/shaf/router.rb:53:in `block in call'
+E, [2019-09-06T13:14:14.893293 #14231] ERROR -- : /home/sammy/Development/shaf/lib/shaf/router.rb:70:in `controllers_for'
+E, [2019-09-06T13:14:14.893302 #14231] ERROR -- : /home/sammy/Development/shaf/lib/shaf/router.rb:52:in `call'
+E, [2019-09-06T13:14:14.893310 #14231] ERROR -- : /home/sammy/Development/shaf/lib/shaf/middleware/request_id.rb:14:in `call'
+E, [2019-09-06T13:14:14.893319 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rack-protection-2.0.7/lib/rack/protection/xss_header.rb:18:in `call'
+E, [2019-09-06T13:14:14.893330 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rack-protection-2.0.7/lib/rack/protection/path_traversal.rb:16:in `call'
+E, [2019-09-06T13:14:14.893339 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rack-protection-2.0.7/lib/rack/protection/json_csrf.rb:26:in `call'
+E, [2019-09-06T13:14:14.893348 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rack-protection-2.0.7/lib/rack/protection/base.rb:50:in `call'
+E, [2019-09-06T13:14:14.893356 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rack-protection-2.0.7/lib/rack/protection/base.rb:50:in `call'
+E, [2019-09-06T13:14:14.893365 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rack-protection-2.0.7/lib/rack/protection/frame_options.rb:31:in `call'
+E, [2019-09-06T13:14:14.893374 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rack-2.0.7/lib/rack/null_logger.rb:9:in `call'
+E, [2019-09-06T13:14:14.893382 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rack-2.0.7/lib/rack/head.rb:12:in `call'
+E, [2019-09-06T13:14:14.893391 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/show_exceptions.rb:22:in `call'
+E, [2019-09-06T13:14:14.893400 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:194:in `call'
+E, [2019-09-06T13:14:14.893410 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:1950:in `call'
+E, [2019-09-06T13:14:14.893419 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:1502:in `block in call'
+E, [2019-09-06T13:14:14.893430 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:1729:in `synchronize'
+E, [2019-09-06T13:14:14.893440 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:1502:in `call'
+E, [2019-09-06T13:14:14.893448 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/thin-1.7.2/lib/thin/connection.rb:86:in `block in pre_process'
+E, [2019-09-06T13:14:14.893456 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/thin-1.7.2/lib/thin/connection.rb:84:in `catch'
+E, [2019-09-06T13:14:14.893465 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/thin-1.7.2/lib/thin/connection.rb:84:in `pre_process'
+E, [2019-09-06T13:14:14.893473 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/thin-1.7.2/lib/thin/connection.rb:50:in `block in process'
+E, [2019-09-06T13:14:14.893481 #14231] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/eventmachine-1.2.7/lib/eventmachine.rb:1077:in `block in spawn_threadpool'
+W, [2019-09-06T13:14:14.893548 #14231]  WARN -- : The default Shaf implementation of #current_user requires a User model with a column auth_token_digest
+I, [2019-09-06T13:14:14.893663 #14231]  INFO -- : GET /users/2 => 404
+D, [2019-09-06T13:14:14.893685 #14231] DEBUG -- : Response payload (Shaf::Errors::NotFoundError): {"title":"Resource not found","code":"RESOURCE_NOT_FOUND","message":"User resource with id 2 does not exist","_links":{"profile":{"href":"https://gist.githubusercontent.com/sammyhenningsson/049d10e2b8978059cde104fc5d6c2d52/raw/shaf-error.md"}}}
+I, [2019-09-06T13:14:14.893987 #14231]  INFO -- : Processing: GET /users/2
+D, [2019-09-06T13:14:14.894013 #14231] DEBUG -- : Payload: {}
+W, [2019-09-06T13:14:14.894106 #14231]  WARN -- : The default Shaf implementation of #current_user requires a User model with a column auth_token_digest
+I, [2019-09-06T13:14:14.894174 #14231]  INFO -- : GET /users/2 => 404
+D, [2019-09-06T13:14:14.894196 #14231] DEBUG -- : Response payload (Shaf::Errors::NotFoundError): {"title":"Resource not found","code":"RESOURCE_NOT_FOUND","message":"Resource \"/users/2\" does not exist","_links":{"profile":{"href":"https://gist.githubusercontent.com/sammyhenningsson/049d10e2b8978059cde104fc5d6c2d52/raw/shaf-error.md"}}}
+I, [2019-09-06T13:14:36.433456 #14231]  INFO -- : Processing: GET /users
+D, [2019-09-06T13:14:36.433594 #14231] DEBUG -- : Payload: {}
+W, [2019-09-06T13:14:36.433729 #14231]  WARN -- : The default Shaf implementation of #current_user requires a User model with a column auth_token_digest
+I, [2019-09-06T13:14:36.434533 #14231]  INFO -- : (0.000246s) SELECT count(*) AS 'count' FROM `users` LIMIT 1
+W, [2019-09-06T13:14:36.434861 #14231]  WARN -- : The default Shaf implementation of #current_user requires a User model with a column auth_token_digest
+I, [2019-09-06T13:14:36.435693 #14231]  INFO -- : (0.000408s) SELECT * FROM `users` ORDER BY `created_at` DESC LIMIT 25 OFFSET 0
+I, [2019-09-06T13:14:36.435953 #14231]  INFO -- : GET /users => 200
+D, [2019-09-06T13:14:36.437084 #14231] DEBUG -- : Response payload (#<Class:0x000055906bc05c78>): {"_links":{"self":{"href":"http://localhost:3000/users?page=1&per_page=25"},"doc:up":{"href":"http://localhost:3000/"},"doc:create-form":{"href":"http://localhost:3000/user/form"},"curies":[{"name":"doc","href":"http://localhost:3000/doc/user/rels/{rel}","templated":true}]},"_embedded":{"users":[]}}
+I, [2019-09-06T13:14:56.211100 #14231]  INFO -- : Processing: GET /
+D, [2019-09-06T13:14:56.211258 #14231] DEBUG -- : Payload: {}
+W, [2019-09-06T13:14:56.211581 #14231]  WARN -- : The default Shaf implementation of #current_user requires a User model with a column auth_token_digest
+I, [2019-09-06T13:14:56.211839 #14231]  INFO -- : GET / => 200
+D, [2019-09-06T13:14:56.211953 #14231] DEBUG -- : Response payload (NilClass): {"_links":{"self":{"href":"http://localhost:3000/"},"users":{"href":"http://localhost:3000/users"}}}
+I, [2019-09-06T13:14:56.217136 #14231]  INFO -- : Processing: GET /users
+D, [2019-09-06T13:14:56.217253 #14231] DEBUG -- : Payload: {}
+W, [2019-09-06T13:14:56.217383 #14231]  WARN -- : The default Shaf implementation of #current_user requires a User model with a column auth_token_digest
+I, [2019-09-06T13:14:56.218216 #14231]  INFO -- : (0.000273s) SELECT count(*) AS 'count' FROM `users` LIMIT 1
+W, [2019-09-06T13:14:56.218530 #14231]  WARN -- : The default Shaf implementation of #current_user requires a User model with a column auth_token_digest
+I, [2019-09-06T13:14:56.219422 #14231]  INFO -- : (0.000423s) SELECT * FROM `users` ORDER BY `created_at` DESC LIMIT 25 OFFSET 0
+I, [2019-09-06T13:14:56.224001 #14231]  INFO -- : Processing: GET /user/form
+D, [2019-09-06T13:14:56.224134 #14231] DEBUG -- : Payload: {}
+W, [2019-09-06T13:14:56.224183 #14231]  WARN -- : The default Shaf implementation of #current_user requires a User model with a column auth_token_digest
+W, [2019-09-06T13:14:56.224295 #14231]  WARN -- : The default Shaf implementation of #current_user requires a User model with a column auth_token_digest
+I, [2019-09-06T13:14:56.224451 #14231]  INFO -- : GET /user/form => 200
+D, [2019-09-06T13:14:56.224478 #14231] DEBUG -- : Response payload (Shaf::Formable::Form): {"method":"POST","name":"create-user","title":"Create User","href":"http://localhost:3000/users","type":"application/json","submit":"save","_links":{"self":{"href":"http://localhost:3000/user/form"},"profile":{"href":"https://gist.githubusercontent.com/sammyhenningsson/39c8aafeaf60192b082762cbf3e08d57/raw/shaf-form.md"}},"fields":[{"name":"name","type":"string","required":true}]}
+I, [2019-09-06T13:15:09.081466 #14231]  INFO -- : Processing: POST /users
+D, [2019-09-06T13:15:09.081640 #14231] DEBUG -- : Payload: {:name=>"foobar"}
+W, [2019-09-06T13:15:09.081775 #14231]  WARN -- : The default Shaf implementation of #current_user requires a User model with a column auth_token_digest
+I, [2019-09-06T13:15:09.082231 #14231]  INFO -- : (0.000075s) BEGIN
+I, [2019-09-06T13:15:09.082939 #14231]  INFO -- : (0.000361s) INSERT INTO `users` (`name`, `created_at`) VALUES ('foobar', '2019-09-06 13:15:09.081976')
+I, [2019-09-06T13:15:09.083578 #14231]  INFO -- : (0.000389s) SELECT * FROM `users` WHERE `id` = 3
+I, [2019-09-06T13:15:09.088314 #14231]  INFO -- : (0.004603s) COMMIT
+W, [2019-09-06T13:15:09.088638 #14231]  WARN -- : The default Shaf implementation of #current_user requires a User model with a column auth_token_digest
+I, [2019-09-06T13:15:09.089126 #14231]  INFO -- : POST /users => 201
+D, [2019-09-06T13:15:09.089210 #14231] DEBUG -- : Response payload (User): {"name":"foobar","_links":{"doc:up":{"href":"http://localhost:3000/users"},"self":{"href":"http://localhost:3000/users/3"},"doc:edit-form":{"href":"http://localhost:3000/users/3/edit"},"doc:delete":{"href":"http://localhost:3000/users/3"},"curies":[{"name":"doc","href":"http://localhost:3000/doc/user/rels/{rel}","templated":true}]}}
+I, [2019-09-06T13:15:29.689634 #14231]  INFO -- : Processing: DELETE /users/3
+D, [2019-09-06T13:15:29.689762 #14231] DEBUG -- : Payload: {}
+W, [2019-09-06T13:15:29.689948 #14231]  WARN -- : The default Shaf implementation of #current_user requires a User model with a column auth_token_digest
+I, [2019-09-06T13:15:29.690661 #14231]  INFO -- : (0.000530s) SELECT * FROM `users` WHERE `id` = '3'
+I, [2019-09-06T13:15:29.690896 #14231]  INFO -- : (0.000054s) BEGIN
+I, [2019-09-06T13:15:29.691359 #14231]  INFO -- : (0.000286s) DELETE FROM `users` WHERE `id` = 3
+I, [2019-09-06T13:15:29.696429 #14231]  INFO -- : (0.004942s) COMMIT
+I, [2019-09-06T13:17:02.801220 #14231]  INFO -- : Processing: GET /
+D, [2019-09-06T13:17:02.801271 #14231] DEBUG -- : Payload: {}
+W, [2019-09-06T13:17:02.801399 #14231]  WARN -- : The default Shaf implementation of #current_user requires a User model with a column auth_token_digest
+I, [2019-09-06T13:17:02.801493 #14231]  INFO -- : GET / => 200
+D, [2019-09-06T13:17:02.801525 #14231] DEBUG -- : Response payload (NilClass): {"_links":{"self":{"href":"http://localhost:3000/"},"users":{"href":"http://localhost:3000/users"}}}
+I, [2019-09-06T13:17:02.803485 #14231]  INFO -- : Processing: GET /users
+D, [2019-09-06T13:17:02.803515 #14231] DEBUG -- : Payload: {}
+W, [2019-09-06T13:17:02.803554 #14231]  WARN -- : The default Shaf implementation of #current_user requires a User model with a column auth_token_digest
+I, [2019-09-06T13:17:02.803869 #14231]  INFO -- : (0.000104s) SELECT count(*) AS 'count' FROM `users` LIMIT 1
+W, [2019-09-06T13:17:02.803988 #14231]  WARN -- : The default Shaf implementation of #current_user requires a User model with a column auth_token_digest
+I, [2019-09-06T13:17:02.804291 #14231]  INFO -- : (0.000123s) SELECT * FROM `users` ORDER BY `created_at` DESC LIMIT 25 OFFSET 0
+I, [2019-09-06T13:17:02.804363 #14231]  INFO -- : GET /users => 200
+D, [2019-09-06T13:17:02.804884 #14231] DEBUG -- : Response payload (#<Class:0x000055906bc05c78>): {"_links":{"self":{"href":"http://localhost:3000/users?page=1&per_page=25"},"doc:up":{"href":"http://localhost:3000/"},"doc:create-form":{"href":"http://localhost:3000/user/form"},"curies":[{"name":"doc","href":"http://localhost:3000/doc/user/rels/{rel}","templated":true}]},"_embedded":{"users":[]}}
+I, [2019-09-06T13:17:02.806720 #14231]  INFO -- : Processing: GET /user/form
+D, [2019-09-06T13:17:02.806751 #14231] DEBUG -- : Payload: {}
+W, [2019-09-06T13:17:02.806789 #14231]  WARN -- : The default Shaf implementation of #current_user requires a User model with a column auth_token_digest
+W, [2019-09-06T13:17:02.806881 #14231]  WARN -- : The default Shaf implementation of #current_user requires a User model with a column auth_token_digest
+I, [2019-09-06T13:17:02.807007 #14231]  INFO -- : GET /user/form => 200
+D, [2019-09-06T13:17:02.807029 #14231] DEBUG -- : Response payload (Shaf::Formable::Form): {"method":"POST","name":"create-user","title":"Create User","href":"http://localhost:3000/users","type":"application/json","submit":"save","_links":{"self":{"href":"http://localhost:3000/user/form"},"profile":{"href":"https://gist.githubusercontent.com/sammyhenningsson/39c8aafeaf60192b082762cbf3e08d57/raw/shaf-form.md"}},"fields":[{"name":"name","type":"string","required":true}]}
+I, [2019-09-06T13:17:18.508910 #14231]  INFO -- : Processing: POST /users
+D, [2019-09-06T13:17:18.509062 #14231] DEBUG -- : Payload: {:name=>"foobar"}
+W, [2019-09-06T13:17:18.509232 #14231]  WARN -- : The default Shaf implementation of #current_user requires a User model with a column auth_token_digest
+I, [2019-09-06T13:17:18.509675 #14231]  INFO -- : (0.000067s) BEGIN
+I, [2019-09-06T13:17:18.510399 #14231]  INFO -- : (0.000361s) INSERT INTO `users` (`name`, `created_at`) VALUES ('foobar', '2019-09-06 13:17:18.509410')
+I, [2019-09-06T13:17:18.511032 #14231]  INFO -- : (0.000383s) SELECT * FROM `users` WHERE `id` = 4
+I, [2019-09-06T13:17:18.515953 #14231]  INFO -- : (0.004770s) COMMIT
+W, [2019-09-06T13:17:18.516336 #14231]  WARN -- : The default Shaf implementation of #current_user requires a User model with a column auth_token_digest
+I, [2019-09-06T13:17:18.516818 #14231]  INFO -- : POST /users => 201
+D, [2019-09-06T13:17:18.516904 #14231] DEBUG -- : Response payload (User): {"name":"foobar","_links":{"doc:up":{"href":"http://localhost:3000/users"},"self":{"href":"http://localhost:3000/users/4"},"doc:edit-form":{"href":"http://localhost:3000/users/4/edit"},"doc:delete":{"href":"http://localhost:3000/users/4"},"curies":[{"name":"doc","href":"http://localhost:3000/doc/user/rels/{rel}","templated":true}]}}
+I, [2019-09-06T13:17:24.564163 #14231]  INFO -- : Processing: DELETE /users/4
+D, [2019-09-06T13:17:24.564278 #14231] DEBUG -- : Payload: {}
+W, [2019-09-06T13:17:24.564449 #14231]  WARN -- : The default Shaf implementation of #current_user requires a User model with a column auth_token_digest
+I, [2019-09-06T13:17:24.565129 #14231]  INFO -- : (0.000512s) SELECT * FROM `users` WHERE `id` = '4'
+I, [2019-09-06T13:17:24.565362 #14231]  INFO -- : (0.000053s) BEGIN
+I, [2019-09-06T13:17:24.565802 #14231]  INFO -- : (0.000286s) DELETE FROM `users` WHERE `id` = 4
+I, [2019-09-06T13:17:24.570249 #14231]  INFO -- : (0.004322s) COMMIT
+I, [2019-09-06T13:19:24.409873 #14231]  INFO -- : Processing: GET /
+D, [2019-09-06T13:19:24.409935 #14231] DEBUG -- : Payload: {}
+W, [2019-09-06T13:19:24.410045 #14231]  WARN -- : The default Shaf implementation of #current_user requires a User model with a column auth_token_digest
+I, [2019-09-06T13:19:24.410137 #14231]  INFO -- : GET / => 200
+D, [2019-09-06T13:19:24.410161 #14231] DEBUG -- : Response payload (NilClass): {"_links":{"self":{"href":"http://localhost:3000/"},"users":{"href":"http://localhost:3000/users"}}}
+I, [2019-09-06T13:19:24.412123 #14231]  INFO -- : Processing: GET /users
+D, [2019-09-06T13:19:24.412156 #14231] DEBUG -- : Payload: {}
+W, [2019-09-06T13:19:24.412195 #14231]  WARN -- : The default Shaf implementation of #current_user requires a User model with a column auth_token_digest
+I, [2019-09-06T13:19:24.412513 #14231]  INFO -- : (0.000114s) SELECT count(*) AS 'count' FROM `users` LIMIT 1
+W, [2019-09-06T13:19:24.412612 #14231]  WARN -- : The default Shaf implementation of #current_user requires a User model with a column auth_token_digest
+I, [2019-09-06T13:19:24.412873 #14231]  INFO -- : (0.000120s) SELECT * FROM `users` ORDER BY `created_at` DESC LIMIT 25 OFFSET 0
+I, [2019-09-06T13:19:24.412951 #14231]  INFO -- : GET /users => 200
+D, [2019-09-06T13:19:24.413452 #14231] DEBUG -- : Response payload (#<Class:0x000055906bc05c78>): {"_links":{"self":{"href":"http://localhost:3000/users?page=1&per_page=25"},"doc:up":{"href":"http://localhost:3000/"},"doc:create-form":{"href":"http://localhost:3000/user/form"},"curies":[{"name":"doc","href":"http://localhost:3000/doc/user/rels/{rel}","templated":true}]},"_embedded":{"users":[]}}
+I, [2019-09-06T13:19:24.415280 #14231]  INFO -- : Processing: GET /user/form
+D, [2019-09-06T13:19:24.415310 #14231] DEBUG -- : Payload: {}
+W, [2019-09-06T13:19:24.415359 #14231]  WARN -- : The default Shaf implementation of #current_user requires a User model with a column auth_token_digest
+W, [2019-09-06T13:19:24.415449 #14231]  WARN -- : The default Shaf implementation of #current_user requires a User model with a column auth_token_digest
+I, [2019-09-06T13:19:24.415581 #14231]  INFO -- : GET /user/form => 200
+D, [2019-09-06T13:19:24.415604 #14231] DEBUG -- : Response payload (Shaf::Formable::Form): {"method":"POST","name":"create-user","title":"Create User","href":"http://localhost:3000/users","type":"application/json","submit":"save","_links":{"self":{"href":"http://localhost:3000/user/form"},"profile":{"href":"https://gist.githubusercontent.com/sammyhenningsson/39c8aafeaf60192b082762cbf3e08d57/raw/shaf-form.md"}},"fields":[{"name":"name","type":"string","required":true}]}
+I, [2019-09-06T13:19:29.936707 #14231]  INFO -- : Processing: POST /users
+D, [2019-09-06T13:19:29.936773 #14231] DEBUG -- : Payload: {:name=>"foobar"}
+W, [2019-09-06T13:19:29.936893 #14231]  WARN -- : The default Shaf implementation of #current_user requires a User model with a column auth_token_digest
+I, [2019-09-06T13:19:29.937461 #14231]  INFO -- : (0.000089s) BEGIN
+I, [2019-09-06T13:19:29.937805 #14231]  INFO -- : (0.000144s) INSERT INTO `users` (`name`, `created_at`) VALUES ('foobar', '2019-09-06 13:19:29.937153')
+I, [2019-09-06T13:19:29.938032 #14231]  INFO -- : (0.000137s) SELECT * FROM `users` WHERE `id` = 5
+I, [2019-09-06T13:19:29.941791 #14231]  INFO -- : (0.003716s) COMMIT
+W, [2019-09-06T13:19:29.941934 #14231]  WARN -- : The default Shaf implementation of #current_user requires a User model with a column auth_token_digest
+I, [2019-09-06T13:19:29.942102 #14231]  INFO -- : POST /users => 201
+D, [2019-09-06T13:19:29.942130 #14231] DEBUG -- : Response payload (User): {"name":"foobar","_links":{"doc:up":{"href":"http://localhost:3000/users"},"self":{"href":"http://localhost:3000/users/5"},"doc:edit-form":{"href":"http://localhost:3000/users/5/edit"},"doc:delete":{"href":"http://localhost:3000/users/5"},"curies":[{"name":"doc","href":"http://localhost:3000/doc/user/rels/{rel}","templated":true}]}}
+I, [2019-09-06T13:19:32.387848 #14231]  INFO -- : Processing: DELETE /users/5
+D, [2019-09-06T13:19:32.387965 #14231] DEBUG -- : Payload: {}
+W, [2019-09-06T13:19:32.388204 #14231]  WARN -- : The default Shaf implementation of #current_user requires a User model with a column auth_token_digest
+I, [2019-09-06T13:19:32.388883 #14231]  INFO -- : (0.000490s) SELECT * FROM `users` WHERE `id` = '5'
+I, [2019-09-06T13:19:32.389115 #14231]  INFO -- : (0.000053s) BEGIN
+I, [2019-09-06T13:19:32.389524 #14231]  INFO -- : (0.000284s) DELETE FROM `users` WHERE `id` = 5
+I, [2019-09-06T13:19:32.394637 #14231]  INFO -- : (0.004971s) COMMIT
+I, [2019-09-06T13:20:55.239137 #14231]  INFO -- : Processing: GET /
+D, [2019-09-06T13:20:55.239184 #14231] DEBUG -- : Payload: {}
+W, [2019-09-06T13:20:55.239303 #14231]  WARN -- : The default Shaf implementation of #current_user requires a User model with a column auth_token_digest
+I, [2019-09-06T13:20:55.239393 #14231]  INFO -- : GET / => 200
+D, [2019-09-06T13:20:55.239415 #14231] DEBUG -- : Response payload (NilClass): {"_links":{"self":{"href":"http://localhost:3000/"},"users":{"href":"http://localhost:3000/users"}}}
+I, [2019-09-06T13:20:55.240925 #14231]  INFO -- : Processing: GET /users
+D, [2019-09-06T13:20:55.240956 #14231] DEBUG -- : Payload: {}
+W, [2019-09-06T13:20:55.240994 #14231]  WARN -- : The default Shaf implementation of #current_user requires a User model with a column auth_token_digest
+I, [2019-09-06T13:20:55.241288 #14231]  INFO -- : (0.000099s) SELECT count(*) AS 'count' FROM `users` LIMIT 1
+W, [2019-09-06T13:20:55.241392 #14231]  WARN -- : The default Shaf implementation of #current_user requires a User model with a column auth_token_digest
+I, [2019-09-06T13:20:55.241672 #14231]  INFO -- : (0.000113s) SELECT * FROM `users` ORDER BY `created_at` DESC LIMIT 25 OFFSET 0
+I, [2019-09-06T13:20:55.241744 #14231]  INFO -- : GET /users => 200
+D, [2019-09-06T13:20:55.242236 #14231] DEBUG -- : Response payload (#<Class:0x000055906bc05c78>): {"_links":{"self":{"href":"http://localhost:3000/users?page=1&per_page=25"},"doc:up":{"href":"http://localhost:3000/"},"doc:create-form":{"href":"http://localhost:3000/user/form"},"curies":[{"name":"doc","href":"http://localhost:3000/doc/user/rels/{rel}","templated":true}]},"_embedded":{"users":[]}}
+I, [2019-09-06T13:20:55.243597 #14231]  INFO -- : Processing: GET /user/form
+D, [2019-09-06T13:20:55.243626 #14231] DEBUG -- : Payload: {}
+W, [2019-09-06T13:20:55.243665 #14231]  WARN -- : The default Shaf implementation of #current_user requires a User model with a column auth_token_digest
+W, [2019-09-06T13:20:55.243759 #14231]  WARN -- : The default Shaf implementation of #current_user requires a User model with a column auth_token_digest
+I, [2019-09-06T13:20:55.243883 #14231]  INFO -- : GET /user/form => 200
+D, [2019-09-06T13:20:55.243905 #14231] DEBUG -- : Response payload (Shaf::Formable::Form): {"method":"POST","name":"create-user","title":"Create User","href":"http://localhost:3000/users","type":"application/json","submit":"save","_links":{"self":{"href":"http://localhost:3000/user/form"},"profile":{"href":"https://gist.githubusercontent.com/sammyhenningsson/39c8aafeaf60192b082762cbf3e08d57/raw/shaf-form.md"}},"fields":[{"name":"name","type":"string","required":true}]}
+I, [2019-09-06T13:20:59.502296 #14231]  INFO -- : Processing: POST /users
+D, [2019-09-06T13:20:59.502353 #14231] DEBUG -- : Payload: {:name=>"foobar"}
+W, [2019-09-06T13:20:59.502408 #14231]  WARN -- : The default Shaf implementation of #current_user requires a User model with a column auth_token_digest
+I, [2019-09-06T13:20:59.502581 #14231]  INFO -- : (0.000028s) BEGIN
+I, [2019-09-06T13:20:59.502820 #14231]  INFO -- : (0.000124s) INSERT INTO `users` (`name`, `created_at`) VALUES ('foobar', '2019-09-06 13:20:59.502491')
+I, [2019-09-06T13:20:59.503002 #14231]  INFO -- : (0.000111s) SELECT * FROM `users` WHERE `id` = 6
+I, [2019-09-06T13:20:59.506693 #14231]  INFO -- : (0.003641s) COMMIT
+W, [2019-09-06T13:20:59.506831 #14231]  WARN -- : The default Shaf implementation of #current_user requires a User model with a column auth_token_digest
+I, [2019-09-06T13:20:59.506967 #14231]  INFO -- : POST /users => 201
+D, [2019-09-06T13:20:59.506988 #14231] DEBUG -- : Response payload (User): {"name":"foobar","_links":{"doc:up":{"href":"http://localhost:3000/users"},"self":{"href":"http://localhost:3000/users/6"},"doc:edit-form":{"href":"http://localhost:3000/users/6/edit"},"doc:delete":{"href":"http://localhost:3000/users/6"},"curies":[{"name":"doc","href":"http://localhost:3000/doc/user/rels/{rel}","templated":true}]}}
+I, [2019-09-06T13:21:02.707781 #14231]  INFO -- : Processing: DELETE /users/6
+D, [2019-09-06T13:21:02.707941 #14231] DEBUG -- : Payload: {}
+W, [2019-09-06T13:21:02.708343 #14231]  WARN -- : The default Shaf implementation of #current_user requires a User model with a column auth_token_digest
+I, [2019-09-06T13:21:02.709065 #14231]  INFO -- : (0.000517s) SELECT * FROM `users` WHERE `id` = '6'
+I, [2019-09-06T13:21:02.709298 #14231]  INFO -- : (0.000054s) BEGIN
+I, [2019-09-06T13:21:02.709718 #14231]  INFO -- : (0.000290s) DELETE FROM `users` WHERE `id` = 6
+I, [2019-09-06T13:21:02.714851 #14231]  INFO -- : (0.004990s) COMMIT
+I, [2019-09-06T13:23:28.034301 #14231]  INFO -- : Processing: GET /
+D, [2019-09-06T13:23:28.034350 #14231] DEBUG -- : Payload: {}
+W, [2019-09-06T13:23:28.034460 #14231]  WARN -- : The default Shaf implementation of #current_user requires a User model with a column auth_token_digest
+I, [2019-09-06T13:23:28.034565 #14231]  INFO -- : GET / => 200
+D, [2019-09-06T13:23:28.034591 #14231] DEBUG -- : Response payload (NilClass): {"_links":{"self":{"href":"http://localhost:3000/"},"users":{"href":"http://localhost:3000/users"}}}
+I, [2019-09-06T13:24:39.472219 #14231]  INFO -- : Processing: GET /
+D, [2019-09-06T13:24:39.472266 #14231] DEBUG -- : Payload: {}
+W, [2019-09-06T13:24:39.472371 #14231]  WARN -- : The default Shaf implementation of #current_user requires a User model with a column auth_token_digest
+I, [2019-09-06T13:24:39.472455 #14231]  INFO -- : GET / => 200
+D, [2019-09-06T13:24:39.472477 #14231] DEBUG -- : Response payload (NilClass): {"_links":{"self":{"href":"http://localhost:3000/"},"users":{"href":"http://localhost:3000/users"}}}
+I, [2019-09-06T13:24:39.474482 #14231]  INFO -- : Processing: GET /users
+D, [2019-09-06T13:24:39.474514 #14231] DEBUG -- : Payload: {}
+W, [2019-09-06T13:24:39.474552 #14231]  WARN -- : The default Shaf implementation of #current_user requires a User model with a column auth_token_digest
+I, [2019-09-06T13:24:39.474855 #14231]  INFO -- : (0.000103s) SELECT count(*) AS 'count' FROM `users` LIMIT 1
+W, [2019-09-06T13:24:39.474963 #14231]  WARN -- : The default Shaf implementation of #current_user requires a User model with a column auth_token_digest
+I, [2019-09-06T13:24:39.475233 #14231]  INFO -- : (0.000125s) SELECT * FROM `users` ORDER BY `created_at` DESC LIMIT 25 OFFSET 0
+I, [2019-09-06T13:24:39.475305 #14231]  INFO -- : GET /users => 200
+D, [2019-09-06T13:24:39.475791 #14231] DEBUG -- : Response payload (#<Class:0x000055906bc05c78>): {"_links":{"self":{"href":"http://localhost:3000/users?page=1&per_page=25"},"doc:up":{"href":"http://localhost:3000/"},"doc:create-form":{"href":"http://localhost:3000/user/form"},"curies":[{"name":"doc","href":"http://localhost:3000/doc/user/rels/{rel}","templated":true}]},"_embedded":{"users":[]}}
+I, [2019-09-06T13:24:39.477629 #14231]  INFO -- : Processing: GET /user/form
+D, [2019-09-06T13:24:39.477659 #14231] DEBUG -- : Payload: {}
+W, [2019-09-06T13:24:39.477696 #14231]  WARN -- : The default Shaf implementation of #current_user requires a User model with a column auth_token_digest
+W, [2019-09-06T13:24:39.477783 #14231]  WARN -- : The default Shaf implementation of #current_user requires a User model with a column auth_token_digest
+I, [2019-09-06T13:24:39.477918 #14231]  INFO -- : GET /user/form => 200
+D, [2019-09-06T13:24:39.477941 #14231] DEBUG -- : Response payload (Shaf::Formable::Form): {"method":"POST","name":"create-user","title":"Create User","href":"http://localhost:3000/users","type":"application/json","submit":"save","_links":{"self":{"href":"http://localhost:3000/user/form"},"profile":{"href":"https://gist.githubusercontent.com/sammyhenningsson/39c8aafeaf60192b082762cbf3e08d57/raw/shaf-form.md"}},"fields":[{"name":"name","type":"string","required":true}]}
+I, [2019-09-06T13:24:45.477663 #14231]  INFO -- : Processing: POST /users
+D, [2019-09-06T13:24:45.477832 #14231] DEBUG -- : Payload: {:name=>"foobar"}
+W, [2019-09-06T13:24:45.477966 #14231]  WARN -- : The default Shaf implementation of #current_user requires a User model with a column auth_token_digest
+I, [2019-09-06T13:24:45.478412 #14231]  INFO -- : (0.000076s) BEGIN
+I, [2019-09-06T13:24:45.479138 #14231]  INFO -- : (0.000364s) INSERT INTO `users` (`name`, `created_at`) VALUES ('foobar', '2019-09-06 13:24:45.478163')
+I, [2019-09-06T13:24:45.479768 #14231]  INFO -- : (0.000380s) SELECT * FROM `users` WHERE `id` = 7
+I, [2019-09-06T13:24:45.484620 #14231]  INFO -- : (0.004717s) COMMIT
+W, [2019-09-06T13:24:45.484938 #14231]  WARN -- : The default Shaf implementation of #current_user requires a User model with a column auth_token_digest
+I, [2019-09-06T13:24:45.485373 #14231]  INFO -- : POST /users => 201
+D, [2019-09-06T13:24:45.485457 #14231] DEBUG -- : Response payload (User): {"name":"foobar","_links":{"doc:up":{"href":"http://localhost:3000/users"},"self":{"href":"http://localhost:3000/users/7"},"doc:edit-form":{"href":"http://localhost:3000/users/7/edit"},"doc:delete":{"href":"http://localhost:3000/users/7"},"curies":[{"name":"doc","href":"http://localhost:3000/doc/user/rels/{rel}","templated":true}]}}
+I, [2019-09-06T13:24:48.570821 #14231]  INFO -- : Processing: DELETE /users/7
+D, [2019-09-06T13:24:48.570958 #14231] DEBUG -- : Payload: {}
+W, [2019-09-06T13:24:48.571133 #14231]  WARN -- : The default Shaf implementation of #current_user requires a User model with a column auth_token_digest
+I, [2019-09-06T13:24:48.571820 #14231]  INFO -- : (0.000513s) SELECT * FROM `users` WHERE `id` = '7'
+I, [2019-09-06T13:24:48.572133 #14231]  INFO -- : (0.000113s) BEGIN
+I, [2019-09-06T13:24:48.572646 #14231]  INFO -- : (0.000336s) DELETE FROM `users` WHERE `id` = 7
+I, [2019-09-06T13:24:48.578385 #14231]  INFO -- : (0.005597s) COMMIT
+I, [2019-09-06T13:26:12.166124 #14231]  INFO -- : Processing: GET /
+D, [2019-09-06T13:26:12.166194 #14231] DEBUG -- : Payload: {}
+W, [2019-09-06T13:26:12.166353 #14231]  WARN -- : The default Shaf implementation of #current_user requires a User model with a column auth_token_digest
+I, [2019-09-06T13:26:12.166486 #14231]  INFO -- : GET / => 200
+D, [2019-09-06T13:26:12.166523 #14231] DEBUG -- : Response payload (NilClass): {"_links":{"self":{"href":"http://localhost:3000/"},"users":{"href":"http://localhost:3000/users"}}}
+I, [2019-09-06T13:26:12.168830 #14231]  INFO -- : Processing: GET /users
+D, [2019-09-06T13:26:12.168890 #14231] DEBUG -- : Payload: {}
+W, [2019-09-06T13:26:12.168962 #14231]  WARN -- : The default Shaf implementation of #current_user requires a User model with a column auth_token_digest
+I, [2019-09-06T13:26:12.169458 #14231]  INFO -- : (0.000152s) SELECT count(*) AS 'count' FROM `users` LIMIT 1
+W, [2019-09-06T13:26:12.169633 #14231]  WARN -- : The default Shaf implementation of #current_user requires a User model with a column auth_token_digest
+I, [2019-09-06T13:26:12.170016 #14231]  INFO -- : (0.000156s) SELECT * FROM `users` ORDER BY `created_at` DESC LIMIT 25 OFFSET 0
+I, [2019-09-06T13:26:12.170144 #14231]  INFO -- : GET /users => 200
+D, [2019-09-06T13:26:12.170961 #14231] DEBUG -- : Response payload (#<Class:0x000055906bc05c78>): {"_links":{"self":{"href":"http://localhost:3000/users?page=1&per_page=25"},"doc:up":{"href":"http://localhost:3000/"},"doc:create-form":{"href":"http://localhost:3000/user/form"},"curies":[{"name":"doc","href":"http://localhost:3000/doc/user/rels/{rel}","templated":true}]},"_embedded":{"users":[]}}
+I, [2019-09-06T13:26:12.172919 #14231]  INFO -- : Processing: GET /user/form
+D, [2019-09-06T13:26:12.172958 #14231] DEBUG -- : Payload: {}
+W, [2019-09-06T13:26:12.173014 #14231]  WARN -- : The default Shaf implementation of #current_user requires a User model with a column auth_token_digest
+W, [2019-09-06T13:26:12.173152 #14231]  WARN -- : The default Shaf implementation of #current_user requires a User model with a column auth_token_digest
+I, [2019-09-06T13:26:12.173371 #14231]  INFO -- : GET /user/form => 200
+D, [2019-09-06T13:26:12.173409 #14231] DEBUG -- : Response payload (Shaf::Formable::Form): {"method":"POST","name":"create-user","title":"Create User","href":"http://localhost:3000/users","type":"application/json","submit":"save","_links":{"self":{"href":"http://localhost:3000/user/form"},"profile":{"href":"https://gist.githubusercontent.com/sammyhenningsson/39c8aafeaf60192b082762cbf3e08d57/raw/shaf-form.md"}},"fields":[{"name":"name","type":"string","required":true}]}
+I, [2019-09-06T13:26:53.281784 #14231]  INFO -- : Processing: POST /users
+D, [2019-09-06T13:26:53.281947 #14231] DEBUG -- : Payload: {:name=>"foobar"}
+W, [2019-09-06T13:26:53.282073 #14231]  WARN -- : The default Shaf implementation of #current_user requires a User model with a column auth_token_digest
+I, [2019-09-06T13:26:53.282477 #14231]  INFO -- : (0.000066s) BEGIN
+I, [2019-09-06T13:26:53.283140 #14231]  INFO -- : (0.000345s) INSERT INTO `users` (`name`, `created_at`) VALUES ('foobar', '2019-09-06 13:26:53.282254')
+I, [2019-09-06T13:26:53.283729 #14231]  INFO -- : (0.000345s) SELECT * FROM `users` WHERE `id` = 8
+I, [2019-09-06T13:26:53.288846 #14231]  INFO -- : (0.004993s) COMMIT
+W, [2019-09-06T13:26:53.289237 #14231]  WARN -- : The default Shaf implementation of #current_user requires a User model with a column auth_token_digest
+I, [2019-09-06T13:26:53.289661 #14231]  INFO -- : POST /users => 201
+D, [2019-09-06T13:26:53.289744 #14231] DEBUG -- : Response payload (User): {"name":"foobar","_links":{"doc:up":{"href":"http://localhost:3000/users"},"self":{"href":"http://localhost:3000/users/8"},"doc:edit-form":{"href":"http://localhost:3000/users/8/edit"},"doc:delete":{"href":"http://localhost:3000/users/8"},"curies":[{"name":"doc","href":"http://localhost:3000/doc/user/rels/{rel}","templated":true}]}}
+I, [2019-09-06T13:27:00.290958 #14231]  INFO -- : Processing: DELETE /users/8
+D, [2019-09-06T13:27:00.291081 #14231] DEBUG -- : Payload: {}
+W, [2019-09-06T13:27:00.291279 #14231]  WARN -- : The default Shaf implementation of #current_user requires a User model with a column auth_token_digest
+I, [2019-09-06T13:27:00.291978 #14231]  INFO -- : (0.000505s) SELECT * FROM `users` WHERE `id` = '8'
+I, [2019-09-06T13:27:00.292312 #14231]  INFO -- : (0.000090s) BEGIN
+I, [2019-09-06T13:27:00.292733 #14231]  INFO -- : (0.000283s) DELETE FROM `users` WHERE `id` = 8
+I, [2019-09-06T13:27:00.297136 #14231]  INFO -- : (0.004278s) COMMIT
+I, [2019-09-06T13:31:56.576711 #14231]  INFO -- : Processing: GET /
+D, [2019-09-06T13:31:56.576763 #14231] DEBUG -- : Payload: {}
+W, [2019-09-06T13:31:56.576874 #14231]  WARN -- : The default Shaf implementation of #current_user requires a User model with a column auth_token_digest
+I, [2019-09-06T13:31:56.576983 #14231]  INFO -- : GET / => 200
+D, [2019-09-06T13:31:56.577013 #14231] DEBUG -- : Response payload (NilClass): {"_links":{"self":{"href":"http://localhost:3000/"},"users":{"href":"http://localhost:3000/users"}}}
+I, [2019-09-06T13:35:27.803612 #14231]  INFO -- : Processing: GET /
+D, [2019-09-06T13:35:27.803670 #14231] DEBUG -- : Payload: {}
+W, [2019-09-06T13:35:27.803803 #14231]  WARN -- : The default Shaf implementation of #current_user requires a User model with a column auth_token_digest
+I, [2019-09-06T13:35:27.803897 #14231]  INFO -- : GET / => 200
+D, [2019-09-06T13:35:27.803920 #14231] DEBUG -- : Response payload (NilClass): {"_links":{"self":{"href":"http://localhost:3000/"},"users":{"href":"http://localhost:3000/users"}}}
+I, [2019-09-06T13:35:27.808470 #14231]  INFO -- : Processing: GET /users
+D, [2019-09-06T13:35:27.808506 #14231] DEBUG -- : Payload: {}
+W, [2019-09-06T13:35:27.808545 #14231]  WARN -- : The default Shaf implementation of #current_user requires a User model with a column auth_token_digest
+I, [2019-09-06T13:35:27.808866 #14231]  INFO -- : (0.000098s) SELECT count(*) AS 'count' FROM `users` LIMIT 1
+W, [2019-09-06T13:35:27.808969 #14231]  WARN -- : The default Shaf implementation of #current_user requires a User model with a column auth_token_digest
+I, [2019-09-06T13:35:27.809217 #14231]  INFO -- : (0.000104s) SELECT * FROM `users` ORDER BY `created_at` DESC LIMIT 25 OFFSET 0
+I, [2019-09-06T13:35:27.809291 #14231]  INFO -- : GET /users => 200
+D, [2019-09-06T13:35:27.809768 #14231] DEBUG -- : Response payload (#<Class:0x000055906bc05c78>): {"_links":{"self":{"href":"http://localhost:3000/users?page=1&per_page=25"},"doc:up":{"href":"http://localhost:3000/"},"doc:create-form":{"href":"http://localhost:3000/user/form"},"curies":[{"name":"doc","href":"http://localhost:3000/doc/user/rels/{rel}","templated":true}]},"_embedded":{"users":[]}}
+I, [2019-09-06T13:35:27.811443 #14231]  INFO -- : Processing: GET /user/form
+D, [2019-09-06T13:35:27.811471 #14231] DEBUG -- : Payload: {}
+W, [2019-09-06T13:35:27.811510 #14231]  WARN -- : The default Shaf implementation of #current_user requires a User model with a column auth_token_digest
+W, [2019-09-06T13:35:27.811604 #14231]  WARN -- : The default Shaf implementation of #current_user requires a User model with a column auth_token_digest
+I, [2019-09-06T13:35:27.811734 #14231]  INFO -- : GET /user/form => 200
+D, [2019-09-06T13:35:27.811758 #14231] DEBUG -- : Response payload (Shaf::Formable::Form): {"method":"POST","name":"create-user","title":"Create User","href":"http://localhost:3000/users","type":"application/json","submit":"save","_links":{"self":{"href":"http://localhost:3000/user/form"},"profile":{"href":"https://gist.githubusercontent.com/sammyhenningsson/39c8aafeaf60192b082762cbf3e08d57/raw/shaf-form.md"}},"fields":[{"name":"name","type":"string","required":true}]}
+I, [2019-09-06T13:35:36.455869 #14231]  INFO -- : Processing: POST /users
+D, [2019-09-06T13:35:36.456033 #14231] DEBUG -- : Payload: {:name=>"foobar"}
+W, [2019-09-06T13:35:36.456250 #14231]  WARN -- : The default Shaf implementation of #current_user requires a User model with a column auth_token_digest
+I, [2019-09-06T13:35:36.456724 #14231]  INFO -- : (0.000078s) BEGIN
+I, [2019-09-06T13:35:36.457442 #14231]  INFO -- : (0.000367s) INSERT INTO `users` (`name`, `created_at`) VALUES ('foobar', '2019-09-06 13:35:36.456450')
+I, [2019-09-06T13:35:36.458066 #14231]  INFO -- : (0.000372s) SELECT * FROM `users` WHERE `id` = 9
+I, [2019-09-06T13:35:36.462548 #14231]  INFO -- : (0.004347s) COMMIT
+W, [2019-09-06T13:35:36.462880 #14231]  WARN -- : The default Shaf implementation of #current_user requires a User model with a column auth_token_digest
+I, [2019-09-06T13:35:36.463312 #14231]  INFO -- : POST /users => 201
+D, [2019-09-06T13:35:36.463399 #14231] DEBUG -- : Response payload (User): {"name":"foobar","_links":{"doc:up":{"href":"http://localhost:3000/users"},"self":{"href":"http://localhost:3000/users/9"},"doc:edit-form":{"href":"http://localhost:3000/users/9/edit"},"doc:delete":{"href":"http://localhost:3000/users/9"},"curies":[{"name":"doc","href":"http://localhost:3000/doc/user/rels/{rel}","templated":true}]}}
+I, [2019-09-06T13:35:41.698913 #14231]  INFO -- : Processing: DELETE /users/9
+D, [2019-09-06T13:35:41.698963 #14231] DEBUG -- : Payload: {}
+W, [2019-09-06T13:35:41.699035 #14231]  WARN -- : The default Shaf implementation of #current_user requires a User model with a column auth_token_digest
+I, [2019-09-06T13:35:41.699307 #14231]  INFO -- : (0.000177s) SELECT * FROM `users` WHERE `id` = '9'
+I, [2019-09-06T13:35:41.699388 #14231]  INFO -- : (0.000015s) BEGIN
+I, [2019-09-06T13:35:41.699511 #14231]  INFO -- : (0.000084s) DELETE FROM `users` WHERE `id` = 9
+I, [2019-09-06T13:35:41.703044 #14231]  INFO -- : (0.003495s) COMMIT
+I, [2019-09-06T13:42:38.926024 #14231]  INFO -- : Processing: GET /
+D, [2019-09-06T13:42:38.926073 #14231] DEBUG -- : Payload: {}
+W, [2019-09-06T13:42:38.926184 #14231]  WARN -- : The default Shaf implementation of #current_user requires a User model with a column auth_token_digest
+I, [2019-09-06T13:42:38.926283 #14231]  INFO -- : GET / => 200
+D, [2019-09-06T13:42:38.926307 #14231] DEBUG -- : Response payload (NilClass): {"_links":{"self":{"href":"http://localhost:3000/"},"users":{"href":"http://localhost:3000/users"}}}
+I, [2019-09-06T13:42:51.402802 #14231]  INFO -- : Processing: GET /users
+D, [2019-09-06T13:42:51.402928 #14231] DEBUG -- : Payload: {}
+W, [2019-09-06T13:42:51.403061 #14231]  WARN -- : The default Shaf implementation of #current_user requires a User model with a column auth_token_digest
+I, [2019-09-06T13:42:51.403878 #14231]  INFO -- : (0.000261s) SELECT count(*) AS 'count' FROM `users` LIMIT 1
+W, [2019-09-06T13:42:51.404270 #14231]  WARN -- : The default Shaf implementation of #current_user requires a User model with a column auth_token_digest
+I, [2019-09-06T13:42:51.405072 #14231]  INFO -- : (0.000352s) SELECT * FROM `users` ORDER BY `created_at` DESC LIMIT 25 OFFSET 0
+I, [2019-09-06T13:42:51.405314 #14231]  INFO -- : GET /users => 200
+D, [2019-09-06T13:42:51.406353 #14231] DEBUG -- : Response payload (#<Class:0x000055906bc05c78>): {"_links":{"self":{"href":"http://localhost:3000/users?page=1&per_page=25"},"doc:up":{"href":"http://localhost:3000/"},"doc:create-form":{"href":"http://localhost:3000/user/form"},"curies":[{"name":"doc","href":"http://localhost:3000/doc/user/rels/{rel}","templated":true}]},"_embedded":{"users":[]}}
+D, [2019-09-06T13:46:41.815008 #12763] DEBUG -- : Loading initializer: hal_presenter
+I, [2019-09-06T13:46:41.817184 #12763]  INFO -- : (0.000079s) SELECT sqlite_version()
+I, [2019-09-06T13:46:41.817363 #12763]  INFO -- : (0.000059s) SELECT NULL AS 'nil' FROM `schema_migrations` LIMIT 1
+I, [2019-09-06T13:46:41.817473 #12763]  INFO -- : (0.000052s) SELECT * FROM `schema_migrations` LIMIT 1
+I, [2019-09-06T13:46:41.817615 #12763]  INFO -- : (0.000058s) SELECT `filename` FROM `schema_migrations` ORDER BY `filename`
+D, [2019-09-06T13:46:41.817653 #12763] DEBUG -- : Loading initializer: db_migrations
+D, [2019-09-06T13:46:41.819588 #12763] DEBUG -- : Loading initializer: sequel
+D, [2019-09-06T13:46:41.819976 #12763] DEBUG -- : Require file: models/user.rb
+I, [2019-09-06T13:46:41.821116 #12763]  INFO -- : (0.000103s) PRAGMA table_info('users')
+D, [2019-09-06T13:46:41.821385 #12763] DEBUG -- : Require file: policies/base_policy.rb
+D, [2019-09-06T13:46:41.821485 #12763] DEBUG -- : Require file: policies/user_policy.rb
+D, [2019-09-06T13:46:41.821620 #12763] DEBUG -- : Require file: controllers/base_controller.rb
+I, [2019-09-06T13:46:41.824612 #12763]  INFO -- : Using Shaf::CurrentUser
+D, [2019-09-06T13:46:41.824724 #12763] DEBUG -- : Require file: controllers/users_controller.rb
+D, [2019-09-06T13:46:41.829822 #12763] DEBUG -- : Require file: controllers/root_controller.rb
+D, [2019-09-06T13:46:41.830236 #12763] DEBUG -- : Require file: controllers/docs_controller.rb
+D, [2019-09-06T13:46:41.832934 #12763] DEBUG -- : Require file: serializers/base_serializer.rb
+D, [2019-09-06T13:46:41.833048 #12763] DEBUG -- : Require file: serializers/user_serializer.rb
+D, [2019-09-06T13:46:41.834029 #12763] DEBUG -- : Require file: serializers/error_serializer.rb
+D, [2019-09-06T13:46:41.834206 #12763] DEBUG -- : Require file: serializers/form_serializer.rb
+D, [2019-09-06T13:46:41.835297 #12763] DEBUG -- : Require file: serializers/validation_error_serializer.rb
+D, [2019-09-06T13:46:41.835459 #12763] DEBUG -- : Require file: serializers/root_serializer.rb
+D, [2019-09-06T13:46:41.835585 #12763] DEBUG -- : Require file: forms/user_forms.rb
+I, [2019-09-06T13:46:53.991370 #12763]  INFO -- : Processing: GET /users
+D, [2019-09-06T13:46:53.991441 #12763] DEBUG -- : Payload: {}
+W, [2019-09-06T13:46:53.991515 #12763]  WARN -- : The default Shaf implementation of #current_user requires a User model with a column auth_token_digest
+I, [2019-09-06T13:46:53.992429 #12763]  INFO -- : (0.000490s) SELECT count(*) AS 'count' FROM `users` LIMIT 1
+W, [2019-09-06T13:46:53.992671 #12763]  WARN -- : The default Shaf implementation of #current_user requires a User model with a column auth_token_digest
+I, [2019-09-06T13:46:53.993076 #12763]  INFO -- : (0.000155s) SELECT * FROM `users` ORDER BY `created_at` DESC LIMIT 25 OFFSET 0
+I, [2019-09-06T13:46:53.993209 #12763]  INFO -- : GET /users => 200
+D, [2019-09-06T13:46:53.993734 #12763] DEBUG -- : Response payload (#<Class:0x000055594a047a88>): {"_links":{"self":{"href":"http://localhost:3000/users?page=1&per_page=25"},"doc:up":{"href":"http://localhost:3000/"},"doc:create-form":{"href":"http://localhost:3000/user/form"},"curies":[{"name":"doc","href":"http://localhost:3000/doc/user/rels/{rel}","templated":true}]},"_embedded":{"users":[]}}
+D, [2019-09-06T13:55:59.582776 #28520] DEBUG -- : Loading initializer: hal_presenter
+I, [2019-09-06T13:55:59.584816 #28520]  INFO -- : (0.000062s) SELECT sqlite_version()
+I, [2019-09-06T13:55:59.584978 #28520]  INFO -- : (0.000053s) SELECT NULL AS 'nil' FROM `schema_migrations` LIMIT 1
+I, [2019-09-06T13:55:59.585082 #28520]  INFO -- : (0.000049s) SELECT * FROM `schema_migrations` LIMIT 1
+I, [2019-09-06T13:55:59.585218 #28520]  INFO -- : (0.000055s) SELECT `filename` FROM `schema_migrations` ORDER BY `filename`
+D, [2019-09-06T13:55:59.585254 #28520] DEBUG -- : Loading initializer: db_migrations
+D, [2019-09-06T13:55:59.587232 #28520] DEBUG -- : Loading initializer: sequel
+D, [2019-09-06T13:55:59.587603 #28520] DEBUG -- : Require file: models/user.rb
+I, [2019-09-06T13:55:59.588683 #28520]  INFO -- : (0.000102s) PRAGMA table_info('users')
+D, [2019-09-06T13:55:59.588972 #28520] DEBUG -- : Require file: policies/base_policy.rb
+D, [2019-09-06T13:55:59.589068 #28520] DEBUG -- : Require file: policies/user_policy.rb
+D, [2019-09-06T13:55:59.589217 #28520] DEBUG -- : Require file: controllers/base_controller.rb
+I, [2019-09-06T13:55:59.592013 #28520]  INFO -- : Using Shaf::CurrentUser
+D, [2019-09-06T13:55:59.592147 #28520] DEBUG -- : Require file: controllers/users_controller.rb
+D, [2019-09-06T13:55:59.597176 #28520] DEBUG -- : Require file: controllers/root_controller.rb
+D, [2019-09-06T13:55:59.597586 #28520] DEBUG -- : Require file: controllers/docs_controller.rb
+D, [2019-09-06T13:55:59.599640 #28520] DEBUG -- : Require file: serializers/base_serializer.rb
+D, [2019-09-06T13:55:59.599752 #28520] DEBUG -- : Require file: serializers/user_serializer.rb
+D, [2019-09-06T13:55:59.600786 #28520] DEBUG -- : Require file: serializers/error_serializer.rb
+D, [2019-09-06T13:55:59.600956 #28520] DEBUG -- : Require file: serializers/form_serializer.rb
+D, [2019-09-06T13:55:59.601929 #28520] DEBUG -- : Require file: serializers/validation_error_serializer.rb
+D, [2019-09-06T13:55:59.602091 #28520] DEBUG -- : Require file: serializers/root_serializer.rb
+D, [2019-09-06T13:55:59.602215 #28520] DEBUG -- : Require file: forms/user_forms.rb
+I, [2019-09-06T13:56:04.306311 #28520]  INFO -- : Processing: GET /users
+D, [2019-09-06T13:56:04.306409 #28520] DEBUG -- : Payload: {}
+I, [2019-09-06T13:56:04.307518 #28520]  INFO -- : (0.000186s) SELECT * FROM `users` WHERE (`auth_token_digest` = 'aaf5ad63ac417e5002bdac202e07287cf90f35b1d419464d2c4fc79e508a1e4c') LIMIT 1
+I, [2019-09-06T13:56:04.308558 #28520]  INFO -- : (0.000498s) SELECT count(*) AS 'count' FROM `users` LIMIT 1
+I, [2019-09-06T13:56:04.309334 #28520]  INFO -- : (0.000172s) SELECT * FROM `users` ORDER BY `created_at` DESC LIMIT 25 OFFSET 0
+I, [2019-09-06T13:56:04.309459 #28520]  INFO -- : GET /users => 200
+D, [2019-09-06T13:56:04.309962 #28520] DEBUG -- : Response payload (#<Class:0x000055b6da278e90>): {"_links":{"self":{"href":"http://localhost:3000/users?page=1&per_page=25"},"doc:up":{"href":"http://localhost:3000/"},"curies":[{"name":"doc","href":"http://localhost:3000/doc/user/rels/{rel}","templated":true}]},"_embedded":{"users":[]}}
+D, [2019-09-06T13:57:37.457341 #31097] DEBUG -- : Loading initializer: hal_presenter
+I, [2019-09-06T13:57:37.459304 #31097]  INFO -- : (0.000061s) SELECT sqlite_version()
+I, [2019-09-06T13:57:37.459463 #31097]  INFO -- : (0.000052s) SELECT NULL AS 'nil' FROM `schema_migrations` LIMIT 1
+I, [2019-09-06T13:57:37.459566 #31097]  INFO -- : (0.000049s) SELECT * FROM `schema_migrations` LIMIT 1
+I, [2019-09-06T13:57:37.459706 #31097]  INFO -- : (0.000055s) SELECT `filename` FROM `schema_migrations` ORDER BY `filename`
+D, [2019-09-06T13:57:37.459741 #31097] DEBUG -- : Loading initializer: db_migrations
+D, [2019-09-06T13:57:37.461595 #31097] DEBUG -- : Loading initializer: sequel
+D, [2019-09-06T13:57:37.461950 #31097] DEBUG -- : Require file: models/user.rb
+I, [2019-09-06T13:57:37.463007 #31097]  INFO -- : (0.000098s) PRAGMA table_info('users')
+D, [2019-09-06T13:57:37.463283 #31097] DEBUG -- : Require file: policies/base_policy.rb
+D, [2019-09-06T13:57:37.463374 #31097] DEBUG -- : Require file: policies/user_policy.rb
+D, [2019-09-06T13:57:37.463515 #31097] DEBUG -- : Require file: controllers/base_controller.rb
+I, [2019-09-06T13:57:37.466291 #31097]  INFO -- : Using Shaf::CurrentUser
+D, [2019-09-06T13:57:37.466394 #31097] DEBUG -- : Require file: controllers/users_controller.rb
+D, [2019-09-06T13:57:37.471313 #31097] DEBUG -- : Require file: controllers/root_controller.rb
+D, [2019-09-06T13:57:37.471728 #31097] DEBUG -- : Require file: controllers/docs_controller.rb
+D, [2019-09-06T13:57:37.473744 #31097] DEBUG -- : Require file: serializers/base_serializer.rb
+D, [2019-09-06T13:57:37.473855 #31097] DEBUG -- : Require file: serializers/user_serializer.rb
+D, [2019-09-06T13:57:37.474770 #31097] DEBUG -- : Require file: serializers/error_serializer.rb
+D, [2019-09-06T13:57:37.475661 #31097] DEBUG -- : Require file: serializers/form_serializer.rb
+D, [2019-09-06T13:57:37.475958 #31097] DEBUG -- : Require file: serializers/validation_error_serializer.rb
+D, [2019-09-06T13:57:37.476933 #31097] DEBUG -- : Require file: serializers/root_serializer.rb
+D, [2019-09-06T13:57:37.477065 #31097] DEBUG -- : Require file: forms/user_forms.rb
+I, [2019-09-06T13:57:43.710191 #31097]  INFO -- : Processing: GET /users
+D, [2019-09-06T13:57:43.710266 #31097] DEBUG -- : Payload: {}
+I, [2019-09-06T13:57:43.711356 #31097]  INFO -- : (0.000160s) SELECT * FROM `users` WHERE (`auth_token_digest` = 'aaf5ad63ac417e5002bdac202e07287cf90f35b1d419464d2c4fc79e508a1e4c') LIMIT 1
+I, [2019-09-06T13:57:43.711748 #31097]  INFO -- : (0.000072s) SELECT count(*) AS 'count' FROM `users` LIMIT 1
+I, [2019-09-06T13:57:43.712376 #31097]  INFO -- : (0.000192s) SELECT * FROM `users` ORDER BY `created_at` DESC LIMIT 25 OFFSET 0
+I, [2019-09-06T13:57:43.712737 #31097]  INFO -- : GET /users => 200
+D, [2019-09-06T13:57:43.713788 #31097] DEBUG -- : Response payload (#<Class:0x0000555d27d97608>): {"_links":{"self":{"href":"http://localhost:3000/users?page=1&per_page=25"},"doc:up":{"href":"http://localhost:3000/"},"doc:create-form":{"href":"http://localhost:3000/user/form"},"curies":[{"name":"doc","href":"http://localhost:3000/doc/user/rels/{rel}","templated":true}]},"_embedded":{"users":[]}}
+I, [2019-09-06T13:58:17.276592 #31097]  INFO -- : Processing: GET /user/form
+D, [2019-09-06T13:58:17.276728 #31097] DEBUG -- : Payload: {}
+I, [2019-09-06T13:58:17.277610 #31097]  INFO -- : (0.000319s) SELECT * FROM `users` WHERE (`auth_token_digest` = 'aaf5ad63ac417e5002bdac202e07287cf90f35b1d419464d2c4fc79e508a1e4c') LIMIT 1
+I, [2019-09-06T13:58:17.278454 #31097]  INFO -- : GET /user/form => 200
+D, [2019-09-06T13:58:17.278548 #31097] DEBUG -- : Response payload (Shaf::Formable::Form): {"method":"POST","name":"create-user","title":"Create User","href":"http://localhost:3000/users","type":"application/json","submit":"save","_links":{"self":{"href":"http://localhost:3000/user/form"},"profile":{"href":"https://gist.githubusercontent.com/sammyhenningsson/39c8aafeaf60192b082762cbf3e08d57/raw/shaf-form.md"}},"fields":[{"name":"name","type":"string","required":true}]}
+I, [2019-09-06T13:58:47.594837 #31097]  INFO -- : Processing: POST /users
+D, [2019-09-06T13:58:47.595228 #31097] DEBUG -- : Payload: {:name=>"sammy"}
+I, [2019-09-06T13:58:47.596211 #31097]  INFO -- : (0.000426s) SELECT * FROM `users` WHERE (`auth_token_digest` = 'aaf5ad63ac417e5002bdac202e07287cf90f35b1d419464d2c4fc79e508a1e4c') LIMIT 1
+E, [2019-09-06T13:58:47.596497 #31097] ERROR -- : Shaf::Authorize::PolicyViolationError
+E, [2019-09-06T13:58:47.596535 #31097] ERROR -- : /home/sammy/Development/shaf/lib/shaf/extensions/authorize.rb:30:in `authorize!'
+E, [2019-09-06T13:58:47.596551 #31097] ERROR -- : /home/sammy/Development/demo/api/controllers/users_controller.rb:22:in `block in <class:UsersController>'
+E, [2019-09-06T13:58:47.596562 #31097] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:1635:in `call'
+E, [2019-09-06T13:58:47.596573 #31097] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:1635:in `block in compile!'
+E, [2019-09-06T13:58:47.596583 #31097] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:987:in `block (3 levels) in route!'
+E, [2019-09-06T13:58:47.596596 #31097] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:1006:in `route_eval'
+E, [2019-09-06T13:58:47.596607 #31097] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:987:in `block (2 levels) in route!'
+E, [2019-09-06T13:58:47.596617 #31097] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:1035:in `block in process_route'
+E, [2019-09-06T13:58:47.596627 #31097] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:1033:in `catch'
+E, [2019-09-06T13:58:47.596637 #31097] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:1033:in `process_route'
+E, [2019-09-06T13:58:47.596647 #31097] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:985:in `block in route!'
+E, [2019-09-06T13:58:47.596657 #31097] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:984:in `each'
+E, [2019-09-06T13:58:47.596667 #31097] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:984:in `route!'
+E, [2019-09-06T13:58:47.596677 #31097] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:1097:in `block in dispatch!'
+E, [2019-09-06T13:58:47.596689 #31097] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:1071:in `block in invoke'
+E, [2019-09-06T13:58:47.596699 #31097] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:1071:in `catch'
+E, [2019-09-06T13:58:47.596709 #31097] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:1071:in `invoke'
+E, [2019-09-06T13:58:47.596720 #31097] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:1094:in `dispatch!'
+E, [2019-09-06T13:58:47.596730 #31097] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:919:in `block in call!'
+E, [2019-09-06T13:58:47.596739 #31097] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:1071:in `block in invoke'
+E, [2019-09-06T13:58:47.596749 #31097] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:1071:in `catch'
+E, [2019-09-06T13:58:47.596760 #31097] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:1071:in `invoke'
+E, [2019-09-06T13:58:47.596770 #31097] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:919:in `call!'
+E, [2019-09-06T13:58:47.596780 #31097] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:908:in `call'
+E, [2019-09-06T13:58:47.596792 #31097] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rack-2.0.7/lib/rack/deflater.rb:34:in `call'
+E, [2019-09-06T13:58:47.596802 #31097] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rack-protection-2.0.7/lib/rack/protection/xss_header.rb:18:in `call'
+E, [2019-09-06T13:58:47.596816 #31097] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rack-protection-2.0.7/lib/rack/protection/path_traversal.rb:16:in `call'
+E, [2019-09-06T13:58:47.596827 #31097] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rack-protection-2.0.7/lib/rack/protection/json_csrf.rb:26:in `call'
+E, [2019-09-06T13:58:47.596837 #31097] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rack-protection-2.0.7/lib/rack/protection/base.rb:50:in `call'
+E, [2019-09-06T13:58:47.596847 #31097] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rack-protection-2.0.7/lib/rack/protection/base.rb:50:in `call'
+E, [2019-09-06T13:58:47.596857 #31097] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rack-protection-2.0.7/lib/rack/protection/frame_options.rb:31:in `call'
+E, [2019-09-06T13:58:47.596866 #31097] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rack-2.0.7/lib/rack/logger.rb:15:in `call'
+E, [2019-09-06T13:58:47.596876 #31097] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rack-2.0.7/lib/rack/common_logger.rb:33:in `call'
+E, [2019-09-06T13:58:47.596889 #31097] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:231:in `call'
+E, [2019-09-06T13:58:47.596899 #31097] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:224:in `call'
+E, [2019-09-06T13:58:47.596909 #31097] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rack-2.0.7/lib/rack/head.rb:12:in `call'
+E, [2019-09-06T13:58:47.596919 #31097] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rack-2.0.7/lib/rack/method_override.rb:22:in `call'
+E, [2019-09-06T13:58:47.596929 #31097] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/show_exceptions.rb:22:in `call'
+E, [2019-09-06T13:58:47.596938 #31097] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:194:in `call'
+E, [2019-09-06T13:58:47.596948 #31097] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:1950:in `call'
+E, [2019-09-06T13:58:47.596958 #31097] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:1502:in `block in call'
+E, [2019-09-06T13:58:47.596968 #31097] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:1729:in `synchronize'
+E, [2019-09-06T13:58:47.596978 #31097] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:1502:in `call'
+E, [2019-09-06T13:58:47.596991 #31097] ERROR -- : /home/sammy/Development/shaf/lib/shaf/router.rb:53:in `block in call'
+E, [2019-09-06T13:58:47.597001 #31097] ERROR -- : /home/sammy/Development/shaf/lib/shaf/router.rb:70:in `controllers_for'
+E, [2019-09-06T13:58:47.597011 #31097] ERROR -- : /home/sammy/Development/shaf/lib/shaf/router.rb:52:in `call'
+E, [2019-09-06T13:58:47.597020 #31097] ERROR -- : /home/sammy/Development/shaf/lib/shaf/middleware/request_id.rb:14:in `call'
+E, [2019-09-06T13:58:47.597030 #31097] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rack-protection-2.0.7/lib/rack/protection/xss_header.rb:18:in `call'
+E, [2019-09-06T13:58:47.597040 #31097] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rack-protection-2.0.7/lib/rack/protection/path_traversal.rb:16:in `call'
+E, [2019-09-06T13:58:47.597049 #31097] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rack-protection-2.0.7/lib/rack/protection/json_csrf.rb:26:in `call'
+E, [2019-09-06T13:58:47.597059 #31097] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rack-protection-2.0.7/lib/rack/protection/base.rb:50:in `call'
+E, [2019-09-06T13:58:47.597073 #31097] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rack-protection-2.0.7/lib/rack/protection/base.rb:50:in `call'
+E, [2019-09-06T13:58:47.597087 #31097] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rack-protection-2.0.7/lib/rack/protection/frame_options.rb:31:in `call'
+E, [2019-09-06T13:58:47.597098 #31097] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rack-2.0.7/lib/rack/null_logger.rb:9:in `call'
+E, [2019-09-06T13:58:47.597107 #31097] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rack-2.0.7/lib/rack/head.rb:12:in `call'
+E, [2019-09-06T13:58:47.597117 #31097] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/show_exceptions.rb:22:in `call'
+E, [2019-09-06T13:58:47.597127 #31097] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:194:in `call'
+E, [2019-09-06T13:58:47.597137 #31097] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:1950:in `call'
+E, [2019-09-06T13:58:47.597147 #31097] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:1502:in `block in call'
+E, [2019-09-06T13:58:47.597156 #31097] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:1729:in `synchronize'
+E, [2019-09-06T13:58:47.597166 #31097] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sinatra-2.0.7/lib/sinatra/base.rb:1502:in `call'
+E, [2019-09-06T13:58:47.597176 #31097] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/thin-1.7.2/lib/thin/connection.rb:86:in `block in pre_process'
+E, [2019-09-06T13:58:47.597189 #31097] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/thin-1.7.2/lib/thin/connection.rb:84:in `catch'
+E, [2019-09-06T13:58:47.597199 #31097] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/thin-1.7.2/lib/thin/connection.rb:84:in `pre_process'
+E, [2019-09-06T13:58:47.597209 #31097] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/thin-1.7.2/lib/thin/connection.rb:50:in `block in process'
+E, [2019-09-06T13:58:47.597219 #31097] ERROR -- : /home/sammy/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/eventmachine-1.2.7/lib/eventmachine.rb:1077:in `block in spawn_threadpool'
+I, [2019-09-06T13:58:47.597419 #31097]  INFO -- : POST /users => 403
+D, [2019-09-06T13:58:47.597449 #31097] DEBUG -- : Response payload (Shaf::Errors::ForbiddenError): {"title":"User not allowed","code":"FORBIDDEN","message":"User is not allowed to perform this action","_links":{"profile":{"href":"https://gist.githubusercontent.com/sammyhenningsson/049d10e2b8978059cde104fc5d6c2d52/raw/shaf-error.md"}}}
+D, [2019-09-06T14:02:13.969027 #6687] DEBUG -- : Loading initializer: hal_presenter
+I, [2019-09-06T14:02:13.971130 #6687]  INFO -- : (0.000066s) SELECT sqlite_version()
+I, [2019-09-06T14:02:13.971301 #6687]  INFO -- : (0.000056s) SELECT NULL AS 'nil' FROM `schema_migrations` LIMIT 1
+I, [2019-09-06T14:02:13.971410 #6687]  INFO -- : (0.000052s) SELECT * FROM `schema_migrations` LIMIT 1
+I, [2019-09-06T14:02:13.971552 #6687]  INFO -- : (0.000058s) SELECT `filename` FROM `schema_migrations` ORDER BY `filename`
+D, [2019-09-06T14:02:13.971589 #6687] DEBUG -- : Loading initializer: db_migrations
+D, [2019-09-06T14:02:13.973552 #6687] DEBUG -- : Loading initializer: sequel
+D, [2019-09-06T14:02:13.973938 #6687] DEBUG -- : Require file: models/user.rb
+I, [2019-09-06T14:02:13.975024 #6687]  INFO -- : (0.000103s) PRAGMA table_info('users')
+D, [2019-09-06T14:02:13.975309 #6687] DEBUG -- : Require file: policies/base_policy.rb
+D, [2019-09-06T14:02:13.975406 #6687] DEBUG -- : Require file: policies/user_policy.rb
+D, [2019-09-06T14:02:13.975557 #6687] DEBUG -- : Require file: controllers/base_controller.rb
+I, [2019-09-06T14:02:13.980700 #6687]  INFO -- : Using Shaf::CurrentUser
+D, [2019-09-06T14:02:13.980832 #6687] DEBUG -- : Require file: controllers/users_controller.rb
+D, [2019-09-06T14:02:13.983674 #6687] DEBUG -- : Require file: controllers/root_controller.rb
+D, [2019-09-06T14:02:13.984091 #6687] DEBUG -- : Require file: controllers/docs_controller.rb
+D, [2019-09-06T14:02:13.989870 #6687] DEBUG -- : Require file: serializers/base_serializer.rb
+D, [2019-09-06T14:02:13.990006 #6687] DEBUG -- : Require file: serializers/user_serializer.rb
+D, [2019-09-06T14:02:13.990337 #6687] DEBUG -- : Require file: serializers/error_serializer.rb
+D, [2019-09-06T14:02:13.991008 #6687] DEBUG -- : Require file: serializers/form_serializer.rb
+D, [2019-09-06T14:02:13.991328 #6687] DEBUG -- : Require file: serializers/validation_error_serializer.rb
+D, [2019-09-06T14:02:13.991994 #6687] DEBUG -- : Require file: serializers/root_serializer.rb
+D, [2019-09-06T14:02:13.992134 #6687] DEBUG -- : Require file: forms/user_forms.rb
+I, [2019-09-06T14:02:27.352395 #6687]  INFO -- : Processing: POST /users
+D, [2019-09-06T14:02:27.352505 #6687] DEBUG -- : Payload: {:name=>"sammy"}
+I, [2019-09-06T14:02:27.353715 #6687]  INFO -- : (0.000196s) SELECT * FROM `users` WHERE (`auth_token_digest` = 'aaf5ad63ac417e5002bdac202e07287cf90f35b1d419464d2c4fc79e508a1e4c') LIMIT 1
+I, [2019-09-06T14:02:27.354190 #6687]  INFO -- : (0.000034s) BEGIN
+I, [2019-09-06T14:02:27.354695 #6687]  INFO -- : (0.000231s) INSERT INTO `users` (`name`, `created_at`, `auth_token_digest`) VALUES ('sammy', '2019-09-06 14:02:27.354044', 'aaf5ad63ac417e5002bdac202e07287cf90f35b1d419464d2c4fc79e508a1e4c')
+I, [2019-09-06T14:02:27.355343 #6687]  INFO -- : (0.000467s) SELECT * FROM `users` WHERE `id` = 1
+I, [2019-09-06T14:02:27.359972 #6687]  INFO -- : (0.004517s) COMMIT
+I, [2019-09-06T14:02:27.360977 #6687]  INFO -- : POST /users => 201
+D, [2019-09-06T14:02:27.361085 #6687] DEBUG -- : Response payload (User): {"name":"sammy","_links":{"doc:up":{"href":"http://localhost:3000/users"},"self":{"href":"http://localhost:3000/users/1"},"curies":[{"name":"doc","href":"http://localhost:3000/doc/user/rels/{rel}","templated":true}]}}
+I, [2019-09-06T14:04:11.099781 #6687]  INFO -- : Processing: GET /
+D, [2019-09-06T14:04:11.099930 #6687] DEBUG -- : Payload: {}
+I, [2019-09-06T14:04:11.101346 #6687]  INFO -- : (0.000554s) SELECT * FROM `users` WHERE (`auth_token_digest` = 'aaf5ad63ac417e5002bdac202e07287cf90f35b1d419464d2c4fc79e508a1e4c') LIMIT 1
+I, [2019-09-06T14:04:11.101677 #6687]  INFO -- : GET / => 200
+D, [2019-09-06T14:04:11.101763 #6687] DEBUG -- : Response payload (NilClass): {"_links":{"self":{"href":"http://localhost:3000/"},"users":{"href":"http://localhost:3000/users"}}}
+I, [2019-09-06T14:04:11.106262 #6687]  INFO -- : Processing: GET /users
+D, [2019-09-06T14:04:11.106368 #6687] DEBUG -- : Payload: {}
+I, [2019-09-06T14:04:11.107313 #6687]  INFO -- : (0.000475s) SELECT * FROM `users` WHERE (`auth_token_digest` = 'aaf5ad63ac417e5002bdac202e07287cf90f35b1d419464d2c4fc79e508a1e4c') LIMIT 1
+I, [2019-09-06T14:04:11.108191 #6687]  INFO -- : (0.000264s) SELECT count(*) AS 'count' FROM `users` LIMIT 1
+I, [2019-09-06T14:04:11.109822 #6687]  INFO -- : (0.000845s) SELECT * FROM `users` ORDER BY `created_at` DESC LIMIT 25 OFFSET 0
+I, [2019-09-06T14:04:11.110139 #6687]  INFO -- : GET /users => 200
+D, [2019-09-06T14:04:11.111351 #6687] DEBUG -- : Response payload (#<Class:0x000055e71e2fbee8>): {"_links":{"self":{"href":"http://localhost:3000/users?page=1&per_page=25"},"doc:up":{"href":"http://localhost:3000/"},"doc:create-form":{"href":"http://localhost:3000/user/form"},"curies":[{"name":"doc","href":"http://localhost:3000/doc/user/rels/{rel}","templated":true}]},"_embedded":{"users":[{"name":"sammy","_links":{"doc:up":{"href":"http://localhost:3000/users"},"self":{"href":"http://localhost:3000/users/1"},"doc:edit-form":{"href":"http://localhost:3000/users/1/edit"},"doc:delete":{"href":"http://localhost:3000/users/1"}}}]}}
+I, [2019-09-06T14:05:14.482486 #6687]  INFO -- : Processing: GET /users
+D, [2019-09-06T14:05:14.482622 #6687] DEBUG -- : Payload: {}
+I, [2019-09-06T14:05:14.483654 #6687]  INFO -- : (0.000522s) SELECT * FROM `users` WHERE (`auth_token_digest` = 'aaf5ad63ac417e5002bdac202e07287cf90f35b1d419464d2c4fc79e508a1e4c') LIMIT 1
+I, [2019-09-06T14:05:14.484460 #6687]  INFO -- : (0.000193s) SELECT count(*) AS 'count' FROM `users` LIMIT 1
+I, [2019-09-06T14:05:14.485913 #6687]  INFO -- : (0.000794s) SELECT * FROM `users` ORDER BY `created_at` DESC LIMIT 25 OFFSET 0
+I, [2019-09-06T14:05:14.486174 #6687]  INFO -- : GET /users => 200
+D, [2019-09-06T14:05:14.487123 #6687] DEBUG -- : Response payload (#<Class:0x000055e71e2fbee8>): {"_links":{"self":{"href":"http://localhost:3000/users?page=1&per_page=25"},"doc:up":{"href":"http://localhost:3000/"},"doc:create-form":{"href":"http://localhost:3000/user/form"},"curies":[{"name":"doc","href":"http://localhost:3000/doc/user/rels/{rel}","templated":true}]},"_embedded":{"users":[{"name":"sammy","_links":{"doc:up":{"href":"http://localhost:3000/users"},"self":{"href":"http://localhost:3000/users/1"},"doc:edit-form":{"href":"http://localhost:3000/users/1/edit"},"doc:delete":{"href":"http://localhost:3000/users/1"}}}]}}
+I, [2019-09-06T14:06:17.541449 #6687]  INFO -- : Processing: GET /
+D, [2019-09-06T14:06:17.541505 #6687] DEBUG -- : Payload: {}
+I, [2019-09-06T14:06:17.541956 #6687]  INFO -- : (0.000194s) SELECT * FROM `users` WHERE (`auth_token_digest` = 'aaf5ad63ac417e5002bdac202e07287cf90f35b1d419464d2c4fc79e508a1e4c') LIMIT 1
+I, [2019-09-06T14:06:17.542060 #6687]  INFO -- : GET / => 200
+D, [2019-09-06T14:06:17.542086 #6687] DEBUG -- : Response payload (NilClass): {"_links":{"self":{"href":"http://localhost:3000/"},"users":{"href":"http://localhost:3000/users"}}}
+I, [2019-09-06T14:06:17.544027 #6687]  INFO -- : Processing: GET /users
+D, [2019-09-06T14:06:17.544090 #6687] DEBUG -- : Payload: {}
+I, [2019-09-06T14:06:17.544376 #6687]  INFO -- : (0.000139s) SELECT * FROM `users` WHERE (`auth_token_digest` = 'aaf5ad63ac417e5002bdac202e07287cf90f35b1d419464d2c4fc79e508a1e4c') LIMIT 1
+I, [2019-09-06T14:06:17.544607 #6687]  INFO -- : (0.000060s) SELECT count(*) AS 'count' FROM `users` LIMIT 1
+I, [2019-09-06T14:06:17.545078 #6687]  INFO -- : (0.000261s) SELECT * FROM `users` ORDER BY `created_at` DESC LIMIT 25 OFFSET 0
+I, [2019-09-06T14:06:17.545158 #6687]  INFO -- : GET /users => 200
+D, [2019-09-06T14:06:17.545633 #6687] DEBUG -- : Response payload (#<Class:0x000055e71e2fbee8>): {"_links":{"self":{"href":"http://localhost:3000/users?page=1&per_page=25"},"doc:up":{"href":"http://localhost:3000/"},"doc:create-form":{"href":"http://localhost:3000/user/form"},"curies":[{"name":"doc","href":"http://localhost:3000/doc/user/rels/{rel}","templated":true}]},"_embedded":{"users":[{"name":"sammy","_links":{"doc:up":{"href":"http://localhost:3000/users"},"self":{"href":"http://localhost:3000/users/1"},"doc:edit-form":{"href":"http://localhost:3000/users/1/edit"},"doc:delete":{"href":"http://localhost:3000/users/1"}}}]}}
+I, [2019-09-06T14:07:11.316241 #6687]  INFO -- : Processing: GET /users
+D, [2019-09-06T14:07:11.316379 #6687] DEBUG -- : Payload: {}
+I, [2019-09-06T14:07:11.317413 #6687]  INFO -- : (0.000524s) SELECT * FROM `users` WHERE (`auth_token_digest` = 'aaf5ad63ac417e5002bdac202e07287cf90f35b1d419464d2c4fc79e508a1e4c') LIMIT 1
+I, [2019-09-06T14:07:11.318155 #6687]  INFO -- : (0.000201s) SELECT count(*) AS 'count' FROM `users` LIMIT 1
+I, [2019-09-06T14:07:11.319653 #6687]  INFO -- : (0.000837s) SELECT * FROM `users` ORDER BY `created_at` DESC LIMIT 25 OFFSET 0
+I, [2019-09-06T14:07:44.459520 #6687]  INFO -- : Processing: POST /users
+D, [2019-09-06T14:07:44.459708 #6687] DEBUG -- : Payload: {:name=>"bengt"}
+I, [2019-09-06T14:07:44.460817 #6687]  INFO -- : (0.000559s) SELECT * FROM `users` WHERE (`auth_token_digest` = 'aaf5ad63ac417e5002bdac202e07287cf90f35b1d419464d2c4fc79e508a1e4c') LIMIT 1
+I, [2019-09-06T14:07:44.461301 #6687]  INFO -- : (0.000056s) BEGIN
+I, [2019-09-06T14:07:44.462093 #6687]  INFO -- : (0.000395s) INSERT INTO `users` (`name`, `created_at`, `auth_token_digest`) VALUES ('bengt', '2019-09-06 14:07:44.461072', '9a707518dc9a536c86960e94f57c86d8eb368c4f9d98392053e9d6a2c7494694')
+I, [2019-09-06T14:07:44.462729 #6687]  INFO -- : (0.000354s) SELECT * FROM `users` WHERE `id` = 2
+I, [2019-09-06T14:07:44.467551 #6687]  INFO -- : (0.004689s) COMMIT
+I, [2019-09-06T14:07:44.468270 #6687]  INFO -- : POST /users => 201
+D, [2019-09-06T14:07:44.468370 #6687] DEBUG -- : Response payload (User): {"name":"bengt","_links":{"doc:up":{"href":"http://localhost:3000/users"},"self":{"href":"http://localhost:3000/users/2"},"curies":[{"name":"doc","href":"http://localhost:3000/doc/user/rels/{rel}","templated":true}]}}
+I, [2019-09-06T14:07:49.599078 #6687]  INFO -- : Processing: GET /users
+D, [2019-09-06T14:07:49.599208 #6687] DEBUG -- : Payload: {}
+I, [2019-09-06T14:07:49.600359 #6687]  INFO -- : (0.000639s) SELECT * FROM `users` WHERE (`auth_token_digest` = 'aaf5ad63ac417e5002bdac202e07287cf90f35b1d419464d2c4fc79e508a1e4c') LIMIT 1
+I, [2019-09-06T14:07:49.601113 #6687]  INFO -- : (0.000195s) SELECT count(*) AS 'count' FROM `users` LIMIT 1
+I, [2019-09-06T14:07:49.601790 #6687]  INFO -- : (0.000347s) SELECT * FROM `users` ORDER BY `created_at` DESC LIMIT 25 OFFSET 0
+I, [2019-09-06T14:07:49.601881 #6687]  INFO -- : GET /users => 200
+D, [2019-09-06T14:07:49.602362 #6687] DEBUG -- : Response payload (#<Class:0x000055e71e2fbee8>): {"_links":{"self":{"href":"http://localhost:3000/users?page=1&per_page=25"},"doc:up":{"href":"http://localhost:3000/"},"doc:create-form":{"href":"http://localhost:3000/user/form"},"curies":[{"name":"doc","href":"http://localhost:3000/doc/user/rels/{rel}","templated":true}]},"_embedded":{"users":[{"name":"bengt","_links":{"doc:up":{"href":"http://localhost:3000/users"},"self":{"href":"http://localhost:3000/users/2"}}},{"name":"sammy","_links":{"doc:up":{"href":"http://localhost:3000/users"},"self":{"href":"http://localhost:3000/users/1"},"doc:edit-form":{"href":"http://localhost:3000/users/1/edit"},"doc:delete":{"href":"http://localhost:3000/users/1"}}}]}}
