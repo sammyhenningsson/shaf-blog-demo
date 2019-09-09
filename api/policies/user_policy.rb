@@ -14,6 +14,10 @@ class UserPolicy < BasePolicy
     write?
   end
 
+  link :bookmarks do
+    read?
+  end
+
   def read?
     true
   end

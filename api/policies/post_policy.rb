@@ -15,6 +15,16 @@ class PostPolicy < BasePolicy
     UserPolicy.new(current_user, post.user).read? 
   end
 
+  link :bookmark do
+    return false unless authenticated?
+    !current_user.bookmarks.map(&:post_id).include? post.id
+  end
+
+  link :remove_bookmark do
+    return false unless authenticated?
+    current_user.bookmarks.map(&:post_id).include? post.id
+  end
+
   link :'create-form' do
     create?
   end
@@ -29,6 +39,10 @@ class PostPolicy < BasePolicy
 
   def write?
     owner? post&.user_id
+  end
+
+  def bookmark?
+    authenticated?
   end
 
   def create?

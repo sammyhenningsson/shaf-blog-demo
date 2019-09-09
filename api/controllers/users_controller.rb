@@ -6,6 +6,7 @@ class UsersController < BaseController
 
   resource_uris_for :user
   register_uri :user_posts, '/users/:id/posts'
+  register_uri :user_bookmarks, '/users/:id/bookmarks'
 
   get :users_path do
     authorize! :read
@@ -53,7 +54,14 @@ class UsersController < BaseController
     authorize! :read
     user_id = params[:id].to_i
     posts = paginate(Post.where(user_id: user_id))
-    respond_with_collection posts
+    respond_with_collection posts, serializer: PostSerializer
+  end
+
+  get :user_bookmarks_path do
+    authorize! :read
+    user_id = params[:id].to_i
+    bookmarks = paginate(Bookmark.where(user_id: user_id))
+    respond_with_collection bookmarks, serializer: BookmarkSerializer
   end
 
   def user_params

@@ -6,6 +6,7 @@ class PostsController < BaseController
 
   resource_uris_for :post
   register_uri :post_author, '/posts/:id/author'
+  register_uri :bookmark_post, '/posts/:id/bookmark'
 
   get :posts_path do
     authorize! :read
@@ -54,6 +55,25 @@ class PostsController < BaseController
   get :post_author_path do
     authorize! :read
     respond_with post.user
+  end
+
+  put :bookmark_post_path do
+    authorize! :bookmark
+    post_id = params[:id].to_i
+    bookmark = current_user.add_bookmark(post_id: post_id)
+
+    headers('Location' => bookmark_uri(bookmark))
+    respond_with bookmark, status: 201
+  end
+
+  delete :bookmark_post_path do
+    authorize! :bookmark
+    post_id = params[:id].to_i
+    bookmark = Bookmark.first(post_id: post_id, user_id: current_user.id)
+    raise NotFoundError.new(clazz: Bookmark) unless bookmark
+
+    bookmark.destroy
+    status 204
   end
 
   def post_params

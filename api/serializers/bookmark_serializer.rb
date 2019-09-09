@@ -1,122 +1,110 @@
 require 'serializers/base_serializer'
-require 'policies/user_policy'
+require 'policies/bookmark_policy'
 
-class UserSerializer < BaseSerializer
+class BookmarkSerializer < BaseSerializer
 
-  model User
-  policy UserPolicy
+  model Bookmark
+  policy BookmarkPolicy
 
-  # FIXME: Write documentation for attribute :name
-  attribute :name
-
+  # The title of the post
+  attribute :post_title do
+    resource.post.title
+  end
   # Auto generated doc:  
-  # Link to the documentation for a given relation of the user resource.
+  # Link to the documentation for a given relation of the bookmark resource.
   # This link is templated, which means that {rel} must be replaced by the
   # appropriate relation name.  
   # Method: GET  
   # Example:
   # ```
   # curl -H "Accept: application/hal+json" \
-  #      /doc/user/rels/delete
+  #      /doc/bookmark/rels/delete
   #```
   curie :doc do
-    doc_curie_uri('user')
+    doc_curie_uri('bookmark')
   end
 
   # Auto generated doc:  
-  # Link to the collection of all users. Send a POST request to this uri to create a new user.  
+  # Link to the collection of all bookmarks. Send a POST request to this uri to create a new bookmark.  
   # Method: GET or POST  
   # Example:
   # ```
   # curl -H "Accept: application/hal+json" \
   #      -H "Authorization: abcdef \"
-  #      /users
+  #      /bookmarks
   #```
   link :"doc:up" do
-    users_uri
+    bookmarks_uri
   end
 
   # Auto generated doc:  
-  # Link to this user.  
+  # Link to this bookmark.  
   # Method: GET  
   # Example:
   # ```
   # curl -H "Accept: application/hal+json" \
   #      -H "Authorization: abcdef \"
-  #      /users/5
+  #      /bookmarks/5
   #```
   link :self do
-    user_uri(resource)
+    bookmark_uri(resource)
   end
 
   # Auto generated doc:  
-  # Link to a form to edit this resource.  
-  # Method: GET  
-  # Example:
-  # ```
-  # curl -H "Accept: application/hal+json" \
-  #      -H "Authorization: abcdef \"
-  #      /users/5/edit
-  #```
-  link :"doc:edit-form" do
-    edit_user_uri(resource)
-  end
-
-  # Auto generated doc:  
-  # Link to delete this user.  
+  # Link to delete this bookmark.  
   # Method: DELETE  
   # Example:
   # ```
   # curl -H "Accept: application/hal+json" \
   #      -H "Authorization: abcdef \"
   #      -X DELETE \
-  #      /users/5
+  #      /bookmarks/5
   #```
   link :"doc:delete" do
-    user_uri(resource)
+    bookmark_uri(resource)
   end
 
-  # Link to all posts written by this user
+  # Link to the user who owns this bookmark
   # Method: GET  
   # Example:
   # ```
   # curl -H "Accept: application/hal+json" \
   #      -H "Authorization: abcdef \"
-  #      /users/5/posts
+  #      /users/5
   #```
-  link :posts do
-    user_posts_uri(resource)
+  link :user do
+    user_uri(resource.user_id)
   end
-  
-  # Link to the users bookmarks   
+
+  # Link to the post that this bookmark is for
   # Method: GET  
   # Example:
   # ```
   # curl -H "Accept: application/hal+json" \
-  #      -H "Authorization: abcdef" \
-  #      /users/5/bookmarks
+  #      -H "Authorization: abcdef \"
+  #      /posts/5
   #```
-  link :bookmarks, bookmarks_uri do
-    user_bookmarks_uri(resource)
+  link :post do
+    post_uri(resource.post_id)
   end
 
-  collection of: 'users' do
-    curie(:doc) { doc_curie_uri('user') }
+  collection of: 'bookmarks' do
+    curie(:doc) { doc_curie_uri('bookmark') }
 
-    link :self, users_uri
+    link :self, bookmarks_uri
     link :'doc:up', root_uri
 
     # Auto generated doc:  
-    # Link to a form used to create new user resources.  
+    # Link to a form used to create new bookmark resources.  
     # Method: GET  
     # Example:
     # ```
     # curl -H "Accept: application/hal+json" \
     #      -H "Authorization: abcdef \"
-    #      /users/form
+    #      /bookmarks/form
     #```
     link :"doc:create-form" do
-      new_user_uri
+      new_bookmark_uri
     end
   end
 end

@@ -91,6 +91,14 @@ class PostSerializer < BaseSerializer
     user_uri(resource.user)
   end
 
+  link :bookmark do
+    bookmark_post_uri(resource)
+  end
+
+  link :remove_bookmark do
+    bookmark_post_uri(resource)
+  end
+
   collection of: 'posts' do
     curie(:doc) { doc_curie_uri('post') }
 
