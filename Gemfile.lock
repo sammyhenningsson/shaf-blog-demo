@@ -7,9 +7,15 @@ GEM
   remote: https://rubygems.org/
   specs:
     bcrypt (3.1.13)
+    byebug (11.0.1)
+    concurrent-ruby (1.1.5)
     daemons (1.3.1)
     eventmachine (1.2.7)
+    faker (2.2.2)
+      i18n (~> 1.6.0)
     hal_presenter (1.2.1)
+    i18n (1.6.0)
+      concurrent-ruby (~> 1.0)
     minitest (5.11.3)
     minitest-hooks (1.5.0)
       minitest (> 5.3)
@@ -43,6 +49,8 @@ PLATFORMS
 
 DEPENDENCIES
   bcrypt
+  byebug
+  faker
   hal_presenter
   minitest
   minitest-hooks

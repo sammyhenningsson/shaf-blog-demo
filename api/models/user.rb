@@ -1,6 +1,8 @@
 require 'securerandom'
 
 class User < Sequel::Model
+  one_to_many :posts
+
   def validate
     super
     validates_presence [:name]

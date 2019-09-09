@@ -24,4 +24,15 @@ class RootSerializer < BaseSerializer
   #      /users
   #```
   link :users, users_uri
+  
+  # Auto generated doc:  
+  # Link to the collection of posts.  
+  # Method: GET  
+  # Example:
+  # ```
+  # curl -H "Accept: application/hal+json" \
+  #      -H "Authorization: abcdef" \
+  #      /posts
+  #```
+  link :posts, posts_uri
 end

@@ -1,52 +1,55 @@
 require 'serializers/base_serializer'
-require 'policies/user_policy'
+require 'policies/post_policy'
 
-class UserSerializer < BaseSerializer
+class PostSerializer < BaseSerializer
 
-  model User
-  policy UserPolicy
+  model Post
+  policy PostPolicy
 
-  # FIXME: Write documentation for attribute :name
-  attribute :name
+  # FIXME: Write documentation for attribute :title
+  attribute :title
+
+  # FIXME: Write documentation for attribute :message
+  attribute :message
 
   # Auto generated doc:  
-  # Link to the documentation for a given relation of the user resource.
+  # Link to the documentation for a given relation of the post resource.
   # This link is templated, which means that {rel} must be replaced by the
   # appropriate relation name.  
   # Method: GET  
   # Example:
   # ```
   # curl -H "Accept: application/hal+json" \
-  #      /doc/user/rels/delete
+  #      /doc/post/rels/delete
   #```
   curie :doc do
-    doc_curie_uri('user')
+    doc_curie_uri('post')
   end
 
   # Auto generated doc:  
-  # Link to the collection of all users. Send a POST request to this uri to create a new user.  
+  # Link to the collection of all posts. Send a POST request to this uri to create a new post.  
   # Method: GET or POST  
   # Example:
   # ```
   # curl -H "Accept: application/hal+json" \
   #      -H "Authorization: abcdef \"
-  #      /users
+  #      /posts
   #```
   link :"doc:up" do
-    users_uri
+    posts_uri
   end
 
   # Auto generated doc:  
-  # Link to this user.  
+  # Link to this post.  
   # Method: GET  
   # Example:
   # ```
   # curl -H "Accept: application/hal+json" \
   #      -H "Authorization: abcdef \"
-  #      /users/5
+  #      /posts/5
   #```
   link :self do
-    user_uri(resource)
+    post_uri(resource)
   end
 
   # Auto generated doc:  
@@ -56,55 +59,55 @@ class UserSerializer < BaseSerializer
   # ```
   # curl -H "Accept: application/hal+json" \
   #      -H "Authorization: abcdef \"
-  #      /users/5/edit
+  #      /posts/5/edit
   #```
   link :"doc:edit-form" do
-    edit_user_uri(resource)
+    edit_post_uri(resource)
   end
 
   # Auto generated doc:  
-  # Link to delete this user.  
+  # Link to delete this post.  
   # Method: DELETE  
   # Example:
   # ```
   # curl -H "Accept: application/hal+json" \
   #      -H "Authorization: abcdef \"
   #      -X DELETE \
-  #      /users/5
+  #      /posts/5
   #```
   link :"doc:delete" do
-    user_uri(resource)
+    post_uri(resource)
   end
 
-  # Link to all posts written by this user
+  # Link to the user who authored this post.  
   # Method: GET  
   # Example:
   # ```
   # curl -H "Accept: application/hal+json" \
   #      -H "Authorization: abcdef \"
-  #      /users/5/posts
+  #      /posts/5/author
   #```
-  link :posts do
-    user_posts_uri(resource)
+  link :author do
+    user_uri(resource.user)
   end
 
-  collection of: 'users' do
-    curie(:doc) { doc_curie_uri('user') }
+  collection of: 'posts' do
+    curie(:doc) { doc_curie_uri('post') }
 
-    link :self, users_uri
+    link :self, posts_uri
     link :'doc:up', root_uri
 
     # Auto generated doc:  
-    # Link to a form used to create new user resources.  
+    # Link to a form used to create new post resources.  
     # Method: GET  
     # Example:
     # ```
     # curl -H "Accept: application/hal+json" \
     #      -H "Authorization: abcdef \"
-    #      /users/form
+    #      /posts/form
     #```
     link :"doc:create-form" do
-      new_user_uri
+      new_post_uri
     end
   end
 end

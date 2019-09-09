@@ -5,7 +5,7 @@ default: &default
   documents_dir: doc/api
   migrations_dir: db/migrations
   fixtures_dir: spec/fixtures
-  paginate_per_page: 25
+  paginate_per_page: 10
   http_cache: on
   http_cache_max_age_long: 86400 # 60 * 60 * 24 = 1 day
   http_cache_max_age_short: 3600 #      60 * 60 = 1 hour

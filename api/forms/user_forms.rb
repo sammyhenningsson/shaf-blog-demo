@@ -8,6 +8,13 @@ class UserForms
       title 'Create User'
       name  'create-user'
     end
+
+    edit do
+      title 'Edit User'
+      name  'edit-user'
+
+      instance_accessor
+    end
   end
 end
 

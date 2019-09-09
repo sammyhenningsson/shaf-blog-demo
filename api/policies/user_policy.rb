@@ -8,7 +8,7 @@ class UserPolicy < BasePolicy
 
   attribute :name
 
-  link :up, :'create-form'
+  link :up, :'create-form', :posts
 
   link :'edit-form', :delete do
     write?
@@ -19,7 +19,6 @@ class UserPolicy < BasePolicy
   end
 
   def write?
-    return false unless current_user && user
-    current_user.id == user.id
+    owner? user&.id
   end
 end

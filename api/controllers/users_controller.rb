@@ -5,10 +5,11 @@ class UsersController < BaseController
   authorize_with UserPolicy
 
   resource_uris_for :user
+  register_uri :user_posts, '/users/:id/posts'
 
   get :users_path do
     authorize! :read
-    collection = paginate(User.order(:created_at).reverse)
+    collection = paginate(User.order(:created_at))
     respond_with_collection collection, serializer: UserSerializer
   end
 
@@ -46,6 +47,13 @@ class UsersController < BaseController
     authorize! :write, user
     user.destroy
     status 204
+  end
+
+  get :user_posts_path do
+    authorize! :read
+    user_id = params[:id].to_i
+    posts = paginate(Post.where(user_id: user_id))
+    respond_with_collection posts
   end
 
   def user_params
