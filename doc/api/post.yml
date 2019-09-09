@@ -1,0 +1,24 @@
+---
+policy: PostPolicy
+attributes:
+  title: 'FIXME: Write documentation for attribute :title'
+  message: 'FIXME: Write documentation for attribute :message'
+curies:
+  doc: "Auto generated doc:  \nLink to the documentation for a given relation of the
+    post resource.\nThis link is templated, which means that {rel} must be replaced
+    by the\nappropriate relation name.  \nMethod: GET  \nExample:\n\ncurl -H \"Accept:
+    application/hal+json\" \\\n     /doc/post/rels/delete\n"
+links:
+  self: "Auto generated doc:  \nLink to this post.  \nMethod: GET  \nExample:\n\ncurl
+    -H \"Accept: application/hal+json\" \\\n     -H \"Authorization: abcdef \\\"\n
+    \    /posts/5\n"
+  author: "Link to the user who authored this post.  \nMethod: GET  \nExample:\n\ncurl
+    -H \"Accept: application/hal+json\" \\\n     -H \"Authorization: abcdef \\\"\n
+    \    /posts/5/author\n"
+  bookmark: "Link to add a bookmark for this post.  \nMethod: PUT  \nExample:\n\ncurl
+    -H \"Accept: application/hal+json\" \\\n     -H \"Authorization: abcdef \\\"\n
+    \    -X PUT \\\n     /posts/5/bookmark\n"
+  remove_bookmark: "Link to remove an exsisting bookmark for this post.  \nMethod:
+    DELETE  \nExample:\n\ncurl -H \"Accept: application/hal+json\" \\\n     -H \"Authorization:
+    abcdef \\\"\n     -X DELETE \\\n     /posts/5/bookmark\n"
+embeds: {}

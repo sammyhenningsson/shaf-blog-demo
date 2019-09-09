@@ -87,15 +87,33 @@ class PostSerializer < BaseSerializer
   #      -H "Authorization: abcdef \"
   #      /posts/5/author
   #```
-  link :author do
+  link :"doc:author" do
     user_uri(resource.user)
   end
 
-  link :bookmark do
+  # Link to add a bookmark for this post.  
+  # Method: PUT  
+  # Example:
+  # ```
+  # curl -H "Accept: application/hal+json" \
+  #      -H "Authorization: abcdef \"
+  #      -X PUT \
+  #      /posts/5/bookmark
+  #```
+  link :"doc:bookmark" do
     bookmark_post_uri(resource)
   end
 
-  link :remove_bookmark do
+  # Link to remove an exsisting bookmark for this post.  
+  # Method: DELETE  
+  # Example:
+  # ```
+  # curl -H "Accept: application/hal+json" \
+  #      -H "Authorization: abcdef \"
+  #      -X DELETE \
+  #      /posts/5/bookmark
+  #```
+  link :"doc:remove_bookmark" do
     bookmark_post_uri(resource)
   end
 

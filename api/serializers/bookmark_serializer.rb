@@ -72,7 +72,7 @@ class BookmarkSerializer < BaseSerializer
   #      -H "Authorization: abcdef \"
   #      /users/5
   #```
-  link :user do
+  link :"doc:user" do
     user_uri(resource.user_id)
   end
 
@@ -84,7 +84,7 @@ class BookmarkSerializer < BaseSerializer
   #      -H "Authorization: abcdef \"
   #      /posts/5
   #```
-  link :post do
+  link :"doc:post" do
     post_uri(resource.post_id)
   end
 

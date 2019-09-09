@@ -1,0 +1,66 @@
+<h2>User</h2>
+
+<h3>Policy</h3>
+
+<p>UserPolicy</p>
+
+<h3>Attributes</h3>
+
+<h6>name</h6>
+
+<p>FIXME: Write documentation for attribute :name</p>
+
+<h3>Curies</h3>
+
+<h6>rel: doc</h6>
+
+<p>Auto generated doc:<br>
+Link to the documentation for a given relation of the user resource.
+This link is templated, which means that {rel} must be replaced by the
+appropriate relation name.<br>
+Method: GET<br>
+Example:
+<pre><code>
+curl -H &quot;Accept: application/hal+json&quot; \
+     /doc/user/rels/delete
+</code></pre></p>
+
+<h3>Links</h3>
+
+<h6>rel: self</h6>
+
+<p>Auto generated doc:<br>
+Link to this user.<br>
+Method: GET<br>
+Example:
+<pre><code>
+curl -H &quot;Accept: application/hal+json&quot; \
+     -H &quot;Authorization: abcdef \&quot;
+     /users/5
+</code></pre></p>
+
+<h6>rel: posts</h6>
+
+<p>Link to all posts written by this user
+Method: GET<br>
+Example:
+<pre><code>
+curl -H &quot;Accept: application/hal+json&quot; \
+     -H &quot;Authorization: abcdef \&quot;
+     /users/5/posts
+</code></pre></p>
+
+<h6>rel: bookmarks</h6>
+
+<p>Link to the users bookmarks<br>
+Method: GET<br>
+Example:
+<pre><code>
+curl -H &quot;Accept: application/hal+json&quot; \
+     -H &quot;Authorization: abcdef&quot; \
+     /users/5/bookmarks
+</code></pre></p>
+
+<h3>Embedded resources</h3>
+
+<p>This resource does not have any documented embedded resources</p>

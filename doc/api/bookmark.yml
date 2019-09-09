@@ -1,0 +1,20 @@
+---
+policy: BookmarkPolicy
+attributes:
+  post_title: The title of the post
+curies:
+  doc: "Auto generated doc:  \nLink to the documentation for a given relation of the
+    bookmark resource.\nThis link is templated, which means that {rel} must be replaced
+    by the\nappropriate relation name.  \nMethod: GET  \nExample:\n\ncurl -H \"Accept:
+    application/hal+json\" \\\n     /doc/bookmark/rels/delete\n"
+links:
+  self: "Auto generated doc:  \nLink to this bookmark.  \nMethod: GET  \nExample:\n\ncurl
+    -H \"Accept: application/hal+json\" \\\n     -H \"Authorization: abcdef \\\"\n
+    \    /bookmarks/5\n"
+  user: "Link to the user who owns this bookmark\nMethod: GET  \nExample:\n\ncurl
+    -H \"Accept: application/hal+json\" \\\n     -H \"Authorization: abcdef \\\"\n
+    \    /users/5\n"
+  post: "Link to the post that this bookmark is for\nMethod: GET  \nExample:\n\ncurl
+    -H \"Accept: application/hal+json\" \\\n     -H \"Authorization: abcdef \\\"\n
+    \    /posts/5\n"
+embeds: {}

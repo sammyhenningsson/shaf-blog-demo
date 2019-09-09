@@ -1,0 +1,19 @@
+---
+policy: UserPolicy
+attributes:
+  name: 'FIXME: Write documentation for attribute :name'
+curies:
+  doc: "Auto generated doc:  \nLink to the documentation for a given relation of the
+    user resource.\nThis link is templated, which means that {rel} must be replaced
+    by the\nappropriate relation name.  \nMethod: GET  \nExample:\n\ncurl -H \"Accept:
+    application/hal+json\" \\\n     /doc/user/rels/delete\n"
+links:
+  self: "Auto generated doc:  \nLink to this user.  \nMethod: GET  \nExample:\n\ncurl
+    -H \"Accept: application/hal+json\" \\\n     -H \"Authorization: abcdef \\\"\n
+    \    /users/5\n"
+  posts: "Link to all posts written by this user\nMethod: GET  \nExample:\n\ncurl
+    -H \"Accept: application/hal+json\" \\\n     -H \"Authorization: abcdef \\\"\n
+    \    /users/5/posts\n"
+  bookmarks: "Link to the users bookmarks   \nMethod: GET  \nExample:\n\ncurl -H \"Accept:
+    application/hal+json\" \\\n     -H \"Authorization: abcdef\" \\\n     /users/5/bookmarks\n"
+embeds: {}

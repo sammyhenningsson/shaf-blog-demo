@@ -84,7 +84,7 @@ class UserSerializer < BaseSerializer
   #      -H "Authorization: abcdef \"
   #      /users/5/posts
   #```
-  link :posts do
+  link :"doc:posts" do
     user_posts_uri(resource)
   end
   
@@ -96,7 +96,7 @@ class UserSerializer < BaseSerializer
   #      -H "Authorization: abcdef" \
   #      /users/5/bookmarks
   #```
-  link :bookmarks, bookmarks_uri do
+  link :"doc:bookmarks" do
     user_bookmarks_uri(resource)
   end
 
