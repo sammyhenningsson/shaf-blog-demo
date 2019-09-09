@@ -2,7 +2,7 @@
 source "https://rubygems.org"
 ruby '2.6.1'
 
-gem 'shaf', path: '/home/sammy/Development/shaf'
+gem 'shaf'
 gem 'sinatra', require: 'sinatra/base'
 gem 'rake'
 gem 'thin'
