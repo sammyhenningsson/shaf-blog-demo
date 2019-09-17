@@ -39,6 +39,7 @@ class BaseController < Sinatra::Base
   before do
     log.info "Processing: #{request.request_method} #{request.path_info}"
     log.debug "Payload: #{payload || 'empty'}"
+    headers('Vary' => Shaf::Settings.auth_token_header)
   end
 
   not_found do
