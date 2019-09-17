@@ -35,7 +35,7 @@ class PostSerializer < BaseSerializer
   #      -H "Authorization: abcdef \"
   #      /posts
   #```
-  link :"doc:up" do
+  link :collection do
     posts_uri
   end
 

@@ -32,7 +32,7 @@ class UserSerializer < BaseSerializer
   #      -H "Authorization: abcdef \"
   #      /users
   #```
-  link :"doc:up" do
+  link :collection do
     users_uri
   end
 
