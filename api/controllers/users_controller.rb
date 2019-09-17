@@ -29,6 +29,7 @@ class UsersController < BaseController
 
   get :user_path do
     authorize! :read
+    cache_control(:private, http_cache_max_age: :short)
     respond_with user
   end
 
