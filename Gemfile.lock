@@ -24,7 +24,7 @@ GEM
     rake (12.3.3)
     redcarpet (3.5.0)
     sequel (5.24.0)
-    shaf (1.1.0)
+    shaf (1.2.0)
     sinatra (2.0.7)
       mustermann (~> 1.0)
       rack (~> 2.0)
