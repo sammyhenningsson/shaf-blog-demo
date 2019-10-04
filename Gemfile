@@ -11,6 +11,7 @@ gem 'sinatra-sequel'
 gem 'bcrypt'
 gem 'hal_presenter'
 gem 'redcarpet'
+gem 'faker'
 
 group :production, :development do
   gem 'pg'
@@ -18,7 +19,6 @@ end
 
 group :development, :test do
   gem 'sqlite3'
-  gem 'faker'
   gem 'byebug'
 end
 
