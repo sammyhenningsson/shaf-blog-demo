@@ -16,12 +16,12 @@ class PostPolicy < BasePolicy
   end
 
   link :bookmark do
-    return false unless authenticated?
+    next false unless authenticated?
     !current_user.bookmarks.map(&:post_id).include? post.id
   end
 
   link :remove_bookmark do
-    return false unless authenticated?
+    next false unless authenticated?
     current_user.bookmarks.map(&:post_id).include? post.id
   end
 
