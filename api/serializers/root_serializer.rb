@@ -2,6 +2,14 @@ require 'serializers/base_serializer'
 
 class RootSerializer < BaseSerializer
 
+  # A description of this API
+  attribute :description, <<~DESC
+    This is demo of an API created with the Shaf framework.
+    It's a simple blog where users can create and read posts.
+    Bookmarks can be added for posts that are interesting.
+    All actions are driven by hypermedia links.
+  DESC
+
   # Auto generated doc:  
   # Link to the root resource. All clients should fetch this resource
   # when starting to interact with this API.  

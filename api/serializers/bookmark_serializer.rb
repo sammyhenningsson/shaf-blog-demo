@@ -92,7 +92,7 @@ class BookmarkSerializer < BaseSerializer
     curie(:doc) { doc_curie_uri('bookmark') }
 
     link :self, bookmarks_uri
-    link :'doc:up', root_uri
+    link :up, root_uri
 
     # Auto generated doc:  
     # Link to a form used to create new bookmark resources.  
@@ -103,7 +103,7 @@ class BookmarkSerializer < BaseSerializer
     #      -H "Authorization: abcdef \"
     #      /bookmarks/form
     #```
-    link :"doc:create-form" do
+    link :"create-form" do
       new_bookmark_uri
     end
   end

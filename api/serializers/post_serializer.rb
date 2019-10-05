@@ -61,7 +61,7 @@ class PostSerializer < BaseSerializer
   #      -H "Authorization: abcdef \"
   #      /posts/5/edit
   #```
-  link :"doc:edit-form" do
+  link :"edit-form" do
     edit_post_uri(resource)
   end
 
@@ -121,7 +121,7 @@ class PostSerializer < BaseSerializer
     curie(:doc) { doc_curie_uri('post') }
 
     link :self, posts_uri
-    link :'doc:up', root_uri
+    link :up, root_uri
 
     # Auto generated doc:  
     # Link to a form used to create new post resources.  
@@ -132,7 +132,7 @@ class PostSerializer < BaseSerializer
     #      -H "Authorization: abcdef \"
     #      /posts/form
     #```
-    link :"doc:create-form" do
+    link :"create-form" do
       new_post_uri
     end
   end

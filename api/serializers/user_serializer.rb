@@ -58,7 +58,7 @@ class UserSerializer < BaseSerializer
   #      -H "Authorization: abcdef \"
   #      /users/5/edit
   #```
-  link :"doc:edit-form" do
+  link :"edit-form" do
     edit_user_uri(resource)
   end
 
@@ -101,10 +101,18 @@ class UserSerializer < BaseSerializer
   end
 
   collection of: 'users' do
+    # A description of this API
+    attribute :description, <<~DESC
+      This is demo of an API created with the Shaf framework.
+      It's a simple blog where users can create posts and list
+      iadfa 
+      adfadf
+    DESC
+
     curie(:doc) { doc_curie_uri('user') }
 
     link :self, users_uri
-    link :'doc:up', root_uri
+    link :up, root_uri
 
     # Auto generated doc:  
     # Link to a form used to create new user resources.  
@@ -115,7 +123,7 @@ class UserSerializer < BaseSerializer
     #      -H "Authorization: abcdef \"
     #      /users/form
     #```
-    link :"doc:create-form" do
+    link :"create-form" do
       new_user_uri
     end
   end

@@ -8,7 +8,7 @@ class BookmarkPolicy < BasePolicy
 
   attribute :post_title
 
-  link :collection, :user, :post
+  link :collection, :user, :post, :up
 
   link :'create-form', :'edit-form', :delete do
     write?

@@ -8,7 +8,7 @@ class UserPolicy < BasePolicy
 
   attribute :name
 
-  link :collection, :'create-form', :posts
+  link :collection, :'create-form', :up, :posts
 
   link :'edit-form', :delete do
     write?

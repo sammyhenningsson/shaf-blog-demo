@@ -9,7 +9,7 @@ class PostPolicy < BasePolicy
   attribute :title
   attribute :message
 
-  link :collection
+  link :collection, :up
 
   link :author do
     UserPolicy.new(current_user, post.user).read? 
