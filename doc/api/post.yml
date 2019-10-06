@@ -9,9 +9,19 @@ curies:
     by the\nappropriate relation name.  \nMethod: GET  \nExample:\n\ncurl -H \"Accept:
     application/hal+json\" \\\n     /doc/post/rels/delete\n"
 links:
+  collection: "Auto generated doc:  \nLink to the collection of all posts. Send a
+    POST request to this uri to create a new post.  \nMethod: GET or POST  \nExample:\n\ncurl
+    -H \"Accept: application/hal+json\" \\\n     -H \"Authorization: abcdef \\\"\n
+    \    /posts\n"
   self: "Auto generated doc:  \nLink to this post.  \nMethod: GET  \nExample:\n\ncurl
     -H \"Accept: application/hal+json\" \\\n     -H \"Authorization: abcdef \\\"\n
     \    /posts/5\n"
+  edit-form: "Auto generated doc:  \nLink to a form to edit this resource.  \nMethod:
+    GET  \nExample:\n\ncurl -H \"Accept: application/hal+json\" \\\n     -H \"Authorization:
+    abcdef \\\"\n     /posts/5/edit\n"
+  delete: "Auto generated doc:  \nLink to delete this post.  \nMethod: DELETE  \nExample:\n\ncurl
+    -H \"Accept: application/hal+json\" \\\n     -H \"Authorization: abcdef \\\"\n
+    \    -X DELETE \\\n     /posts/5\n"
   author: "Link to the user who authored this post.  \nMethod: GET  \nExample:\n\ncurl
     -H \"Accept: application/hal+json\" \\\n     -H \"Authorization: abcdef \\\"\n
     \    /posts/5/author\n"
@@ -21,4 +31,7 @@ links:
   remove_bookmark: "Link to remove an exsisting bookmark for this post.  \nMethod:
     DELETE  \nExample:\n\ncurl -H \"Accept: application/hal+json\" \\\n     -H \"Authorization:
     abcdef \\\"\n     -X DELETE \\\n     /posts/5/bookmark\n"
+  create-form: "Auto generated doc:  \nLink to a form used to create new post resources.
+    \ \nMethod: GET  \nExample:\n\ncurl -H \"Accept: application/hal+json\" \\\n     -H
+    \"Authorization: abcdef \\\"\n     /posts/form\n"
 embeds: {}

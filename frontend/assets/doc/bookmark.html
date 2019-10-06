@@ -27,6 +27,18 @@ curl -H &quot;Accept: application/hal+json&quot; \
 
 <h3>Links</h3>
 
+<h6>rel: collection</h6>
+
+<p>Auto generated doc:<br>
+Link to the collection of all bookmarks. Send a POST request to this uri to create a new bookmark.<br>
+Method: GET or POST<br>
+Example:
+<pre><code>
+curl -H &quot;Accept: application/hal+json&quot; \
+     -H &quot;Authorization: abcdef \&quot;
+     /bookmarks
+</code></pre></p>
+
 <h6>rel: self</h6>
 
 <p>Auto generated doc:<br>
@@ -36,6 +48,19 @@ Example:
 <pre><code>
 curl -H &quot;Accept: application/hal+json&quot; \
      -H &quot;Authorization: abcdef \&quot;
+     /bookmarks/5
+</code></pre></p>
+
+<h6>rel: delete</h6>
+
+<p>Auto generated doc:<br>
+Link to delete this bookmark.<br>
+Method: DELETE<br>
+Example:
+<pre><code>
+curl -H &quot;Accept: application/hal+json&quot; \
+     -H &quot;Authorization: abcdef \&quot;
+     -X DELETE \
      /bookmarks/5
 </code></pre></p>
 
@@ -59,6 +84,18 @@ Example:
 curl -H &quot;Accept: application/hal+json&quot; \
      -H &quot;Authorization: abcdef \&quot;
      /posts/5
+</code></pre></p>
+
+<h6>rel: create-form</h6>
+
+<p>Auto generated doc:<br>
+Link to a form used to create new bookmark resources.<br>
+Method: GET<br>
+Example:
+<pre><code>
+curl -H &quot;Accept: application/hal+json&quot; \
+     -H &quot;Authorization: abcdef \&quot;
+     /bookmarks/form
 </code></pre></p>
 
 <h3>Embedded resources</h3>
