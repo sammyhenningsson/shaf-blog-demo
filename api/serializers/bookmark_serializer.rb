@@ -33,7 +33,7 @@ class BookmarkSerializer < BaseSerializer
   #      -H "Authorization: abcdef \"
   #      /bookmarks
   #```
-  link :collection do
+  link :collection, embed_depth: 0 do
     bookmarks_uri
   end
 
