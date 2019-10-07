@@ -35,19 +35,19 @@ class PostsController < BaseController
   end
 
   get :edit_post_path do
-    authorize! :write
+    authorize! :write, post
     cache_control(:private, http_cache_max_age: :short)
     respond_with edit_form
   end
 
   put :post_path do
-    authorize! :write
+    authorize! :write, post
     post.update(post_params)
     respond_with post
   end
 
   delete :post_path do
-    authorize! :write
+    authorize! :write, post
     post.destroy
     status 204
   end
