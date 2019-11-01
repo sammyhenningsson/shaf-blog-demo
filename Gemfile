@@ -20,6 +20,7 @@ end
 group :development, :test do
   gem 'sqlite3'
   gem 'byebug'
+  gem 'irb'
 end
 
 group :test do
