@@ -6,7 +6,6 @@ class BaseController < Sinatra::Base
     disable :static
     enable :logging
     enable :method_override
-    mime_type :hal, 'application/hal+json'
     set :views, Shaf::Settings.views_folder
     set :static, !production?
     set :public_folder, Shaf::Settings.public_folder
@@ -20,26 +19,14 @@ class BaseController < Sinatra::Base
 
   Shaf::Router.mount(self, default: true)
 
-  def self.inherited(controller)
-    super
-    Shaf::Router.mount controller
-  end
-
-  def self.log
-    $logger
-  end
-
-  def log
-    self.class.log
-  end
-
   register(*Shaf.extensions)
   helpers(*Shaf.helpers)
 
   before do
     log.info "Processing: #{request.request_method} #{request.path_info}"
+    log.debug "Headers: #{request_headers}"
     log.debug "Payload: #{payload || 'empty'}"
-    headers('Vary' => Shaf::Settings.auth_token_header)
+    set_vary_header
   end
 
   not_found do
@@ -52,12 +39,22 @@ class BaseController < Sinatra::Base
     log.error err.message
     Array(err.backtrace).each(&log.method(:error))
 
-    api_error = to_api_error(err)
-
-    respond_with(api_error, status: api_error.http_status)
+    respond_with api_error(err)
   end
 
-  def to_api_error(err)
+  def self.inherited(controller)
+    super
+    Shaf::Router.mount controller
+  end
+
+  def set_vary_header
+    return unless settings.auth_token_header
+    return unless [:get, :head].include? request.request_method.downcase.to_sym
+
+    headers('Vary' => Shaf::Settings.auth_token_header)
+  end
+
+  def api_error(err)
     case err
     when Shaf::Authorize::PolicyViolationError
       ForbiddenError.new
