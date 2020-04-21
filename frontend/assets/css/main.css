@@ -16,8 +16,16 @@ ul {
   list-style-type: none;
 }
 
+td {
+  min-width: 20em;
+}
+
 pre {
   margin: 0;
+}
+
+main {
+  padding-bottom: 8em;
 }
 
 .container {
@@ -31,6 +39,10 @@ pre {
 .section {
   width: 50%;
   height: 100%;
+}
+
+.headers {
+  margin-bottom: 2em;
 }
 
 .hal-form {
@@ -60,11 +72,31 @@ pre {
   min-height: 100%;
   height: auto;
   overflow: auto;
-  background-color: #b5aeae;
+  background-color: #e0e0e0;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start;
   padding: 1em;
+  border-radius: 20px;
 }
 
+span.boolean {
+  color: #0277BD;
+}
+
+span.null {
+  color: #757575;
+}
+
+span.number {
+  color: #3F51B5;
+}
+
+span.structural {
+  color: black;
+}
+
+span.string {
+  color: #43A047;
+}
