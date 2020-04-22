@@ -3,11 +3,11 @@ class BaseController < Sinatra::Base
   include Shaf::Errors
 
   configure do
-    disable :static
+    enable :static
     enable :logging
     enable :method_override
+    set :root, Shaf::Settings.app_root
     set :views, Shaf::Settings.views_folder
-    set :static, !production?
     set :public_folder, Shaf::Settings.public_folder
     disable :dump_errors
     set :show_exceptions, :after_handler
