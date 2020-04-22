@@ -4,7 +4,7 @@ class RootSerializer < BaseSerializer
 
   # A description of this API
   attribute :description, <<~DESC
-    This is demo of an API created with the Shaf framework.
+    This is a demo of an API created with the Shaf framework.
     It's a simple blog where users can create and read posts.
     Bookmarks can be added for posts that are interesting.
     All actions are driven by hypermedia links.
