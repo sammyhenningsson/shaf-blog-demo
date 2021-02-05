@@ -11,8 +11,6 @@ class BaseController < Sinatra::Base
     set :public_folder, Shaf::Settings.public_folder
     disable :dump_errors
     set :show_exceptions, :after_handler
-    enable :current_user
-    set :auth_token_header, Shaf::Settings.auth_token_header
   end
 
   use Rack::Deflater
@@ -26,7 +24,6 @@ class BaseController < Sinatra::Base
     log.info "Processing: #{request.request_method} #{request.path_info}"
     log.debug "Headers: #{request_headers}"
     log.debug "Payload: #{payload || 'empty'}"
-    set_vary_header
   end
 
   not_found do
@@ -45,13 +42,6 @@ class BaseController < Sinatra::Base
   def self.inherited(controller)
     super
     Shaf::Router.mount controller
-  end
-
-  def set_vary_header
-    return unless settings.auth_token_header
-    return unless [:get, :head].include? request.request_method.downcase.to_sym
-
-    headers('Vary' => Shaf::Settings.auth_token_header)
   end
 
   def api_error(err)

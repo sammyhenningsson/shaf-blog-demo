@@ -24,13 +24,13 @@ def init
   return if current?
 
   if environment == 'test'
-    $logger.info "Running migrations in 'test' environment.."
+    Shaf.log.info "Running migrations in 'test' environment.."
     Sequel::Migrator.run(DB, migrations_dir)
   else
     msg = "Database for environment '#{environment}' is not " \
       'updated to the latest migration'
     STDERR.puts msg
-    $logger&.warn msg
+    Shaf.log&.warn msg
   end
 end
 

@@ -3,8 +3,6 @@
 require 'rubygems'
 require 'bundler'
 
-$logger = nil
-
 require 'shaf'
 if ENV['RACK_ENV'] == 'test'
   require 'minitest'
@@ -18,3 +16,4 @@ require 'config/database'
 require 'config/initializers'
 require 'config/directories'
 require 'config/helpers'
+

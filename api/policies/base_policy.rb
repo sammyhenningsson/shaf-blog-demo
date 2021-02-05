@@ -1,6 +1,8 @@
 class BasePolicy
   include HALPresenter::Policy::DSL
 
+  link :profile
+
   def authenticated?
     !!current_user&.id
   end

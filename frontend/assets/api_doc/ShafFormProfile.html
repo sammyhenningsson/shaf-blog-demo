@@ -1,0 +1,250 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Example API (Change this name in config/settings.yml)</title>
+    <link rel="stylesheet" href="/css/api-doc.css" type="text/css" media="screen" charset="utf-8" />
+    <script type="text/javascript" charset="utf-8" src="/js/switch_tab.js"></script>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="header header-sidebar">
+  <h2><span>API documentation</span></h2>
+</div>
+<div class="header header-main">
+  <h1><span>Example API (Change this name in config/settings.yml)</span></h1>
+</div>
+<div class="header header-non"></div>
+<div class="sidebar">
+  <div class="sidebar-tabs">
+    <button class="sidebar-tab-btn " onclick="openTab(event, 'serializer-list')">
+      Resources
+    </button>
+    <button class="sidebar-tab-btn active" onclick="openTab(event, 'profile-list')">
+      Profiles
+    </button>
+  </div>
+  <div class="sidebar-container">
+    <div id="serializer-list" class="list sidebar-content ">
+  <ul>
+    
+      <li class="sidebar-link ">
+        <a href=/api_doc/BaseSerializer.html class="">Base</a>
+      </li>
+    
+      <li class="sidebar-link ">
+        <a href=/api_doc/BookmarkSerializer.html class="">Bookmark</a>
+      </li>
+    
+      <li class="sidebar-link ">
+        <a href=/api_doc/DocumentationSerializer.html class="">Documentation</a>
+      </li>
+    
+      <li class="sidebar-link ">
+        <a href=/api_doc/ErrorSerializer.html class="">Error</a>
+      </li>
+    
+      <li class="sidebar-link ">
+        <a href=/api_doc/FormSerializer.html class="">Form</a>
+      </li>
+    
+      <li class="sidebar-link ">
+        <a href=/api_doc/PostSerializer.html class="">Post</a>
+      </li>
+    
+      <li class="sidebar-link ">
+        <a href=/api_doc/RootSerializer.html class="">Root</a>
+      </li>
+    
+      <li class="sidebar-link ">
+        <a href=/api_doc/UserSerializer.html class="">User</a>
+      </li>
+    
+      <li class="sidebar-link ">
+        <a href=/api_doc/ValidationErrorSerializer.html class="">ValidationError</a>
+      </li>
+    
+</div>
+<div id="profile-list" class="list sidebar-content active">
+  <ul>
+    
+      <li class="sidebar-link ">
+        <a href=/api_doc/ShafErrorProfile.html class="">ShafError</a>
+      </li>
+    
+      <li class="sidebar-link active">
+        <a href=/api_doc/ShafFormProfile.html class="active">ShafForm</a>
+      </li>
+    
+</div>
+
+  </div>
+</div>
+
+<div class="resource">
+  <h2>The <span class="resource-title">ShafForm</span> profile</h2>
+  <p>This profile describes how a set of descriptors should be interpreted to turn a generic media type into a form (similar to HTML forms). For example, the HAL media type (application/hal+json) does not specify any semantics about forms, however we can add semantics about forms to a HAL document using this profile.
+  <div class="resource-section attributes">
+  <h3>Attributes</h3>
+  <ul>
+    
+      <li class="description-item">
+        <h4 class=description-list>
+    <strong> method</strong>
+    
+        <span class="property-source profile">string</span>
+    
+</h4>
+<p>The HTTP method used for submitting the form</p>
+
+
+      </li>
+    
+      <li class="description-item">
+        <h4 class=description-list>
+    <strong> href</strong>
+    
+        <span class="property-source profile">string</span>
+    
+</h4>
+<p>The target uri that the form should be submitted to</p>
+
+
+      </li>
+    
+      <li class="description-item">
+        <h4 class=description-list>
+    <strong> name</strong>
+    
+        <span class="property-source profile">string</span>
+    
+</h4>
+<p>A string used to indentify the form.</p>
+
+
+      </li>
+    
+      <li class="description-item">
+        <h4 class=description-list>
+    <strong> title</strong>
+    
+        <span class="property-source profile">string</span>
+    
+</h4>
+<p>A string used as title/label when showing the form in a user interface</p>
+
+
+      </li>
+    
+      <li class="description-item">
+        <h4 class=description-list>
+    <strong> type</strong>
+    
+        <span class="property-source profile">string</span>
+    
+</h4>
+<p>The media type that must be set in the CONTENT-TYPE header when submiting the form</p>
+
+
+      </li>
+    
+      <li class="description-item">
+        <h4 class=description-list>
+    <strong> submit</strong>
+    
+        <span class="property-source profile">string</span>
+    
+</h4>
+<p>A string used as label for the CallToAction (e.g. the submit button text)</p>
+
+
+      </li>
+    
+      <li class="description-item">
+        <h4 class=description-list>
+    <strong> fields</strong>
+    
+        <span class="property-source profile">string</span>
+    
+</h4>
+<p>A list of field descriptors</p>
+
+    <div class="nested-attributes">
+        <h5>Nested attributes</h5>
+        <ul>
+        
+            <li>
+                <h6>
+                    <strong> fields.name</strong>
+                    <span class="property-source profile">string</span>
+                </h6>
+                <p>A string that should be used as key for the field.</p>
+            </li>
+        
+            <li>
+                <h6>
+                    <strong> fields.type</strong>
+                    <span class="property-source profile">string</span>
+                </h6>
+                <p>A string specifying the possible values accepted by the field.</p>
+            </li>
+        
+            <li>
+                <h6>
+                    <strong> fields.title</strong>
+                    <span class="property-source profile">string</span>
+                </h6>
+                <p>A string used to present this field in a UI. If not present name may be used instead.</p>
+            </li>
+        
+            <li>
+                <h6>
+                    <strong> fields.value</strong>
+                    <span class="property-source profile">string</span>
+                </h6>
+                <p>A prefilled value. Should be shown in a user interface (unless hidden) and sent back on submission unless changed.</p>
+            </li>
+        
+            <li>
+                <h6>
+                    <strong> fields.required</strong>
+                    <span class="property-source profile">boolean</span>
+                </h6>
+                <p>A boolean specifying that the field must be given a value before the form is submitted.</p>
+            </li>
+        
+            <li>
+                <h6>
+                    <strong> fields.hidden</strong>
+                    <span class="property-source profile">boolean</span>
+                </h6>
+                <p>A boolean specifying that the field should not be shown in a user interface.</p>
+            </li>
+        
+            <li>
+                <h6>
+                    <strong> fields.accepted_values</strong>
+                    <span class="property-source profile">array</span>
+                </h6>
+                <p>A list of av acceptable values. Submitting a value not present in this list SHOULD result in a client error response.</p>
+            </li>
+        
+        </ul>
+    </div>
+
+
+      </li>
+    
+  </ul>
+</div>
+<div class="resource-section relations">
+  <h3>Link relations</h3>
+  <ul>
+    
+  </ul>
+</div>
+
+</div>
+
+    </div>
+  </body>
+</html>
