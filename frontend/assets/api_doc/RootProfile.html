@@ -16,19 +16,19 @@
 <div class="header header-none"></div>
 <div class="sidebar">
   <div class="sidebar-tabs">
-    <button class="sidebar-tab-btn active" onclick="openTab(event, 'serializer-list')">
+    <button class="sidebar-tab-btn" onclick="openTab(event, 'serializer-list')">
       Resources
     </button>
-    <button class="sidebar-tab-btn" onclick="openTab(event, 'profile-list')">
+    <button class="sidebar-tab-btn active" onclick="openTab(event, 'profile-list')">
       Profiles
     </button>
   </div>
   <div class="sidebar-container">
-    <div id="serializer-list" class="list sidebar-content active">
+    <div id="serializer-list" class="list sidebar-content ">
   <ul>
     
-      <li class="sidebar-link active">
-        <a href=/api_doc/BaseSerializer.html class="active">Base</a>
+      <li class="sidebar-link ">
+        <a href=/api_doc/BaseSerializer.html class="">Base</a>
       </li>
     
       <li class="sidebar-link ">
@@ -64,7 +64,7 @@
       </li>
     
 </div>
-<div id="profile-list" class="list sidebar-content ">
+<div id="profile-list" class="list sidebar-content active">
   <ul>
     
       <li class="sidebar-link ">
@@ -75,8 +75,8 @@
         <a href=/api_doc/PostProfile.html class="">Post</a>
       </li>
     
-      <li class="sidebar-link ">
-        <a href=/api_doc/RootProfile.html class="">Root</a>
+      <li class="sidebar-link active">
+        <a href=/api_doc/RootProfile.html class="active">Root</a>
       </li>
     
       <li class="sidebar-link ">
@@ -95,16 +95,17 @@
 
   </div>
 </div>
+
 <div class="resource">
-  <h2>The <span class="resource-title">Base</span> resource</h2>
-  <p>
-  <div class="resource-section media-type-profile">
-  <h3>Media type profile</h3>
-  <p>
-    
-  </p>
-</div>
-<div class="resource-section attributes">
+  <h2>The <span class="resource-title">Root</span> profile</h2>
+  <p>This is a demo of an API created with the Shaf framework.
+It's a simple blog where users can create and read posts.
+Bookmarks can be added for posts that are interesting.
+All actions are driven by hypermedia links.
+Authentication is done using Basic Auth by sending the user name and
+an empty password (this only for demo purposes..)
+
+  <div class="resource-section attributes">
   <h3>Attributes</h3>
   <ul>
     
@@ -113,6 +114,50 @@
 <div class="resource-section relations">
   <h3>Link relations</h3>
   <ul>
+    
+      <li class="description-item">
+        <h4 class=description-list>
+    <strong> users</strong>
+</h4>
+<p>Link to the collection of all users</p>
+
+
+
+
+    <p>Supported HTTP Methods: 
+        <span class="http-method get">GET</span>
+        
+    
+    </p>
+
+
+
+
+
+
+      </li>
+    
+      <li class="description-item">
+        <h4 class=description-list>
+    <strong> users</strong>
+</h4>
+<p>Link to the collection of all posts</p>
+
+
+
+
+    <p>Supported HTTP Methods: 
+        <span class="http-method get">GET</span>
+        
+    
+    </p>
+
+
+
+
+
+
+      </li>
     
   </ul>
 </div>

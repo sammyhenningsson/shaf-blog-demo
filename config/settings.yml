@@ -1,6 +1,6 @@
 ---
 default: &default
-  project_name: Example API (Change this name in config/settings.yml)
+  project_name: Shaf Demo API
 
   public_folder: frontend/assets
   views_folder: frontend/views

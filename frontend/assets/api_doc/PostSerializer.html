@@ -1,7 +1,7 @@
 <html>
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>Example API (Change this name in config/settings.yml)</title>
+    <title>Shaf Demo API</title>
     <link rel="stylesheet" href="/css/api-doc.css" type="text/css" media="screen" charset="utf-8" />
     <script type="text/javascript" charset="utf-8" src="/js/switch_tab.js"></script>
   </head>
@@ -11,15 +11,15 @@
   <h2><span>API documentation</span></h2>
 </div>
 <div class="header header-main">
-  <h1><span>Example API (Change this name in config/settings.yml)</span></h1>
+  <h1><span>Shaf Demo API</span></h1>
 </div>
-<div class="header header-non"></div>
+<div class="header header-none"></div>
 <div class="sidebar">
   <div class="sidebar-tabs">
     <button class="sidebar-tab-btn active" onclick="openTab(event, 'serializer-list')">
       Resources
     </button>
-    <button class="sidebar-tab-btn " onclick="openTab(event, 'profile-list')">
+    <button class="sidebar-tab-btn" onclick="openTab(event, 'profile-list')">
       Profiles
     </button>
   </div>
@@ -68,11 +68,27 @@
   <ul>
     
       <li class="sidebar-link ">
+        <a href=/api_doc/BookmarkProfile.html class="">Bookmark</a>
+      </li>
+    
+      <li class="sidebar-link ">
+        <a href=/api_doc/PostProfile.html class="">Post</a>
+      </li>
+    
+      <li class="sidebar-link ">
+        <a href=/api_doc/RootProfile.html class="">Root</a>
+      </li>
+    
+      <li class="sidebar-link ">
         <a href=/api_doc/ShafErrorProfile.html class="">ShafError</a>
       </li>
     
       <li class="sidebar-link ">
         <a href=/api_doc/ShafFormProfile.html class="">ShafForm</a>
+      </li>
+    
+      <li class="sidebar-link ">
+        <a href=/api_doc/UserProfile.html class="">User</a>
       </li>
     
 </div>
@@ -86,6 +102,12 @@
   <h3>Media type profile</h3>
   <p>
     
+      <span class="property-source profile">
+        
+        <a href="/api_doc/PostProfile.html">Post</a>
+        
+      </span>
+    
   </p>
 </div>
 <div class="resource-section attributes">
@@ -96,8 +118,10 @@
         <h4 class=description-list>
     <strong> message</strong>
     
+        <span class="property-source profile">String</span>
+    
 </h4>
-<p>Not documented</p>
+<p>The body of the post</p>
 
 
       </li>
@@ -106,8 +130,10 @@
         <h4 class=description-list>
     <strong> title</strong>
     
+        <span class="property-source profile">String</span>
+    
 </h4>
-<p>Not documented</p>
+<p>The title of the post</p>
 
 
       </li>
@@ -117,6 +143,60 @@
 <div class="resource-section relations">
   <h3>Link relations</h3>
   <ul>
+    
+      <li class="description-item">
+        <h4 class=description-list>
+    <strong> author</strong>
+</h4>
+<p>Refers to the context's author.</p>
+
+<p>Source:
+    
+        <span class="property-source iana">
+            <a href="https://www.iana.org/assignments/link-relations/link-relations.xhtml">IANA</a>
+        </span>
+    
+</p>
+
+
+
+
+
+
+
+
+
+      </li>
+    
+      <li class="description-item">
+        <h4 class=description-list>
+    <strong> bookmark</strong>
+</h4>
+<p>Link to add a bookmark for this post</p>
+
+<p>Source:
+    
+        <span class="property-source profile">
+            <a href="/api_doc/PostProfile.html">PostProfile</a>
+        </span>
+    
+</p>
+
+
+
+
+    <p>Supported HTTP Methods: 
+        <span class="http-method put">PUT</span>
+        
+    
+    </p>
+
+
+
+
+
+
+      </li>
     
       <li class="description-item">
         <h4 class=description-list>
@@ -144,84 +224,34 @@
     
       <li class="description-item">
         <h4 class=description-list>
-    <strong> doc:author</strong>
+    <strong> delete</strong>
 </h4>
-<p>Undocumented</p>
+<p>When a resource contains a link with rel 'delete', this
+means that the autenticated user (or any user if the
+current user has not been authenticated), may send a
+DELETE request to the href of the link.
+If a DELETE request is sent to this href then the corresponding
+resource will be deleted.
+</p>
 
 <p>Source:
     
-        <span class="property-source unknown">Unknown</span>
+        <span class="property-source profile">
+            <a href="/api_doc/PostProfile.html">PostProfile</a>
+        </span>
     
 </p>
 
 
+    <p>Reference: <a href="/doc/profiles/shaf-basic#delete">/doc/profiles/shaf-basic#delete</a></p>
 
 
 
-
-
-
-
-      </li>
+    <p>Supported HTTP Methods: 
+        <span class="http-method delete">DELETE</span>
+        
     
-      <li class="description-item">
-        <h4 class=description-list>
-    <strong> doc:bookmark</strong>
-</h4>
-<p>Undocumented</p>
-
-<p>Source:
-    
-        <span class="property-source unknown">Unknown</span>
-    
-</p>
-
-
-
-
-
-
-
-
-
-      </li>
-    
-      <li class="description-item">
-        <h4 class=description-list>
-    <strong> doc:delete</strong>
-</h4>
-<p>Undocumented</p>
-
-<p>Source:
-    
-        <span class="property-source unknown">Unknown</span>
-    
-</p>
-
-
-
-
-
-
-
-
-
-      </li>
-    
-      <li class="description-item">
-        <h4 class=description-list>
-    <strong> doc:remove_bookmark</strong>
-</h4>
-<p>Undocumented</p>
-
-<p>Source:
-    
-        <span class="property-source unknown">Unknown</span>
-    
-</p>
-
-
-
+    </p>
 
 
 
@@ -257,6 +287,36 @@
     
       <li class="description-item">
         <h4 class=description-list>
+    <strong> remove_bookmark</strong>
+</h4>
+<p>Link to remove an exsisting bookmark for this post</p>
+
+<p>Source:
+    
+        <span class="property-source profile">
+            <a href="/api_doc/PostProfile.html">PostProfile</a>
+        </span>
+    
+</p>
+
+
+
+
+    <p>Supported HTTP Methods: 
+        <span class="http-method delete">DELETE</span>
+        
+    
+    </p>
+
+
+
+
+
+
+      </li>
+    
+      <li class="description-item">
+        <h4 class=description-list>
     <strong> self</strong>
 </h4>
 <p>Conveys an identifier for the link's context.</p>
@@ -282,6 +342,9 @@
   </ul>
 </div>
 
+</div>
+<div class="footer">
+  <p>Icon by <a href="https://freeicons.io/profile/3054">Nine One</a> on <a href="https://freeicons.io">freeicons.io</a></p>
 </div>
 
     </div>
