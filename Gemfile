@@ -2,7 +2,7 @@
 source "https://rubygems.org"
 ruby '2.6.6'
 
-gem 'shaf', path: '/home/sammy/Development/shaf'
+gem 'shaf'
 gem 'sinatra', require: 'sinatra/base'
 gem 'rake'
 gem 'puma'
@@ -14,7 +14,6 @@ gem 'redcarpet'
 gem 'faker'
 
 group :production, :development do
-  gem 'yard'
   gem 'pg'
 end
 

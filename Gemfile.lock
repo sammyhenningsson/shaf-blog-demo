@@ -1,9 +1,3 @@
-PATH
-  remote: /home/sammy/Development/shaf
-  specs:
-    shaf (2.0.0)
-      file_transactions (~> 0.1.2)
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -12,7 +6,7 @@ GEM
     concurrent-ruby (1.1.8)
     faker (2.15.1)
       i18n (>= 1.6, < 2)
-    file_transactions (0.1.3)
+    file_transactions (1.1.4)
     hal_presenter (1.6.0)
     i18n (1.8.8)
       concurrent-ruby (~> 1.0)
@@ -39,6 +33,8 @@ GEM
       io-console (~> 0.5)
     ruby2_keywords (0.0.4)
     sequel (5.41.0)
+    shaf (2.0.0)
+      file_transactions
     sinatra (2.1.0)
       mustermann (~> 1.0)
       rack (~> 2.2)
@@ -68,7 +64,7 @@ DEPENDENCIES
   rake
   redcarpet
   sequel
-  shaf!
+  shaf
   sinatra
   sinatra-sequel
   sqlite3
