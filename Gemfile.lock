@@ -33,7 +33,7 @@ GEM
       io-console (~> 0.5)
     ruby2_keywords (0.0.4)
     sequel (5.41.0)
-    shaf (2.0.0)
+    shaf (2.1.0)
       file_transactions
     sinatra (2.1.0)
       mustermann (~> 1.0)
