@@ -8,8 +8,8 @@ class RootSerializer < BaseSerializer
     It's a simple blog where users can create and read posts.
     Bookmarks can be added for posts that are interesting.
     All actions are driven by hypermedia links.
-    Authentication is done by sending the user name in
-    the X-Auth-Token header (this only a demo...)
+    Authentication is done through Basic auth, using username and an emtpy
+    password (this only a demo...)
   DESC
 
   link :self, root_uri
