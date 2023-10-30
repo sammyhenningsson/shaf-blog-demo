@@ -11,7 +11,8 @@ class User < Sequel::Model
   end
 
   def before_create
-    self.auth_token_digest = Shaf::CurrentUser.digest(name)
+    # This is currenly not used.
+    self.auth_token_digest = SecureRandom.hex
     super
   end
 end
