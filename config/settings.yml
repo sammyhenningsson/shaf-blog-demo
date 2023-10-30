@@ -19,7 +19,7 @@ default: &default
 production:
   <<: *default
   port: <%= ENV.fetch('PORT', 443) %>
-  base_uri: https://shaf-blog-demo.herokuapp.com
+  base_uri: https://shaf-blog-demo.onrender.com
 
 development:
   <<: *default
