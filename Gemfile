@@ -12,6 +12,7 @@ gem 'bcrypt'
 gem 'hal_presenter'
 gem 'redcarpet'
 gem 'faker'
+gem 'sqlite3'
 
 group :production, :development do
   gem 'pg'
@@ -19,7 +20,6 @@ end
 
 group :development, :test do
   gem 'yard'
-  gem 'sqlite3'
   gem 'byebug'
   gem 'irb'
 end

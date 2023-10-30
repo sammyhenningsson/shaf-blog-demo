@@ -1,4 +1,3 @@
-config/database.yml
 db/*.sqlite3
 logs/*
 .byebug_history
